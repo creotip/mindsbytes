@@ -1,0 +1,2009 @@
+
+   [
+    {
+      "question": "Which of the following is a connected graph?",
+      "options": [
+        {
+          "answer": "Cycle",
+          "rightAnswer": false
+        },
+        {
+          "answer": "Star",
+          "rightAnswer": false
+        },
+        {
+          "answer": "Path",
+          "rightAnswer": true
+        },
+        {
+          "answer": "Complete Graph",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Graph Theory"
+    },
+    {
+      "question": "What is the value of pi (π)?",
+      "options": [
+        {
+          "answer": "3.14159",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2.71828",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1.61803",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4.66920",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Geometry"
+    },
+    {
+      "question": "Solve the equation: 2x + 5 = 15",
+      "options": [
+        {
+          "answer": "x = 5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 12",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the derivative of f(x) = 3x^2 + 2x + 1?",
+      "options": [
+        {
+          "answer": "f'(x) = 3x^2 + 2x",
+          "rightAnswer": false
+        },
+        {
+          "answer": "f'(x) = 6x + 2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "f'(x) = 6x",
+          "rightAnswer": false
+        },
+        {
+          "answer": "f'(x) = 3x + 2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Calculus"
+    },
+    {
+      "question": "What is the value of sin(45°)?",
+      "options": [
+        {
+          "answer": "0.7071",
+          "rightAnswer": true
+        },
+        {
+          "answer": "0.8660",
+          "rightAnswer": false
+        },
+        {
+          "answer": "0.5000",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1.0000",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: (2 + 3) × (4 - 1)",
+      "options": [
+        {
+          "answer": "12",
+          "rightAnswer": true
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "15",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the square root of 144?",
+      "options": [
+        {
+          "answer": "12",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "14",
+          "rightAnswer": false
+        },
+        {
+          "answer": "16",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "Find the area of a rectangle with length 6 and width 4.",
+      "options": [
+        {
+          "answer": "24",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "14",
+          "rightAnswer": false
+        },
+        {
+          "answer": "16",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Geometry"
+    },
+    {
+      "question": "Evaluate the expression: 2^3 - 5 × (4 + 1)",
+      "options": [
+        {
+          "answer": "-13",
+          "rightAnswer": true
+        },
+        {
+          "answer": "0",
+          "rightAnswer": false
+        },
+        {
+          "answer": "7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-15",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of log₅(25)?",
+      "options": [
+        {
+          "answer": "2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "0.5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Logarithms"
+    },
+    {
+      "question": "Solve the equation: 3x + 7 = 22",
+      "options": [
+        {
+          "answer": "x = 5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 15",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of tan(60°)?",
+      "options": [
+        {
+          "answer": "√3",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "0.5",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 4x - 2x + 3x - 5x",
+      "options": [
+        {
+          "answer": "-x",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2x",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4x",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-2x",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of √9 - √4?",
+      "options": [
+        {
+          "answer": "1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of 2² + 3³?",
+      "options": [
+        {
+          "answer": "35",
+          "rightAnswer": true
+        },
+        {
+          "answer": "13",
+          "rightAnswer": false
+        },
+        {
+          "answer": "17",
+          "rightAnswer": false
+        },
+        {
+          "answer": "20",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "Solve the equation: 2(x + 5) = 18",
+      "options": [
+        {
+          "answer": "x = 4",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 12",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of cos(30°)?",
+      "options": [
+        {
+          "answer": "√3/2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 5(2x + 3) - 2(4x - 1)",
+      "options": [
+        {
+          "answer": "18x + 17",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10x - 7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8x + 5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "12x - 2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of log₂(16)?",
+      "options": [
+        {
+          "answer": "4",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "16",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Logarithms"
+    },
+    {
+      "question": "What is the value of 3! (factorial)?",
+      "options": [
+        {
+          "answer": "6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6",
+          "rightAnswer": true
+        }
+      ],
+      "level": "Easy",
+      "category": "Combinatorics"
+    },
+    {
+      "question": "Solve the equation: 4x - 7 = 9x + 2",
+      "options": [
+        {
+          "answer": "x = -3",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -7",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of sin²(30°) + cos²(30°)?",
+      "options": [
+        {
+          "answer": "1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "0",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-1",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 2(3x + 5) + 4(2x - 1)",
+      "options": [
+        {
+          "answer": "14x + 6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10x - 2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8x + 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "12x + 4",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of 2³ × 3²?",
+      "options": [
+        {
+          "answer": "72",
+          "rightAnswer": true
+        },
+        {
+          "answer": "15",
+          "rightAnswer": false
+        },
+        {
+          "answer": "36",
+          "rightAnswer": false
+        },
+        {
+          "answer": "24",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of 5 + 7 - 3 × 2 ÷ 4?",
+      "options": [
+        {
+          "answer": "9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8",
+          "rightAnswer": true
+        },
+        {
+          "answer": "6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "Solve the equation: 2(x - 3) = 4x + 5",
+      "options": [
+        {
+          "answer": "x = -4",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -1",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of cos(45°)?",
+      "options": [
+        {
+          "answer": "0.7071",
+          "rightAnswer": true
+        },
+        {
+          "answer": "0.8660",
+          "rightAnswer": false
+        },
+        {
+          "answer": "0.5000",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1.0000",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: (2x - 3) + (4x + 5) - (x + 2)",
+      "options": [
+        {
+          "answer": "5x",
+          "rightAnswer": true
+        },
+        {
+          "answer": "7x",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3x",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2x",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of √(16 + 9) ÷ 5?",
+      "options": [
+        {
+          "answer": "1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of 3² + 4³ - 5²?",
+      "options": [
+        {
+          "answer": "52",
+          "rightAnswer": true
+        },
+        {
+          "answer": "45",
+          "rightAnswer": false
+        },
+        {
+          "answer": "37",
+          "rightAnswer": false
+        },
+        {
+          "answer": "48",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "Solve the equation: 3(x - 2) = 2x + 4",
+      "options": [
+        {
+          "answer": "x = 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = -2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of sin(60°)?",
+      "options": [
+        {
+          "answer": "√3/2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 2(x + 3) + 3(2x - 1) - 4(3x + 2)",
+      "options": [
+        {
+          "answer": "-10x - 2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "5x - 1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8x + 4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-6x + 6",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of log₃(27)?",
+      "options": [
+        {
+          "answer": "3",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1/3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Logarithms"
+    },
+    {
+      "question": "What is the value of 8 ÷ 2(2 + 2)?",
+      "options": [
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "16",
+          "rightAnswer": true
+        },
+        {
+          "answer": "4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "Solve the equation: 5x + 2 = 3x - 4",
+      "options": [
+        {
+          "answer": "x = -3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 3",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -6",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of tan(45°)?",
+      "options": [
+        {
+          "answer": "1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "0",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-1",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 3x + 2 - (x - 4) + 5x",
+      "options": [
+        {
+          "answer": "7x + 6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "8x - 2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5x + 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6x + 8",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of 2⁴ + 3³ - 4²?",
+      "options": [
+        {
+          "answer": "29",
+          "rightAnswer": true
+        },
+        {
+          "answer": "21",
+          "rightAnswer": false
+        },
+        {
+          "answer": "27",
+          "rightAnswer": false
+        },
+        {
+          "answer": "32",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of √(9 + 16) - √(4 + 1)?",
+      "options": [
+        {
+          "answer": "4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "Solve the equation: 2(x + 3) = 3(x - 2) - 4",
+      "options": [
+        {
+          "answer": "x = 5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = -5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 3",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of sec(30°)?",
+      "options": [
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2/√3",
+          "rightAnswer": true
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 2x - (3 - 4x) + 5(2 + x)",
+      "options": [
+        {
+          "answer": "13x + 13",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10x + 13",
+          "rightAnswer": false
+        },
+        {
+          "answer": "7x + 13",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8x + 13",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of log₁₀(100) + log₂(8)?",
+      "options": [
+        {
+          "answer": "4",
+          "rightAnswer": true
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Logarithms"
+    },
+    {
+      "question": "Evaluate the expression: |−6| + |−3|",
+      "options": [
+        {
+          "answer": "9",
+          "rightAnswer": true
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-3",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 2x - 5 = 3x + 2",
+      "options": [
+        {
+          "answer": "x = -7",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -5",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of cos(π/3)?",
+      "options": [
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√3/2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: (4x + 3) - (2x - 5) + (x + 2)",
+      "options": [
+        {
+          "answer": "3x + 10",
+          "rightAnswer": true
+        },
+        {
+          "answer": "3x - 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6x - 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6x + 6",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "What is the value of ln(e²) - log₄(16)?",
+      "options": [
+        {
+          "answer": "1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Logarithms"
+    },
+    {
+      "question": "Simplify the expression: 2(3x - 4) - 5(2 - x)",
+      "options": [
+        {
+          "answer": "16x - 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "16x - 18",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10x - 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "10x - 18",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |4 - 8| + |3 - 7|",
+      "options": [
+        {
+          "answer": "8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 5x - 3 = 2x + 7",
+      "options": [
+        {
+          "answer": "x = 5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = -2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(25) + √(16) - √(9)",
+      "options": [
+        {
+          "answer": "8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of sin(π/6)?",
+      "options": [
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√3/2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: (2x - 3) + (4x + 5) - (3x - 2)",
+      "options": [
+        {
+          "answer": "3x + 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3x + 10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3x + 4",
+          "rightAnswer": true
+        },
+        {
+          "answer": "3x + 2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |5 - 9| + |7 - 2|",
+      "options": [
+        {
+          "answer": "9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "11",
+          "rightAnswer": true
+        },
+        {
+          "answer": "5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "7",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 3(x - 4) = 5(x + 2) - 1",
+      "options": [
+        {
+          "answer": "x = 9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -7",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 7",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(36) - √(25) + √(16)",
+      "options": [
+        {
+          "answer": "7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of tan(π/4)?",
+      "options": [
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Evaluate the expression: 2(5x - 3) - 3(2x + 4)",
+      "options": [
+        {
+          "answer": "4x - 18",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4x + 18",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4x - 6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "4x + 6",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |6 - 12| + |4 - 8|",
+      "options": [
+        {
+          "answer": "0",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "4",
+          "rightAnswer": true
+        },
+        {
+          "answer": "8",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 3(x + 5) - 2(x - 3) = 4(x - 2)",
+      "options": [
+        {
+          "answer": "x = -1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Simplify the expression: 3x + 2(x - 4) - 5(2x + 3)",
+      "options": [
+        {
+          "answer": "-6x - 29",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-5x - 29",
+          "rightAnswer": true
+        },
+        {
+          "answer": "-6x - 31",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-5x - 31",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |9 - 5| + |3 - 7|",
+      "options": [
+        {
+          "answer": "6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8",
+          "rightAnswer": true
+        },
+        {
+          "answer": "10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "12",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 2(3x - 4) - 3(x + 2) = 5(x - 1)",
+      "options": [
+        {
+          "answer": "x = 5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 7",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 8",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(25) - √(16) + √(9)",
+      "options": [
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of sin(π/3)?",
+      "options": [
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√3/2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 2(x + 3) - 3(x - 2) + 4x",
+      "options": [
+        {
+          "answer": "-3x + 8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-3x + 2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3x + 8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "3x - 2",
+          "rightAnswer": true
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |10 - 3| + |7 - 9|",
+      "options": [
+        {
+          "answer": "3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "7",
+          "rightAnswer": false
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 4(2x - 3) - 2(3x + 1) = 5x + 4",
+      "options": [
+        {
+          "answer": "x = 2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 3",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 5",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(36) - √(25) + √(16)",
+      "options": [
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of cos(π/6)?",
+      "options": [
+        {
+          "answer": "1/2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "√3/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 3(2x - 5) + 2(3x + 4) - 4(4x - 2)",
+      "options": [
+        {
+          "answer": "-16x + 30",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-16x - 30",
+          "rightAnswer": true
+        },
+        {
+          "answer": "-16x + 34",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-16x - 34",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |7 - 15| + |2 - 9|",
+      "options": [
+        {
+          "answer": "11",
+          "rightAnswer": false
+        },
+        {
+          "answer": "12",
+          "rightAnswer": true
+        },
+        {
+          "answer": "13",
+          "rightAnswer": false
+        },
+        {
+          "answer": "14",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 5(2x + 3) - 3(3x - 2) = 4(x - 1)",
+      "options": [
+        {
+          "answer": "x = -3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = -2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 3",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(81) - √(64) + √(49)",
+      "options": [
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "5",
+          "rightAnswer": false
+        },
+        {
+          "answer": "8",
+          "rightAnswer": true
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of cot(π/4)?",
+      "options": [
+        {
+          "answer": "1",
+          "rightAnswer": true
+        },
+        {
+          "answer": "√2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "1/√2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "√3",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 2(3x - 4) + 3(x + 2) - 4(2x - 3)",
+      "options": [
+        {
+          "answer": "-9x - 8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-9x + 8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "9x - 8",
+          "rightAnswer": true
+        },
+        {
+          "answer": "9x + 8",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |12 - 8| + |5 - 9|",
+      "options": [
+        {
+          "answer": "4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "6",
+          "rightAnswer": true
+        },
+        {
+          "answer": "8",
+          "rightAnswer": false
+        },
+        {
+          "answer": "10",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 3(2x + 5) - 2(x - 3) = 4(3x - 2)",
+      "options": [
+        {
+          "answer": "x = 4",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 5",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 7",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(144) - √(169) + √(196)",
+      "options": [
+        {
+          "answer": "10",
+          "rightAnswer": false
+        },
+        {
+          "answer": "13",
+          "rightAnswer": false
+        },
+        {
+          "answer": "15",
+          "rightAnswer": true
+        },
+        {
+          "answer": "18",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of sec(π/3)?",
+      "options": [
+        {
+          "answer": "1/2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2/√3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "√3",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    },
+    {
+      "question": "Simplify the expression: 4(3x - 5) + 2(2x + 3) - 3(4x - 1)",
+      "options": [
+        {
+          "answer": "-9x + 22",
+          "rightAnswer": false
+        },
+        {
+          "answer": "-9x - 22",
+          "rightAnswer": true
+        },
+        {
+          "answer": "9x + 22",
+          "rightAnswer": false
+        },
+        {
+          "answer": "9x - 22",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Algebra"
+    },
+    {
+      "question": "Find the value of |10 - 18| + |7 - 12|",
+      "options": [
+        {
+          "answer": "13",
+          "rightAnswer": false
+        },
+        {
+          "answer": "14",
+          "rightAnswer": true
+        },
+        {
+          "answer": "15",
+          "rightAnswer": false
+        },
+        {
+          "answer": "16",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Easy",
+      "category": "Absolute Value"
+    },
+    {
+      "question": "Solve the equation: 2(3x + 4) - 3(2x - 1) = 5(4x - 2)",
+      "options": [
+        {
+          "answer": "x = 1",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 2",
+          "rightAnswer": true
+        },
+        {
+          "answer": "x = 3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "x = 4",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Algebra"
+    },
+    {
+      "question": "Evaluate the expression: √(225) - √(196) + √(169)",
+      "options": [
+        {
+          "answer": "6",
+          "rightAnswer": false
+        },
+        {
+          "answer": "9",
+          "rightAnswer": false
+        },
+        {
+          "answer": "14",
+          "rightAnswer": true
+        },
+        {
+          "answer": "15",
+          "rightAnswer": false
+        }
+      ],
+      "level": "Medium",
+      "category": "Arithmetic"
+    },
+    {
+      "question": "What is the value of csc(π/6)?",
+      "options": [
+        {
+          "answer": "2",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2/√3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2√3",
+          "rightAnswer": false
+        },
+        {
+          "answer": "2",
+          "rightAnswer": true
+        }
+      ],
+      "level": "Hard",
+      "category": "Trigonometry"
+    }
+  ]
+
+
+
+
+
