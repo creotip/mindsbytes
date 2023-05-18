@@ -36,7 +36,7 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 			setQuizActive(false)
 			setCurrentQuizTypeTitle('')
 		}
-	}, [setQuizActive])
+	}, [setCurrentQuizTypeTitle, setQuizActive])
 
 	if (isQuizActive) {
 		return <Quiz title={title} quiz={quiz} />
