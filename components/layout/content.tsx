@@ -10,7 +10,13 @@ export const Content = (props: BoxProps) => (
 			transition={{ duration: 0.5 }}
 			exist={{ opacity: 0 }}
 		>
-			<Box className="content" border="1px solid #333f57" borderRadius="7px" {...props} />
+			<Box
+				className="content"
+				minH="325px"
+				border="1px solid #333f57"
+				borderRadius="7px"
+				{...props}
+			/>
 		</motion.div>
 	</AnimatePresence>
 )

@@ -5,6 +5,8 @@ export const config = {
 				'https://mindsbytes-default-rtdb.europe-west1.firebasedatabase.app/quizzes/math-general.json',
 			'javascript-general':
 				'https://mindsbytes-default-rtdb.europe-west1.firebasedatabase.app/quizzes/javascript-general.json',
+			'python-general':
+				'https://mindsbytes-default-rtdb.europe-west1.firebasedatabase.app/quizzes/python-general.json',
 		},
 	},
 }

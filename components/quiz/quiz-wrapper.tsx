@@ -10,19 +10,38 @@ import {
 	Stack,
 	VStack,
 } from '@chakra-ui/react'
+import { useQuizStore } from '@/config/store'
+import { Quiz } from '@/components/quiz/quiz'
+import { useEffect } from 'react'
 
 interface WrapperProps {
 	quiz: SingleQuiz[]
 	title: string
 }
 export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
-	console.log('quiz', quiz)
-
 	const levels = new Set(quiz.map((q) => q.level))
-	const fields = new Set(quiz.map((q) => q.category))
+	const categories = new Set(quiz.map((q) => q.category).flat())
 
-	console.log('levels', levels)
-	console.log('fields', fields)
+	const { isQuizActive, setQuizActive, setCurrentQuizTypeTitle } = useQuizStore((state) => state)
+
+	const handleStartQuiz = () => {
+		if (!isQuizActive) {
+			setQuizActive(true)
+			setCurrentQuizTypeTitle(title)
+		}
+	}
+
+	useEffect(() => {
+		return () => {
+			setQuizActive(false)
+			setCurrentQuizTypeTitle('')
+		}
+	}, [setQuizActive])
+
+	if (isQuizActive) {
+		return <Quiz title={title} quiz={quiz} />
+	}
+
 	return (
 		<>
 			<Heading as="h2" textAlign="center" my="2rem">
@@ -52,15 +71,21 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 					</Box>
 					<Select defaultValue="All">
 						<option value="All">All</option>
-						{[...fields].map((field, index) => (
-							<option key={index} value={field}>
-								{field}
+						{[...categories].map((cat, index) => (
+							<option key={index} value={cat}>
+								{cat}
 							</option>
 						))}
 					</Select>
 				</Box>
 
-				<Button colorScheme="blue" borderRadius="6px" fontSize="15px" minW="220px">
+				<Button
+					onClick={handleStartQuiz}
+					colorScheme="blue"
+					borderRadius="6px"
+					fontSize="15px"
+					minW="220px"
+				>
 					Start Quiz
 				</Button>
 			</VStack>

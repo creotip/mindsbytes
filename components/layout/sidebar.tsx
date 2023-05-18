@@ -12,6 +12,13 @@ import {
 import { Link } from '@chakra-ui/next-js'
 import { usePathname } from 'next/navigation'
 
+const CustomLink = ({ href, title }) => {
+	return (
+		<Link href={href} _hover={{ color: 'purple.300' }}>
+			{title}
+		</Link>
+	)
+}
 export const Sidebar = () => {
 	const pathname = usePathname()
 
@@ -36,9 +43,7 @@ export const Sidebar = () => {
 				{/*</Box>*/}
 				<List spacing={3}>
 					<ListItem>
-						<Link href="/quizzes/math" _hover={{ color: 'purple.300' }}>
-							Mathematics
-						</Link>
+						<CustomLink title="Mathematics" href="/quizzes/math" />
 					</ListItem>
 					<ListItem>Computer Science</ListItem>
 					<ListItem>Front-End</ListItem>
@@ -62,16 +67,12 @@ export const Sidebar = () => {
 								<AccordionPanel pb={4}>
 									<List spacing={3}>
 										<ListItem>
-											<Link
-												href="/quizzes/javascript"
-												color="blue.400"
-												_hover={{ color: 'blue.500' }}
-											>
-												Javascript
-											</Link>
+											<CustomLink title="Javascript" href="/quizzes/javascript" />
 										</ListItem>
 										<ListItem>TypeScript</ListItem>
-										<ListItem>Python</ListItem>
+										<ListItem>
+											<CustomLink title="Python" href="/quizzes/python" />
+										</ListItem>
 										<ListItem>HTML</ListItem>
 										<ListItem>CSS</ListItem>
 										<ListItem>Java</ListItem>
