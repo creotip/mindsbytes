@@ -1,7 +1,7 @@
 'use client'
-import { Grid } from '@chakra-ui/react'
+import { Grid, GridProps } from '@chakra-ui/react'
 
-export const Main = (props) => {
+export const Main = (props: GridProps) => {
 	return (
 		<Grid
 			as="main"

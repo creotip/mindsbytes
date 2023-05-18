@@ -1,7 +1,7 @@
 'use client'
-import { Grid } from '@chakra-ui/react'
+import { Grid, GridProps } from '@chakra-ui/react'
 
-export const HolyGrail = (props) => {
+export const HolyGrail = (props: GridProps) => {
 	return (
 		<Grid
 			className="holy-grail"

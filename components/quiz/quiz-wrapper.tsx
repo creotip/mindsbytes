@@ -56,7 +56,7 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 					<CheckboxGroup colorScheme="purple" defaultValue={['all']}>
 						<Stack spacing={[1, 5]} direction={['column', 'row']}>
 							<Checkbox value="all">All</Checkbox>
-							{[...levels].map((level) => (
+							{Array.from(levels).map((level) => (
 								<Checkbox key={level} value={level}>
 									{level}
 								</Checkbox>
@@ -71,7 +71,7 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 					</Box>
 					<Select defaultValue="All">
 						<option value="All">All</option>
-						{[...categories].map((cat, index) => (
+						{Array.from(categories).map((cat, index) => (
 							<option key={index} value={cat}>
 								{cat}
 							</option>
