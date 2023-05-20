@@ -7,7 +7,14 @@ export function HomeContent() {
 			{/* <Heading as="h2" fontSize="2rem" textAlign="left" my="2rem">
 				MindsBytes
 			</Heading> */}
-			<Heading as="h1" fontSize="3rem" textAlign="center" my="2rem">
+			<Heading
+				as="h1"
+				fontSize="3rem"
+				textAlign="center"
+				my="2rem"
+				bg="-webkit-linear-gradient(45deg, #ffffff, #cbbcff)"
+				backgroundClip="text"
+			>
 				Make Learning Fun With Quizzes
 			</Heading>
 
