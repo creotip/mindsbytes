@@ -9,7 +9,7 @@ interface QuizProps {
 export const Quiz = ({ title, quiz }: QuizProps) => {
 	return (
 		<div>
-			<Heading as="h2" textAlign="center" my="1rem">
+			<Heading as="h2" textAlign="center" my="2rem">
 				{title} Quiz{' '}
 			</Heading>
 		</div>
