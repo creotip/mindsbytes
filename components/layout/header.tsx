@@ -21,9 +21,10 @@ import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { QuizList } from '../quiz/quiz-list'
+import { useUIStore } from '@/config/store'
 
 export const Header = () => {
-	const { isOpen, onOpen, onClose } = useDisclosure()
+	const { isDrawerOpen, setDrawer } = useUIStore((state) => state)
 
 	return (
 		<Flex as="header" justifyContent="space-between" py={6} px="1rem">
@@ -43,29 +44,23 @@ export const Header = () => {
 
 			<Show below="md">
 				<IconButton
-					// variant="outline"
-					// colorScheme="teal"
 					aria-label="Call Sage"
 					fontSize="20px"
-					onClick={onOpen}
+					onClick={() => setDrawer(true)}
 					icon={<HiOutlineMenuAlt3 />}
 				/>
-				<Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+				<Drawer isOpen={isDrawerOpen} placement="right" onClose={() => setDrawer(false)}>
 					<DrawerOverlay />
 					<DrawerContent>
 						<DrawerCloseButton />
 						<DrawerHeader>Choose your quiz</DrawerHeader>
 
 						<DrawerBody>
-							{/* <Box color="cyan.600" fontWeight="600" mb="4" fontSize="xl">
-								Choose your quiz
-							</Box> */}
-
 							<QuizList />
 						</DrawerBody>
 
 						<DrawerFooter>
-							<Button variant="outline" mr={3} onClick={onClose}>
+							<Button variant="outline" mr={3} onClose={() => setDrawer(false)}>
 								Cancel
 							</Button>
 							<Button colorScheme="blue">Save</Button>

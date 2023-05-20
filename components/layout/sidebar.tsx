@@ -41,9 +41,6 @@ export const Sidebar = () => {
 			display={['none', 'none', 'block']}
 		>
 			<Box as="nav" fontSize="14px" fontWeight="600">
-				{/*<Box color="cyan.600" fontWeight="600" mb="4">*/}
-				{/*	Quizzes*/}
-				{/*</Box>*/}
 				<QuizList />
 			</Box>
 		</Box>
