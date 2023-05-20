@@ -28,18 +28,35 @@ export const Header = () => {
 
 	return (
 		<Flex as="header" justifyContent="space-between" py={6} px="1rem">
-			<Box className="logo" fontWeight="900" fontSize="xl">
-				<Link display="flex" alignItems="center" gap="10px" href="/" _hover={{ opacity: '0.7' }}>
+			<Box className="logo" pos="relative" fontWeight="900" fontSize="xl">
+				<Link
+					zIndex="2"
+					pos="relative"
+					display="flex"
+					alignItems="center"
+					gap="10px"
+					href="/"
+					_hover={{ opacity: '0.7' }}
+				>
 					<MdCenterFocusWeak size="24px" />
 					<motion.span
 						initial={{ opacity: 0, x: -20 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5 }}
-						whileHover={{ scale: 1.1 }}
+						whileHover={{ scale: 1.05 }}
 					>
 						MindsBytes
 					</motion.span>
 				</Link>
+				<Box
+					filter="blur(34px)"
+					backgroundImage="linear-gradient( -45deg, #572eab 30%, #906fda )"
+					pos="absolute"
+					top="0"
+					left="0"
+					w="100%"
+					h="100%"
+				></Box>
 			</Box>
 
 			<Show below="md">

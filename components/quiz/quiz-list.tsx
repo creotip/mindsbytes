@@ -13,19 +13,8 @@ import { Link } from '@chakra-ui/next-js'
 import { usePathname } from 'next/navigation'
 import { config } from '@/config/config'
 import { useUIStore } from '@/config/store'
+import { CustomLink } from '../custom-link'
 
-interface CustomLinkProps {
-	href: string
-	title: string
-}
-const CustomLink = ({ href, title }: CustomLinkProps) => {
-	const { setDrawer } = useUIStore((state) => state)
-	return (
-		<Link onClick={() => setDrawer(false)} href={href} _hover={{ color: 'purple.300' }}>
-			{title}
-		</Link>
-	)
-}
 export const QuizList = () => {
 	const pathname = usePathname()
 

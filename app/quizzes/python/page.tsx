@@ -8,5 +8,5 @@ export default async function PythonQuizPage() {
 	const staticData = await fetch(quizJavascriptApiURL)
 	const quiz: SingleQuiz[] = await staticData.json()
 
-	return <QuizWrapper quiz={quiz} title="Python" />
+	return <QuizWrapper quizQuestions={quiz} title="Python" />
 }

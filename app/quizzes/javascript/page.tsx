@@ -9,5 +9,5 @@ export default async function JavascriptQuizPage() {
 	const quiz: SingleQuiz[] = await staticData.json()
 
 	// console.log('staticData', res)
-	return <QuizWrapper quiz={quiz} title="Javascript" />
+	return <QuizWrapper quizQuestions={quiz} title="Javascript" />
 }

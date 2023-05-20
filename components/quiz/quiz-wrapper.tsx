@@ -9,20 +9,35 @@ import {
 	Select,
 	Stack,
 	VStack,
+	FormErrorMessage,
+	FormLabel,
+	FormControl,
+	Input,
 } from '@chakra-ui/react'
 import { useQuizStore } from '@/config/store'
 import { Quiz } from '@/components/quiz/quiz'
 import { useEffect } from 'react'
+import { useForm, SubmitHandler } from 'react-hook-form'
 
 interface WrapperProps {
-	quiz: SingleQuiz[]
+	quizQuestions: SingleQuiz[]
 	title: string
 }
-export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
-	const levels = new Set(quiz.map((q) => q.level))
-	const categories = new Set(quiz.map((q) => q.category).flat())
-
+export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
+	const levels = new Set(quizQuestions.map((q) => q.level))
+	const categories = new Set(quizQuestions.map((q) => q.category).flat())
 	const { isQuizActive, setQuizActive, setCurrentQuizTypeTitle } = useQuizStore((state) => state)
+
+	const {
+		handleSubmit,
+		register,
+		formState: { errors, isSubmitting },
+	} = useForm()
+
+	function onSubmit(values) {
+		console.log('values', values)
+		handleStartQuiz()
+	}
 
 	const handleStartQuiz = () => {
 		if (!isQuizActive) {
@@ -39,7 +54,7 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 	}, [setCurrentQuizTypeTitle, setQuizActive])
 
 	if (isQuizActive) {
-		return <Quiz title={title} quiz={quiz} />
+		return <Quiz title={title} quizQuestions={quizQuestions} />
 	}
 
 	return (
@@ -48,7 +63,7 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 				{title} Quiz
 			</Heading>
 
-			<VStack spacing="3rem" pb="40px">
+			<VStack as="form" onSubmit={handleSubmit(onSubmit)} spacing="3rem" pb="40px">
 				<Box>
 					<Box textAlign="center" mb={1} fontWeight="600">
 						Choose Level
@@ -80,7 +95,9 @@ export const QuizWrapper = ({ quiz, title }: WrapperProps) => {
 				</Box>
 
 				<Button
-					onClick={handleStartQuiz}
+					// onClick={handleStartQuiz}
+					isLoading={isSubmitting}
+					type="submit"
 					colorScheme="blue"
 					borderRadius="6px"
 					fontSize="15px"
