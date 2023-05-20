@@ -34,7 +34,7 @@ export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 		formState: { errors, isSubmitting },
 	} = useForm()
 
-	function onSubmit(values) {
+	function onSubmit(values: Record<string, any>) {
 		console.log('values', values)
 		handleStartQuiz()
 	}
