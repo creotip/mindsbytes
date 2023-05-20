@@ -60,7 +60,7 @@ export const Header = () => {
 						</DrawerBody>
 
 						<DrawerFooter>
-							<Button variant="outline" mr={3} onClose={() => setDrawer(false)}>
+							<Button variant="outline" mr={3} onClick={() => setDrawer(false)}>
 								Cancel
 							</Button>
 							<Button colorScheme="blue">Save</Button>
