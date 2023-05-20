@@ -16,33 +16,51 @@ import {
 } from '@chakra-ui/react'
 import { useQuizStore } from '@/config/store'
 import { Quiz } from '@/components/quiz/quiz'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 interface WrapperProps {
 	quizQuestions: SingleQuiz[]
 	title: string
 }
+
+type Inputs = {
+	level: string[]
+	category: string
+}
+
 export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 	const levels = new Set(quizQuestions.map((q) => q.level))
 	const categories = new Set(quizQuestions.map((q) => q.category).flat())
-	const { isQuizActive, setQuizActive, setCurrentQuizTypeTitle } = useQuizStore((state) => state)
+	const { isQuizActive, setQuizActive, setCurrentQuizTypeTitle, setCategory, setLevel } =
+		useQuizStore((state) => state)
+
+	const [filteredQuestions, setFilteredQuestions] = useState<SingleQuiz[]>(quizQuestions)
 
 	const {
 		handleSubmit,
 		register,
 		formState: { errors, isSubmitting },
-	} = useForm()
+		watch,
+		reset,
+	} = useForm<Inputs>()
 
 	function onSubmit(values: Record<string, any>) {
-		console.log('values', values)
-		handleStartQuiz()
-	}
-
-	const handleStartQuiz = () => {
 		if (!isQuizActive) {
-			setQuizActive(true)
+			const filteredQuestions = quizQuestions.filter((q) => {
+				const isLevelMatch = values.level.includes(q.level) || values.level.includes('all')
+				const isCategoryMatch = values.category === q.category || values.category === 'all'
+
+				return isLevelMatch && isCategoryMatch
+			})
+
+			console.log('filteredQuestions', filteredQuestions)
+
+			setFilteredQuestions(filteredQuestions)
+			setLevel(values.level)
+			setCategory(values.category)
 			setCurrentQuizTypeTitle(title)
+			setQuizActive(true)
 		}
 	}
 
@@ -50,11 +68,17 @@ export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 		return () => {
 			setQuizActive(false)
 			setCurrentQuizTypeTitle('')
+			setLevel([])
+			setCategory('')
 		}
-	}, [setCurrentQuizTypeTitle, setQuizActive])
+	}, [setCategory, setCurrentQuizTypeTitle, setLevel, setQuizActive])
+
+	useEffect(() => {
+		reset({ level: ['all'], category: 'all' })
+	}, [reset])
 
 	if (isQuizActive) {
-		return <Quiz title={title} quizQuestions={quizQuestions} />
+		return <Quiz title={title} quizQuestions={filteredQuestions} />
 	}
 
 	return (
@@ -64,38 +88,47 @@ export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 			</Heading>
 
 			<VStack as="form" onSubmit={handleSubmit(onSubmit)} spacing="3rem" pb="40px">
-				<Box>
-					<Box textAlign="center" mb={1} fontWeight="600">
+				<FormControl isInvalid={!!errors.level} w="auto">
+					<FormLabel htmlFor="level" textAlign="center" mb={1} fontWeight="600">
 						Choose Level
-					</Box>
+					</FormLabel>
+
 					<CheckboxGroup colorScheme="purple" defaultValue={['all']}>
 						<Stack spacing={[1, 5]} direction={['column', 'row']}>
-							<Checkbox value="all">All</Checkbox>
+							<Checkbox
+								value="all"
+								{...register('level', {
+									required: 'Please select at least one level',
+								})}
+							>
+								All
+							</Checkbox>
 							{Array.from(levels).map((level) => (
-								<Checkbox key={level} value={level}>
+								<Checkbox key={level} value={level} {...register('level')}>
 									{level}
 								</Checkbox>
 							))}
 						</Stack>
 					</CheckboxGroup>
-				</Box>
+					<FormErrorMessage>{errors.level && errors.level.message}</FormErrorMessage>
+				</FormControl>
 
-				<Box>
-					<Box textAlign="center" mb={1} fontWeight="600">
+				<FormControl isInvalid={!!errors.category} w="auto">
+					<FormLabel htmlFor="category" textAlign="center" mb={1} fontWeight="600">
 						Choose Category
-					</Box>
-					<Select defaultValue="All">
-						<option value="All">All</option>
+					</FormLabel>
+					<Select defaultValue="all" {...register('category')}>
+						<option value="all">All</option>
 						{Array.from(categories).map((cat, index) => (
 							<option key={index} value={cat}>
 								{cat}
 							</option>
 						))}
 					</Select>
-				</Box>
+				</FormControl>
 
+				{/* <Box>{filteredQuestions.length} Questions</Box> */}
 				<Button
-					// onClick={handleStartQuiz}
 					isLoading={isSubmitting}
 					type="submit"
 					colorScheme="blue"

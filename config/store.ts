@@ -6,6 +6,10 @@ interface QuizStoreState {
 	setQuizActive: (isActive: boolean) => void
 	currentQuizType: string
 	setCurrentQuizTypeTitle: (quizType: string) => void
+	level: string[]
+	setLevel: (newLevels: string[]) => void
+	category: string
+	setCategory: (category: string) => void
 }
 interface UIStoreState {
 	isDrawerOpen: boolean
@@ -18,6 +22,10 @@ export const useQuizStore = create<QuizStoreState>()(
 		setQuizActive: (isActive: boolean) => set({ isQuizActive: isActive }),
 		currentQuizType: '',
 		setCurrentQuizTypeTitle: (quizType: string) => set({ currentQuizType: quizType }),
+		level: [],
+		setLevel: (newLevels: string[]) => set({ level: newLevels }),
+		category: '',
+		setCategory: (category: string) => set({ category }),
 	}))
 )
 
