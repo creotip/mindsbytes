@@ -15,7 +15,7 @@ export function HomeContent() {
 				bg="-webkit-linear-gradient(45deg, #ffffff, #cbbcff)"
 				backgroundClip="text"
 			>
-				Make Learning Fun With Quizzes
+				<span>Make</span> Learning Fun With Quizzes
 			</Heading>
 
 			<Text color="gray.400" textAlign="center" mb="2rem">
