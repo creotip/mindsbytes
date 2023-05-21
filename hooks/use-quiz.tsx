@@ -1,17 +1,29 @@
 import { QuizOption, SingleQuiz } from '@/interfaces/quiz-interface'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
+import { useMap } from './use-map'
 
 export function useQuiz(quizQuestions: SingleQuiz[]) {
+	const [answersMap, { set: setAnswersMap, clear: clearAnswersMap }] = useMap([])
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-	const [score, setScore] = useState(0)
 	const [quizCompleted, setQuizCompleted] = useState(false)
 
 	const currentQuestion = quizQuestions[currentQuestionIndex]
 
+	const score = useMemo(() => {
+		let score = 0
+
+		answersMap.forEach((value) => {
+			if (value) {
+				score++
+			}
+		})
+		return score
+	}, [answersMap])
+
+	console.log('score', score)
+
 	const handleAnswer = (option: QuizOption) => {
-		if (option.rightAnswer) {
-			setScore((prevScore) => prevScore + 1)
-		}
+		setAnswersMap(currentQuestionIndex, option.rightAnswer)
 	}
 
 	const goToNextQuestion = () => {
@@ -24,12 +36,13 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 
 	const resetQuiz = () => {
 		setCurrentQuestionIndex(0)
-		setScore(0)
+		clearAnswersMap()
 		setQuizCompleted(false)
 	}
 
 	const scorePercentage = ((score / quizQuestions.length) * 100).toFixed()
 
+	console.log('scorePercentage', scorePercentage)
 	return {
 		currentQuestion,
 		currentQuestionIndex,

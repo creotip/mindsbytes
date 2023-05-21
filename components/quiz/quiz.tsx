@@ -12,6 +12,7 @@ import {
 	CardHeader,
 	Stack,
 	StackDivider,
+	Center,
 } from '@chakra-ui/react'
 import { Highlight, themes } from 'prism-react-renderer'
 
@@ -47,15 +48,26 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 		resetQuiz,
 	} = useQuiz(quizQuestions)
 
-	console.log('currentQuestion', {
-		currentQuestion,
-		currentQuestionIndex,
-		score,
-		scorePercentage,
-		quizCompleted,
-		handleAnswer,
-		resetQuiz,
-	})
+	// console.log('currentQuestion', {
+	// 	currentQuestion,
+	// 	currentQuestionIndex,
+	// 	score,
+	// 	scorePercentage,
+	// 	quizCompleted,
+	// 	handleAnswer,
+	// 	resetQuiz,
+	// })
+
+	if (quizCompleted) {
+		return (
+			<Center h="full">
+				<VStack>
+					<Box>Quiz finished!</Box>
+					<Box>Your score is %{scorePercentage}</Box>
+				</VStack>
+			</Center>
+		)
+	}
 
 	return (
 		<Box px="2rem">
@@ -63,7 +75,9 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 				{title} Quiz{' '}
 			</Heading>
 
-			<Box mb="2rem">{currentQuestion.question}</Box>
+			<Heading as="h3" fontSize="18px" mb="2rem">
+				{currentQuestion.question}
+			</Heading>
 
 			{currentQuestion.codeBlock && (
 				<Box mb="2rem">
@@ -99,6 +113,8 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 								px={4}
 								py={2}
 								textAlign="left"
+								fontSize="15px"
+								fontWeight="400"
 								_hover={{ opacity: '0.9' }}
 							>
 								<Text>{option.answer}</Text>
