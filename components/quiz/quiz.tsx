@@ -115,9 +115,11 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 								textAlign="left"
 								fontSize="15px"
 								fontWeight="400"
+								h="auto"
+								whiteSpace="normal"
 								_hover={{ opacity: '0.9' }}
 							>
-								<Text>{option.answer}</Text>
+								{option.answer}
 							</Button>
 						))}
 					</VStack>
