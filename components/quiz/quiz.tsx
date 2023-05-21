@@ -1,12 +1,38 @@
 'use client'
 import { useQuiz } from '@/hooks/use-quiz'
 import { SingleQuiz } from '@/interfaces/quiz-interface'
-import { Box, Heading, Button, Code, VStack } from '@chakra-ui/react'
+import {
+	Box,
+	Heading,
+	Button,
+	Text,
+	VStack,
+	Card,
+	CardBody,
+	CardHeader,
+	Stack,
+	StackDivider,
+} from '@chakra-ui/react'
 import { Highlight, themes } from 'prism-react-renderer'
 
 interface QuizProps {
 	quizQuestions: SingleQuiz[]
 	title: string
+}
+
+const Option = ({ text }: any) => {
+	return (
+		<Button
+			variant="ghost"
+			justifyContent="flex-start"
+			px={4}
+			py={2}
+			textAlign="left"
+			_hover={{ opacity: '0.9' }}
+		>
+			<Text>{text}</Text>
+		</Button>
+	)
 }
 
 export const Quiz = ({ title, quizQuestions }: QuizProps) => {
@@ -17,6 +43,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 		scorePercentage,
 		quizCompleted,
 		handleAnswer,
+		goToNextQuestion,
 		resetQuiz,
 	} = useQuiz(quizQuestions)
 
@@ -29,6 +56,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 		handleAnswer,
 		resetQuiz,
 	})
+
 	return (
 		<Box px="2rem">
 			<Heading as="h2" fontSize="1.4rem" textAlign="center" my="2rem">
@@ -59,12 +87,34 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 				</Box>
 			)}
 
+			<Card mb="2rem">
+				<CardBody>
+					<VStack spacing={4} align="stretch" divider={<StackDivider />}>
+						{currentQuestion.options.map((option, i) => (
+							<Button
+								onClick={() => handleAnswer(option)}
+								key={i}
+								variant="ghost"
+								justifyContent="flex-start"
+								px={4}
+								py={2}
+								textAlign="left"
+								_hover={{ opacity: '0.9' }}
+							>
+								<Text>{option.answer}</Text>
+							</Button>
+						))}
+					</VStack>
+				</CardBody>
+			</Card>
+
 			<Button
-				onClick={() => handleAnswer(currentQuestion.options[0])}
+				onClick={() => goToNextQuestion()}
 				colorScheme="blue"
 				borderRadius="6px"
 				fontSize="15px"
 				minW="220px"
+				mb="2rem"
 			>
 				Next
 			</Button>

@@ -1,2578 +1,2577 @@
 [
-  {
-    "question": "What is the correct syntax to output \"Hello World\" in Python?",
-    "codeBlock": "```python\nprint(\"Hello World\")\n```",
-    "options": [
-      {
-        "answer": "print(\"Hello World\")",
-        "rightAnswer": true
-      },
-      {
-        "answer": "echo(\"Hello World\")",
-        "rightAnswer": false
-      },
-      {
-        "answer": "console.log(\"Hello World\")",
-        "rightAnswer": false
-      },
-      {
-        "answer": "fmt.print(\"Hello World\")",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nprint(x % y)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "0",
-        "rightAnswer": true
-      },
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What does the 'elif' keyword mean in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is short for 'else if' and is used to specify multiple conditions.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to define a function in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to create a loop in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is a built-in module in Python for file handling.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "Which of the following is a mutable data type in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "String",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Tuple",
-        "rightAnswer": false
-      },
-      {
-        "answer": "List",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Set",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Data Types"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nprint(x[1:])\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 3]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[2]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "Which of the following is true about Python dictionaries?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Dictionaries are ordered collections of items.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Dictionaries can contain duplicate keys.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Dictionary keys must be of immutable data types.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Dictionaries can only store numeric values.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Data Structures"]
-  },
-  {
-    "question": "What is the correct way to open a file named 'data.txt' in Python for reading?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "file = open('data.txt', 'r')",
-        "rightAnswer": true
-      },
-      {
-        "answer": "file = open('data.txt', 'w')",
-        "rightAnswer": false
-      },
-      {
-        "answer": "file = open('data.txt', 'a')",
-        "rightAnswer": false
-      },
-      {
-        "answer": "file = open('data.txt', 'x')",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["File Handling"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nprint(len(x))\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'pass' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to terminate a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to skip the current iteration of a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used as a placeholder for future code.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to raise an exception in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "6",
-        "rightAnswer": true
-      },
-      {
-        "answer": "9",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nprint(x[7:])\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "'World!'",
-        "rightAnswer": true
-      },
-      {
-        "answer": "'Hello,'",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'Hello'",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'llo, Wo'",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Strings"]
-  },
-  {
-    "question": "Which of the following is NOT a valid way to comment out a single line in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "// This is a comment",
-        "rightAnswer": true
-      },
-      {
-        "answer": "# This is a comment",
-        "rightAnswer": false
-      },
-      {
-        "answer": "\"\"\" This is a comment \"\"\"",
-        "rightAnswer": false
-      },
-      {
-        "answer": "# This is a comment //",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Syntax"]
-  },
-  {
-    "question": "Which of the following is a correct way to check if a key exists in a Python dictionary?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "key in dict",
-        "rightAnswer": true
-      },
-      {
-        "answer": "dict[key]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "dict.get(key)",
-        "rightAnswer": false
-      },
-      {
-        "answer": "dict.exists(key)",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Dictionaries"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nprint(x[::-1])\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[4, 3, 2, 1]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[4, 3, 2]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the difference between 'append()' and 'extend()' methods in Python lists?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "'append()' adds a single element to the end of the list, while 'extend()' adds multiple elements.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "'append()' adds elements at the beginning of the list, while 'extend()' adds elements at the end.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'append()' removes the last element from the list, while 'extend()' removes multiple elements.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'append()' and 'extend()' are synonyms and can be used interchangeably.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nresult = closure(5)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15",
-        "rightAnswer": true
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "25",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 5\n    return x\n\nx = 10\nresult = my_func(x)\nprint(x, result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10 15",
-        "rightAnswer": false
-      },
-      {
-        "answer": "10 10",
-        "rightAnswer": true
-      },
-      {
-        "answer": "15 15",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15 10",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the purpose of the 'yield' keyword in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a generator function.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to exit a loop or terminate a function.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a class in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nif x > y:\n    result = 'x is greater'\nelse:\n    result = 'y is greater'\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "x is greater",
-        "rightAnswer": true
-      },
-      {
-        "answer": "y is greater",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'result' is not defined",
-        "rightAnswer": false
-      },
-      {
-        "answer": "No output, the code contains an error",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3, [4]]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, [1, 2, 3, 4]]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'try-except' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to handle exceptions and perform error handling.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to define a block of code that will be executed repeatedly.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a conditional statement.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a loop that will iterate over a sequence.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Error Handling"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = x\nx += 5\nprint(x, y)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "15 10",
-        "rightAnswer": true
-      },
-      {
-        "answer": "10 15",
-        "rightAnswer": false
-      },
-      {
-        "answer": "10 10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15 15",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Variables"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nprint(len(x))\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Tuples"]
-  },
-  {
-    "question": "What is the purpose of the 'pass' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to terminate a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to skip the current iteration of a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used as a placeholder for future code.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to raise an exception in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "6",
-        "rightAnswer": true
-      },
-      {
-        "answer": "9",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[4, 2, 3]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[4, 4, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 1, 1]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "Which of the following statements is true about Python's Global Interpreter Lock (GIL)?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "The GIL allows only one thread to execute Python bytecode at a time.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The GIL prevents the execution of multi-threaded programs in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The GIL is responsible for garbage collection in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The GIL is a feature introduced in Python 3 to improve concurrency.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Concurrency"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x, y):\n    return x / y\n\nresult = my_func(10, 0)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: division by zero",
-        "rightAnswer": true
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Error Handling"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = {1: 'one', 2: 'two', 3: 'three'}\nprint(x.get(4, 'four'))\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'four'",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Dictionaries"]
-  },
-  {
-    "question": "What is the purpose of the 'super()' function in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to create an instance of a class.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to call a method from a parent class.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a class attribute.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Classes"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i * i for i in x if i % 2 == 0]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 4, 9, 16, 25]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[4, 16]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[2, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3, 5]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["List Comprehension"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = True\ny = False\nz = False\nif x or y and z:\n    print('Hello')\nelse:\n    print('World')\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Hello",
-        "rightAnswer": true
-      },
-      {
-        "answer": "World",
-        "rightAnswer": false
-      },
-      {
-        "answer": "No output, the code contains an error",
-        "rightAnswer": false
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\ny = x\ny.append(5)\nprint(len(x))\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "4",
-        "rightAnswer": true
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "6",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'yield' keyword in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a generator function.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to exit a loop or terminate a function.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a decorator function.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Generators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 1\n\nx = 10\nmy_func(x)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": true
-      },
-      {
-        "answer": "11",
-        "rightAnswer": false
-      },
-      {
-        "answer": "12",
-        "rightAnswer": false
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i * 2 for i in x if i % 2 == 0]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3, 4, 5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[4, 8]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[2, 4, 6, 8, 10]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 4, 6, 8]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["List Comprehension"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nprint(x[7:])\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Hello",
-        "rightAnswer": false
-      },
-      {
-        "answer": "World!",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Hello, World!",
-        "rightAnswer": false
-      },
-      {
-        "answer": "H",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Strings"]
-  },
-  {
-    "question": "What is the purpose of the 'with' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a context manager.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to create a file object.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a decorator function.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["File Handling"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\ny = x\ny = y + [5]\nprint(len(x))\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "4",
-        "rightAnswer": true
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "6",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = 3\nresult = x % y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "1",
-        "rightAnswer": true
-      },
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x * 2\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3, 1, 2, 3]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[2, 4, 6]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 2, 4, 6]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 4, 6, 2, 4, 6]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'pass' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to skip the current iteration of a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to exit a loop or terminate a function.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define an empty code block or placeholder.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [10, 20, 30, 40, 50]\nresult = x[-3]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "30",
-        "rightAnswer": true
-      },
-      {
-        "answer": "20",
-        "rightAnswer": false
-      },
-      {
-        "answer": "40",
-        "rightAnswer": false
-      },
-      {
-        "answer": "50",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 2\ny = 5\nresult = x ** y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "7",
-        "rightAnswer": false
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "25",
-        "rightAnswer": false
-      },
-      {
-        "answer": "32",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x // y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2.5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2.0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the purpose of the 'super()' function in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to call the superclass's methods.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a generator function.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a context manager.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Classes"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    print(x)\n\nmy_func(5)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "5",
-        "rightAnswer": true
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: Invalid function call.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i for i in x if i % 2 == 0]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3, 4, 5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 3, 5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["List Comprehension"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = 20\nresult = x > y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "True",
-        "rightAnswer": false
-      },
-      {
-        "answer": "False",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Error: Invalid comparison.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the purpose of the 'self' parameter in Python class methods?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to refer to the current instance of the class.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to define a static method.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a class method.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to handle exceptions in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Classes"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x % y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "1",
-        "rightAnswer": true
-      },
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nx.append([4, 5])\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3, [4, 5]]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3, 4, 5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4], [5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3], [4, 5]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'join' method in Python strings?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to remove leading and trailing whitespaces from a string.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to split a string into a list of substrings.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to concatenate a list of strings into a single string.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to convert a string to uppercase or lowercase.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Strings"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x / y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2.5",
-        "rightAnswer": true
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2.0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2.0",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 5\ny = 3\nresult = x ** (1 / y)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "1.7099759466766968",
-        "rightAnswer": true
-      },
-      {
-        "answer": "125",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nresult = x > 5 and y < 8\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "True",
-        "rightAnswer": true
-      },
-      {
-        "answer": "False",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: Invalid comparison.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the purpose of the 'break' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to skip the current iteration in a loop and move to the next one.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to exit the loop and skip the remaining iterations.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to define a function in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to raise an exception in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = [i * 2 for i in x]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3, 1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 4, 6]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 4, 9]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 4, 6, 2, 4, 6]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["List Comprehension"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    if x == 0:\n        return 0\n    return x + my_func(x - 1)\n\nresult = my_func(5)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Recursion"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 'Hello'\nprint(x[1:4])\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "'ell'",
-        "rightAnswer": true
-      },
-      {
-        "answer": "'H'",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'Hello'",
-        "rightAnswer": false
-      },
-      {
-        "answer": "'lo'",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Strings"]
-  },
-  {
-    "question": "What is the purpose of the 'pass' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to skip the current iteration in a loop and move to the next one.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to exit the loop and skip the remaining iterations.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define an empty block of code that does nothing.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to raise an exception in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    return x * 2\n\nresult = my_func('Hello')\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "'HelloHello'",
-        "rightAnswer": true
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: Unsupported operand type(s) for *: 'str' and 'int'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = list(map(lambda n: n ** 2, x))\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 4, 9, 16]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[2, 4, 6, 8]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 8, 27, 64]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Lambda Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = list(filter(lambda n: n % 2 == 0, x))\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[2, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 4]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lambda Functions"]
-  },
-  {
-    "question": "What is the purpose of the 'enumerate' function in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to iterate over a sequence and retrieve both the index and the element at each iteration.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to sort a list in ascending or descending order.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to convert a string to lowercase or uppercase.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to calculate the length of a sequence or container.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x, y=5):\n    return x + y\n\nresult = my_func(10)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15",
-        "rightAnswer": true
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: Missing required argument 'x'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\nx.append(4)\nprint(y)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[4, 3, 2, 1]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'list' object has no attribute 'append'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = x[1:4:2]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[2, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[2, 3, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3, 5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[4, 2]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'zip' function in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to combine multiple lists into a single list.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to convert a list into a dictionary.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to sort a list in ascending or descending order.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to calculate the length of a list.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "6",
-        "rightAnswer": true
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\nresult = (x := x + 1) * 2\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "20",
-        "rightAnswer": true
-      },
-      {
-        "answer": "21",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: Invalid syntax.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Operators"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = {'a': 1, 'b': 2}\nresult = x.get('c', 3)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": true
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Dictionaries"]
-  },
-  {
-    "question": "What is the purpose of the 'try-except' block in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a function in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to handle exceptions and prevent program crashes.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to loop over a sequence and perform an action on each element.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to open and read files in Python.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Exception Handling"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = [n ** 2 for n in x if n % 2 == 0]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 4, 9]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 4, 6]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["List Comprehension"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[4, 3, 2, 1]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'list' object has no attribute 'append'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nresult = x.split(',')\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "['Hello', ' World!']",
-        "rightAnswer": true
-      },
-      {
-        "answer": "['Hello', 'World!']",
-        "rightAnswer": false
-      },
-      {
-        "answer": "['Hello,', ' World!']",
-        "rightAnswer": false
-      },
-      {
-        "answer": "['Hello', ', World!']",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Strings"]
-  },
-  {
-    "question": "What is the purpose of the 'pass' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a class in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to skip the current iteration of a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used as a placeholder when no action is required.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to convert a string to an integer.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x[::-1]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[3, 2, 1]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3, 2]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 3, 1]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 10\n    return x\n\nx = 5\nresult = my_func(x)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "5",
-        "rightAnswer": true
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'int' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = [n for n in x if n % 2 == 0]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[2, 4]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3, 4]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["List Comprehension"]
-  },
-  {
-    "question": "What is the purpose of the 'join' method in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to convert a list to a string.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to split a string into a list.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to remove leading and trailing whitespace from a string.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to convert a string to uppercase or lowercase.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Strings"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[10, 2, 3]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[10, 20, 30]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'tuple' object does not support item assignment.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 5\nresult = x ** 3 if x > 3 else x ** 2\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "8",
-        "rightAnswer": false
-      },
-      {
-        "answer": "25",
-        "rightAnswer": true
-      },
-      {
-        "answer": "125",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Conditional Statements"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = {1, 2, 3}\nresult = len(x)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'set' object has no attribute 'len'.",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Sets"]
-  },
-  {
-    "question": "What is the purpose of the 'with' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a block of code.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to handle exceptions.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to automatically close resources, such as files.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to execute a block of code repeatedly.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["File Handling"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = sum(x)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'int' object is not iterable.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 2, 3, 4]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "10",
-        "rightAnswer": true
-      },
-      {
-        "answer": "24",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'tuple' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.pop()\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Error: 'list' object has no attribute 'pop'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'lambda' keyword in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a class in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to create anonymous functions.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to import modules in Python.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to handle exceptions.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.reverse()\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[3, 2, 1]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 3, 2]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "None",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 10\n    return x\n\nx = [5]\nresult = my_func(x)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[5]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[10]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[15]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Error: 'list' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nresult = x // y\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "2.0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": true
-      },
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'int' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Arithmetic Operations"]
-  },
-  {
-    "question": "What is the purpose of the 'break' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to exit the current loop and resume execution at the next iteration.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to skip the current iteration and move to the next iteration of a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to execute a block of code repeatedly.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to define a block of code.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = x[1:3]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[2, 3]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[3, 4, 5]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    return x\n\nresult = my_func()\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": true
-      },
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'int' object is not callable.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'my_func' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x[3]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: list index out of range.",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the purpose of the 'pass' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a block of code.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to skip the current iteration and move to the next iteration of a loop.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to exit the current loop and resume execution at the next iteration.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used as a placeholder for future code.",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = {'a': 1, 'b': 2, 'c': 3}\nresult = x.get('d', 0)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": true
-      },
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'dict' object has no attribute 'get'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Dictionaries"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "[10, 2, 3]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[1, 10, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'list' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nresult = x[1]\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "1",
-        "rightAnswer": false
-      },
-      {
-        "answer": "2",
-        "rightAnswer": true
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'tuple' object does not support item assignment.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "Python",
-    "category": ["Tuples"]
-  },
-  {
-    "question": "What is the purpose of the 'continue' statement in Python?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "It is used to define a block of code.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to exit the current loop and resume execution at the next iteration.",
-        "rightAnswer": false
-      },
-      {
-        "answer": "It is used to skip the current iteration and move to the next iteration of a loop.",
-        "rightAnswer": true
-      },
-      {
-        "answer": "It is used to execute a block of code repeatedly.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Control Flow"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.index(2)\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "1",
-        "rightAnswer": true
-      },
-      {
-        "answer": "2",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'list' object has no attribute 'index'.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "Python",
-    "category": ["Lists"]
-  },
-  {
-    "question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    x += 1\n    return x\n\nresult = my_func()\nprint(result)\n```",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "11",
-        "rightAnswer": true
-      },
-      {
-        "answer": "0",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Error: 'int' object is not callable.",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "Python",
-    "category": ["Functions"]
-  }
-
+	{
+		"question": "What is the correct syntax to output \"Hello World\" in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "print(\"Hello World\")",
+				"rightAnswer": true
+			},
+			{
+				"answer": "echo(\"Hello World\")",
+				"rightAnswer": false
+			},
+			{
+				"answer": "console.log(\"Hello World\")",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fmt.print(\"Hello World\")",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nprint(x % y)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "0",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What does the 'elif' keyword mean in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is short for 'else if' and is used to specify multiple conditions.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to define a function in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to create a loop in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is a built-in module in Python for file handling.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "Which of the following is a mutable data type in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Tuple",
+				"rightAnswer": false
+			},
+			{
+				"answer": "List",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Set",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Data Types"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nprint(x[1:])\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 3]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[2]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "Which of the following is true about Python dictionaries?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Dictionaries are ordered collections of items.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Dictionaries can contain duplicate keys.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Dictionary keys must be of immutable data types.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Dictionaries can only store numeric values.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Data Structures"]
+	},
+	{
+		"question": "What is the correct way to open a file named 'data.txt' in Python for reading?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "file = open('data.txt', 'r')",
+				"rightAnswer": true
+			},
+			{
+				"answer": "file = open('data.txt', 'w')",
+				"rightAnswer": false
+			},
+			{
+				"answer": "file = open('data.txt', 'a')",
+				"rightAnswer": false
+			},
+			{
+				"answer": "file = open('data.txt', 'x')",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["File Handling"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nprint(len(x))\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'pass' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to terminate a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to skip the current iteration of a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used as a placeholder for future code.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to raise an exception in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "9",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nprint(x[7:])\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "'World!'",
+				"rightAnswer": true
+			},
+			{
+				"answer": "'Hello,'",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'Hello'",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'llo, Wo'",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Strings"]
+	},
+	{
+		"question": "Which of the following is NOT a valid way to comment out a single line in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "// This is a comment",
+				"rightAnswer": true
+			},
+			{
+				"answer": "# This is a comment",
+				"rightAnswer": false
+			},
+			{
+				"answer": "\"\"\" This is a comment \"\"\"",
+				"rightAnswer": false
+			},
+			{
+				"answer": "# This is a comment //",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Syntax"]
+	},
+	{
+		"question": "Which of the following is a correct way to check if a key exists in a Python dictionary?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "key in dict",
+				"rightAnswer": true
+			},
+			{
+				"answer": "dict[key]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "dict.get(key)",
+				"rightAnswer": false
+			},
+			{
+				"answer": "dict.exists(key)",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Dictionaries"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nprint(x[::-1])\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[4, 3, 2, 1]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[4, 3, 2]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the difference between 'append()' and 'extend()' methods in Python lists?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "'append()' adds a single element to the end of the list, while 'extend()' adds multiple elements.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "'append()' adds elements at the beginning of the list, while 'extend()' adds elements at the end.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'append()' removes the last element from the list, while 'extend()' removes multiple elements.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'append()' and 'extend()' are synonyms and can be used interchangeably.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nresult = closure(5)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15",
+				"rightAnswer": true
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "25",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 5\n    return x\n\nx = 10\nresult = my_func(x)\nprint(x, result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10 15",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10 10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "15 15",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15 10",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the purpose of the 'yield' keyword in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a generator function.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to exit a loop or terminate a function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a class in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nif x > y:\n    result = 'x is greater'\nelse:\n    result = 'y is greater'\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "x is greater",
+				"rightAnswer": true
+			},
+			{
+				"answer": "y is greater",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'result' is not defined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "No output, the code contains an error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3, [4]]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, [1, 2, 3, 4]]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'try-except' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to handle exceptions and perform error handling.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to define a block of code that will be executed repeatedly.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a conditional statement.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a loop that will iterate over a sequence.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = x\nx += 5\nprint(x, y)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "15 10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "10 15",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10 10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15 15",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Variables"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nprint(len(x))\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Tuples"]
+	},
+	{
+		"question": "What is the purpose of the 'pass' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to terminate a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to skip the current iteration of a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used as a placeholder for future code.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to raise an exception in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "9",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[4, 2, 3]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[4, 4, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 1, 1]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "Which of the following statements is true about Python's Global Interpreter Lock (GIL)?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The GIL allows only one thread to execute Python bytecode at a time.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The GIL prevents the execution of multi-threaded programs in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The GIL is responsible for garbage collection in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The GIL is a feature introduced in Python 3 to improve concurrency.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Concurrency"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x, y):\n    return x / y\n\nresult = my_func(10, 0)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: division by zero",
+				"rightAnswer": true
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = {1: 'one', 2: 'two', 3: 'three'}\nprint(x.get(4, 'four'))\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'four'",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Dictionaries"]
+	},
+	{
+		"question": "What is the purpose of the 'super()' function in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to create an instance of a class.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to call a method from a parent class.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a class attribute.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Classes"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i * i for i in x if i % 2 == 0]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 4, 9, 16, 25]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[4, 16]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[2, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3, 5]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["List Comprehension"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = True\ny = False\nz = False\nif x or y and z:\n    print('Hello')\nelse:\n    print('World')\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Hello",
+				"rightAnswer": true
+			},
+			{
+				"answer": "World",
+				"rightAnswer": false
+			},
+			{
+				"answer": "No output, the code contains an error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\ny = x\ny.append(5)\nprint(len(x))\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": true
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'yield' keyword in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a generator function.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to exit a loop or terminate a function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a decorator function.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Generators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 1\n\nx = 10\nmy_func(x)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "11",
+				"rightAnswer": false
+			},
+			{
+				"answer": "12",
+				"rightAnswer": false
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i * 2 for i in x if i % 2 == 0]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[4, 8]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[2, 4, 6, 8, 10]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4, 6, 8]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["List Comprehension"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nprint(x[7:])\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Hello",
+				"rightAnswer": false
+			},
+			{
+				"answer": "World!",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Hello, World!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "H",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Strings"]
+	},
+	{
+		"question": "What is the purpose of the 'with' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a context manager.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to create a file object.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a decorator function.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["File Handling"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\ny = x\ny = y + [5]\nprint(len(x))\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": true
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 3\nresult = x % y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1",
+				"rightAnswer": true
+			},
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x * 2\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3, 1, 2, 3]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[2, 4, 6]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 2, 4, 6]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4, 6, 2, 4, 6]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'pass' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to skip the current iteration of a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to exit a loop or terminate a function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define an empty code block or placeholder.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [10, 20, 30, 40, 50]\nresult = x[-3]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "30",
+				"rightAnswer": true
+			},
+			{
+				"answer": "20",
+				"rightAnswer": false
+			},
+			{
+				"answer": "40",
+				"rightAnswer": false
+			},
+			{
+				"answer": "50",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 2\ny = 5\nresult = x ** y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "7",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "25",
+				"rightAnswer": false
+			},
+			{
+				"answer": "32",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x // y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2.5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2.0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the purpose of the 'super()' function in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to call the superclass's methods.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a generator function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a context manager.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Classes"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    print(x)\n\nmy_func(5)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Invalid function call.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i for i in x if i % 2 == 0]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 3, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["List Comprehension"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 20\nresult = x > y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "True",
+				"rightAnswer": false
+			},
+			{
+				"answer": "False",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Error: Invalid comparison.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the purpose of the 'self' parameter in Python class methods?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to refer to the current instance of the class.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to define a static method.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a class method.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to handle exceptions in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Classes"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x % y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1",
+				"rightAnswer": true
+			},
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nx.append([4, 5])\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3, [4, 5]]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4], [5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3], [4, 5]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'join' method in Python strings?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to remove leading and trailing whitespaces from a string.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to split a string into a list of substrings.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to concatenate a list of strings into a single string.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to convert a string to uppercase or lowercase.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Strings"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x / y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2.5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2.0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2.0",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 3\nresult = x ** (1 / y)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1.7099759466766968",
+				"rightAnswer": true
+			},
+			{
+				"answer": "125",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nresult = x > 5 and y < 8\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "True",
+				"rightAnswer": true
+			},
+			{
+				"answer": "False",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Invalid comparison.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the purpose of the 'break' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to skip the current iteration in a loop and move to the next one.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to exit the loop and skip the remaining iterations.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to define a function in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to raise an exception in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = [i * 2 for i in x]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3, 1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4, 6]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 4, 9]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4, 6, 2, 4, 6]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["List Comprehension"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    if x == 0:\n        return 0\n    return x + my_func(x - 1)\n\nresult = my_func(5)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Recursion"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 'Hello'\nprint(x[1:4])\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "'ell'",
+				"rightAnswer": true
+			},
+			{
+				"answer": "'H'",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'Hello'",
+				"rightAnswer": false
+			},
+			{
+				"answer": "'lo'",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Strings"]
+	},
+	{
+		"question": "What is the purpose of the 'pass' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to skip the current iteration in a loop and move to the next one.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to exit the loop and skip the remaining iterations.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define an empty block of code that does nothing.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to raise an exception in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    return x * 2\n\nresult = my_func('Hello')\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "'HelloHello'",
+				"rightAnswer": true
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Unsupported operand type(s) for *: 'str' and 'int'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = list(map(lambda n: n ** 2, x))\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 4, 9, 16]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[2, 4, 6, 8]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 8, 27, 64]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Lambda Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = list(filter(lambda n: n % 2 == 0, x))\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[2, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 4]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lambda Functions"]
+	},
+	{
+		"question": "What is the purpose of the 'enumerate' function in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to iterate over a sequence and retrieve both the index and the element at each iteration.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to sort a list in ascending or descending order.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to convert a string to lowercase or uppercase.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to calculate the length of a sequence or container.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x, y=5):\n    return x + y\n\nresult = my_func(10)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15",
+				"rightAnswer": true
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Missing required argument 'x'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\nx.append(4)\nprint(y)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[4, 3, 2, 1]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'list' object has no attribute 'append'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = x[1:4:2]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[2, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[2, 3, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[4, 2]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'zip' function in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to combine multiple lists into a single list.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to convert a list into a dictionary.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to sort a list in ascending or descending order.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to calculate the length of a list.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\nresult = (x := x + 1) * 2\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "20",
+				"rightAnswer": true
+			},
+			{
+				"answer": "21",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Invalid syntax.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Operators"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = {'a': 1, 'b': 2}\nresult = x.get('c', 3)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": true
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Dictionaries"]
+	},
+	{
+		"question": "What is the purpose of the 'try-except' block in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a function in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to handle exceptions and prevent program crashes.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to loop over a sequence and perform an action on each element.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to open and read files in Python.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Exception Handling"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = [n ** 2 for n in x if n % 2 == 0]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 4, 9]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4, 6]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["List Comprehension"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[4, 3, 2, 1]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'list' object has no attribute 'append'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nresult = x.split(',')\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "['Hello', ' World!']",
+				"rightAnswer": true
+			},
+			{
+				"answer": "['Hello', 'World!']",
+				"rightAnswer": false
+			},
+			{
+				"answer": "['Hello,', ' World!']",
+				"rightAnswer": false
+			},
+			{
+				"answer": "['Hello', ', World!']",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Strings"]
+	},
+	{
+		"question": "What is the purpose of the 'pass' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a class in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to skip the current iteration of a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used as a placeholder when no action is required.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to convert a string to an integer.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x[::-1]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[3, 2, 1]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3, 2]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 3, 1]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 10\n    return x\n\nx = 5\nresult = my_func(x)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'int' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = [n for n in x if n % 2 == 0]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[2, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3, 4]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["List Comprehension"]
+	},
+	{
+		"question": "What is the purpose of the 'join' method in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to convert a list to a string.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to split a string into a list.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to remove leading and trailing whitespace from a string.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to convert a string to uppercase or lowercase.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Strings"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[10, 2, 3]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[10, 20, 30]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'tuple' object does not support item assignment.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 5\nresult = x ** 3 if x > 3 else x ** 2\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "8",
+				"rightAnswer": false
+			},
+			{
+				"answer": "25",
+				"rightAnswer": true
+			},
+			{
+				"answer": "125",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Conditional Statements"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = {1, 2, 3}\nresult = len(x)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'set' object has no attribute 'len'.",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Sets"]
+	},
+	{
+		"question": "What is the purpose of the 'with' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a block of code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to handle exceptions.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to automatically close resources, such as files.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to execute a block of code repeatedly.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["File Handling"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = sum(x)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'int' object is not iterable.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "24",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'tuple' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.pop()\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Error: 'list' object has no attribute 'pop'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'lambda' keyword in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a class in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to create anonymous functions.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to import modules in Python.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to handle exceptions.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.reverse()\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[3, 2, 1]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 3, 2]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "None",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 10\n    return x\n\nx = [5]\nresult = my_func(x)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[10]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[15]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Error: 'list' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nresult = x // y\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2.0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": true
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'int' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Arithmetic Operations"]
+	},
+	{
+		"question": "What is the purpose of the 'break' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to exit the current loop and resume execution at the next iteration.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to skip the current iteration and move to the next iteration of a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to execute a block of code repeatedly.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to define a block of code.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = x[1:3]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 3]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[3, 4, 5]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    return x\n\nresult = my_func()\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'int' object is not callable.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'my_func' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x[3]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: list index out of range.",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the purpose of the 'pass' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a block of code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to skip the current iteration and move to the next iteration of a loop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to exit the current loop and resume execution at the next iteration.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used as a placeholder for future code.",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = {'a': 1, 'b': 2, 'c': 3}\nresult = x.get('d', 0)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'dict' object has no attribute 'get'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Dictionaries"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "[10, 2, 3]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 10, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'list' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nresult = x[1]\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2",
+				"rightAnswer": true
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'tuple' object does not support item assignment.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Python",
+		"category": ["Tuples"]
+	},
+	{
+		"question": "What is the purpose of the 'continue' statement in Python?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is used to define a block of code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to exit the current loop and resume execution at the next iteration.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used to skip the current iteration and move to the next iteration of a loop.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used to execute a block of code repeatedly.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.index(2)\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1",
+				"rightAnswer": true
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'list' object has no attribute 'index'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Python",
+		"category": ["Lists"]
+	},
+	{
+		"question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    x += 1\n    return x\n\nresult = my_func()\nprint(result)\n```",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "11",
+				"rightAnswer": true
+			},
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: 'int' object is not callable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Python",
+		"category": ["Functions"]
+	}
 ]

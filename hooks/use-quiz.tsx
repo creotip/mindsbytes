@@ -12,7 +12,9 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 		if (option.rightAnswer) {
 			setScore((prevScore) => prevScore + 1)
 		}
+	}
 
+	const goToNextQuestion = () => {
 		if (currentQuestionIndex === quizQuestions.length - 1) {
 			setQuizCompleted(true)
 		} else {
@@ -35,6 +37,7 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 		quizCompleted,
 		scorePercentage,
 		handleAnswer,
+		goToNextQuestion,
 		resetQuiz,
 	}
 }
