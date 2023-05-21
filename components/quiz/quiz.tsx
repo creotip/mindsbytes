@@ -87,7 +87,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 						language={currentQuestion.language.toLowerCase()}
 					>
 						{({ className, style, tokens, getLineProps, getTokenProps }) => (
-							<Box as="pre" style={style} p="2rem" borderRadius="7px">
+							<Box as="pre" style={style} fontSize="14px" p="2rem" borderRadius="7px">
 								{tokens.map((line, i) => (
 									<div key={i} {...getLineProps({ line })}>
 										{line.map((token, key) => (
