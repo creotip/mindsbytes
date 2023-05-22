@@ -13,6 +13,7 @@ import {
 	Stack,
 	StackDivider,
 	Center,
+	Grid,
 } from '@chakra-ui/react'
 import { Highlight, themes } from 'prism-react-renderer'
 
@@ -80,25 +81,34 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 			</Heading>
 
 			{currentQuestion.codeBlock && (
-				<Box mb="2rem">
+				<Grid gridAutoFlow="column" className="code-block-wrapper" mb="2rem">
 					<Highlight
 						theme={themes.nightOwl}
 						code={currentQuestion.codeBlock}
 						language={currentQuestion.language.toLowerCase()}
 					>
 						{({ className, style, tokens, getLineProps, getTokenProps }) => (
-							<Box as="pre" style={style} fontSize="14px" p="2rem" borderRadius="7px">
-								{tokens.map((line, i) => (
-									<div key={i} {...getLineProps({ line })}>
-										{line.map((token, key) => (
-											<span key={key} {...getTokenProps({ token })} />
-										))}
-									</div>
-								))}
+							<Box
+								as="pre"
+								style={style}
+								overflow="auto"
+								fontSize="14px"
+								p="2rem"
+								borderRadius="7px"
+							>
+								<Box as="code">
+									{tokens.map((line, i) => (
+										<div key={i} {...getLineProps({ line })}>
+											{line.map((token, key) => (
+												<span key={key} {...getTokenProps({ token })} />
+											))}
+										</div>
+									))}
+								</Box>
 							</Box>
 						)}
 					</Highlight>
-				</Box>
+				</Grid>
 			)}
 
 			<Card mb="2rem">
