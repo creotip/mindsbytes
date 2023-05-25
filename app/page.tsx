@@ -1,9 +1,10 @@
 import { HomeContent } from '@/components/home-content'
+import { config } from '@/config/config'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-	title: 'MindsBytes - Make Learning Fun With Quizzes',
-	description: `Explore, Learn, and Have Fun with Quizzes at MindsBytes.com. Expand Your Knowledge, Challenge Yourself`,
+	title: config.seo.title,
+	description: config.seo.description,
 }
 
 export default function Home() {

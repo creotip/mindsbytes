@@ -1,4 +1,12 @@
 export const config = {
+	seo: {
+		siteName: 'MindsBytes',
+		title: 'MindsBytes - Make Learning Fun With Quizzes',
+		alternativeTitle: 'MindsBytes - Explore, Learn, and Have Fun with Quizzes',
+		description:
+			'Boost your coding skills with JavaScript, Python, Go, React, Rust, and more. Dive into quizzes covering Math, CS, Data Science, AI, and more. Explore engaging quizzes challenging your knowledge',
+		url: 'https://mindsbytes.com',
+	},
 	db: {
 		quizzes: {
 			'math-general':
