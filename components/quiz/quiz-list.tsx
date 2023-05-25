@@ -22,18 +22,6 @@ export const QuizList = () => {
 		<Box as="nav" fontSize="14px" fontWeight="600">
 			<List spacing={3}>
 				<ListItem>
-					<CustomLink title="Mathematics" href="/quizzes/math" />
-				</ListItem>
-				<ListItem>Computer Science</ListItem>
-				<ListItem>Front-End</ListItem>
-				<ListItem>Back-End</ListItem>
-				<ListItem>Data Science</ListItem>
-				<ListItem>DevOps</ListItem>
-				<ListItem>Network</ListItem>
-				<ListItem>Cyber Security</ListItem>
-				<ListItem>Quality Assurance</ListItem>
-				<ListItem>Blockchain</ListItem>
-				<ListItem>
 					<Accordion allowToggle>
 						<AccordionItem border="none">
 							<AccordionButton fontSize="14px" fontWeight="600" p={0}>
@@ -74,6 +62,18 @@ export const QuizList = () => {
 						</AccordionItem>
 					</Accordion>
 				</ListItem>
+				<ListItem>
+					<CustomLink title="Mathematics" href="/quizzes/math" />
+				</ListItem>
+				<ListItem>Computer Science</ListItem>
+				<ListItem>Front-End</ListItem>
+				<ListItem>Back-End</ListItem>
+				<ListItem>Data Science</ListItem>
+				<ListItem>DevOps</ListItem>
+				<ListItem>Network</ListItem>
+				<ListItem>Cyber Security</ListItem>
+				<ListItem>Quality Assurance</ListItem>
+				<ListItem>Blockchain</ListItem>
 			</List>
 		</Box>
 	)

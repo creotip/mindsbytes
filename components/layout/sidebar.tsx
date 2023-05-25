@@ -1,13 +1,6 @@
 'use client'
 import {
 	Box,
-	List,
-	ListItem,
-	Accordion,
-	AccordionItem,
-	AccordionButton,
-	AccordionPanel,
-	AccordionIcon,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/next-js'
 import { usePathname } from 'next/navigation'
