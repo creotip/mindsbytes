@@ -8,6 +8,12 @@ const colors = {
 	},
 }
 
+const fonts = {
+	body: 'var(--font-inter)',
+	heading: 'var(--font-inter)',
+	mono: 'Menlo, monospace',
+}
+
 const styles = {
 	global: {
 		body: {
@@ -17,4 +23,4 @@ const styles = {
 	},
 }
 
-export const theme = extendTheme({ styles, colors })
+export const theme = extendTheme({ styles, colors, fonts })
