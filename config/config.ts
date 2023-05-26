@@ -5,6 +5,8 @@ export const config = {
 		alternativeTitle: 'MindsBytes - Explore, Learn, and Have Fun with Quizzes',
 		description:
 			'Boost your coding skills with JavaScript, Python, Go, React, Rust, and more. Dive into quizzes covering Math, CS, Data Science, AI, and more. Explore engaging quizzes challenging your knowledge',
+		alternativeDescription:
+			'Elevate coding skills with JavaScript, Python, Go, React, Rust, and more. Immerse in quizzes spanning Math, CS, Data Science, AI, and more. Engage in challenging quizzes to expand your knowledge.',
 		url: 'https://mindsbytes.com',
 	},
 	db: {

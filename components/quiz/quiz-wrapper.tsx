@@ -83,7 +83,7 @@ export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 
 	return (
 		<>
-			<Heading as="h2" textAlign="center" my="2rem">
+			<Heading as="h1" textAlign="center" my="2rem">
 				{title} Quiz
 			</Heading>
 

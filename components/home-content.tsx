@@ -1,4 +1,5 @@
 'use client'
+import { config } from '@/config/config'
 import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 
 export function HomeContent() {
@@ -16,8 +17,7 @@ export function HomeContent() {
 			</Heading>
 
 			<Text color="gray.400" textAlign="center" mb="2rem">
-				Explore, Learn, and Have Fun with Quizzes at MindsBytes.com. <br /> Expand Your Knowledge,
-				Challenge Yourself, and Join the Quizzing Community Today!
+				{config.seo.alternativeDescription}
 			</Text>
 
 			<SimpleGrid columns={[1, 1, 1, 3]} gap="25px">
