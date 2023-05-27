@@ -31,11 +31,15 @@ export const QuizList = () => {
 							<AccordionPanel pb={4}>
 								<List spacing={3}>
 									<ListItem>
-										<CustomLink title="Javascript" href="/quizzes/javascript" />
+										<CustomLink isSidebar href="/quizzes/javascript">
+											Javascript
+										</CustomLink>
 									</ListItem>
 									<ListItem>TypeScript</ListItem>
 									<ListItem>
-										<CustomLink title="Python" href="/quizzes/python" />
+										<CustomLink isSidebar href="/quizzes/python">
+											Python
+										</CustomLink>
 									</ListItem>
 									<ListItem>HTML</ListItem>
 									<ListItem>CSS</ListItem>
@@ -60,7 +64,9 @@ export const QuizList = () => {
 					</Accordion>
 				</ListItem>
 				<ListItem>
-					<CustomLink title="Mathematics" href="/quizzes/math" />
+					<CustomLink isSidebar href="/quizzes/math">
+						Mathematics
+					</CustomLink>
 				</ListItem>
 				<ListItem>Computer Science</ListItem>
 				<ListItem>Front-End</ListItem>

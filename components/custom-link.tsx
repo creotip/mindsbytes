@@ -4,9 +4,9 @@ import { usePathname, useRouter } from 'next/navigation'
 
 interface CustomLinkProps extends LinkProps {
 	href: string
-	title: string
+	isSidebar?: boolean
 }
-export const CustomLink = ({ href, title, ...props }: CustomLinkProps) => {
+export const CustomLink = ({ href, isSidebar, ...props }: CustomLinkProps) => {
 	const { setDrawer } = useUIStore((state) => state)
 	const { isQuizActive } = useQuizStore((state) => state)
 	const pathname = usePathname()
@@ -24,11 +24,11 @@ export const CustomLink = ({ href, title, ...props }: CustomLinkProps) => {
 		<Link
 			onClick={handleClick}
 			href={href}
-			color={isActiveLink ? 'purple.300' : 'initial'}
+			color={isActiveLink && isSidebar ? 'purple.300' : 'initial'}
 			_hover={{ color: 'purple.300' }}
 			{...props}
 		>
-			{title}
+			{props.children}
 		</Link>
 	)
 }

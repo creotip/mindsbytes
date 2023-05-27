@@ -22,6 +22,7 @@ import { useRef } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { QuizList } from '../quiz/quiz-list'
 import { useUIStore } from '@/config/store'
+import { CustomLink } from '../custom-link'
 
 export const Header = () => {
 	const { isDrawerOpen, setDrawer } = useUIStore((state) => state)
@@ -29,7 +30,7 @@ export const Header = () => {
 	return (
 		<Flex as="header" justifyContent="space-between" py={6} px="1rem">
 			<Box className="logo" pos="relative" fontWeight="900" fontSize="xl">
-				<Link
+				<CustomLink
 					zIndex="2"
 					pos="relative"
 					display="flex"
@@ -47,7 +48,7 @@ export const Header = () => {
 					>
 						MindsBytes
 					</motion.span>
-				</Link>
+				</CustomLink>
 				<Box
 					filter="blur(34px)"
 					backgroundImage="linear-gradient( -45deg, #572eab 30%, #906fda )"
