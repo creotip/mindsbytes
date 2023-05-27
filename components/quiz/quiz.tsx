@@ -9,12 +9,9 @@ import {
 	VStack,
 	Card,
 	CardBody,
-	CardHeader,
-	Stack,
 	StackDivider,
 	Center,
 	Grid,
-	Flex,
 	Radio,
 } from '@chakra-ui/react'
 import { Highlight, themes } from 'prism-react-renderer'
@@ -72,6 +69,8 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 			</Center>
 		)
 	}
+
+	console.log('rex', answersIndexMap.get(currentQuestionIndex))
 
 	return (
 		<Box px="2rem">
@@ -154,6 +153,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 				fontSize="15px"
 				minW="220px"
 				mb="2rem"
+				isDisabled={answersIndexMap.get(currentQuestionIndex) === undefined}
 			>
 				Next
 			</Button>
