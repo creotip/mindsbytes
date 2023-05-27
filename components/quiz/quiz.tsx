@@ -70,8 +70,6 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 		)
 	}
 
-	console.log('rex', answersIndexMap.get(currentQuestionIndex))
-
 	return (
 		<Box px="2rem">
 			<Heading as="h2" fontSize="1.4rem" textAlign="center" my="2rem">
