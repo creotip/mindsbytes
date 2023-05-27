@@ -13,6 +13,7 @@ import {
 	FormLabel,
 	FormControl,
 	Input,
+	Text,
 } from '@chakra-ui/react'
 import { useQuizStore } from '@/config/store'
 import { Quiz } from '@/components/quiz/quiz'
@@ -22,6 +23,7 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 interface WrapperProps {
 	quizQuestions: SingleQuiz[]
 	title: string
+	longDescription: string
 }
 
 type Inputs = {
@@ -29,7 +31,7 @@ type Inputs = {
 	category: string
 }
 
-export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
+export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperProps) => {
 	const levels = new Set(quizQuestions.map((q) => q.level))
 	const categories = new Set(quizQuestions.map((q) => q.category).flat())
 	const { isQuizActive, setQuizActive, setCurrentQuizTypeTitle, setCategory, setLevel } =
@@ -86,6 +88,10 @@ export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 			<Heading as="h1" textAlign="center" my="2rem">
 				{title} Quiz
 			</Heading>
+
+			<Text px={['1rem', '1rem', '2rem']} mb="2rem" color="gray.400">
+				{longDescription}
+			</Text>
 
 			<VStack as="form" onSubmit={handleSubmit(onSubmit)} spacing="3rem" pb="40px">
 				<FormControl isInvalid={!!errors.level} w="auto">
