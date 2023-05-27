@@ -24,7 +24,7 @@ export const CustomLink = ({ href, isSidebar, ...props }: CustomLinkProps) => {
 		<Link
 			onClick={handleClick}
 			href={href}
-			color={isActiveLink && isSidebar ? 'purple.300' : 'initial'}
+			color={isActiveLink && isSidebar ? 'purple.300' : 'inherit'}
 			_hover={{ color: 'purple.300' }}
 			{...props}
 		>
