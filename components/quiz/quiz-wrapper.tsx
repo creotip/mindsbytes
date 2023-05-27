@@ -131,7 +131,7 @@ export const QuizWrapper = ({ quizQuestions, title }: WrapperProps) => {
 				<Button
 					isLoading={isSubmitting}
 					type="submit"
-					colorScheme="blue"
+					colorScheme="purple"
 					borderRadius="6px"
 					fontSize="15px"
 					minW="220px"

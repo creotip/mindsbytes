@@ -14,6 +14,8 @@ import {
 	StackDivider,
 	Center,
 	Grid,
+	Flex,
+	Radio,
 } from '@chakra-ui/react'
 import { Highlight, themes } from 'prism-react-renderer'
 
@@ -41,30 +43,31 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 	const {
 		currentQuestion,
 		currentQuestionIndex,
+		answersIndexMap,
 		score,
 		scorePercentage,
-		quizCompleted,
+		isQuizFinished,
 		handleAnswer,
 		goToNextQuestion,
 		resetQuiz,
 	} = useQuiz(quizQuestions)
 
-	// console.log('currentQuestion', {
-	// 	currentQuestion,
-	// 	currentQuestionIndex,
-	// 	score,
-	// 	scorePercentage,
-	// 	quizCompleted,
-	// 	handleAnswer,
-	// 	resetQuiz,
-	// })
+	console.log('currentQuestion', {
+		currentQuestion,
+		currentQuestionIndex,
+		score,
+		scorePercentage,
+		isQuizFinished,
+		handleAnswer,
+		resetQuiz,
+	})
 
-	if (quizCompleted) {
+	if (isQuizFinished) {
 		return (
 			<Center h="full">
 				<VStack>
 					<Box>Quiz finished!</Box>
-					<Box>Your score is %{scorePercentage}</Box>
+					<Box>Your score is {scorePercentage}%</Box>
 				</VStack>
 			</Center>
 		)
@@ -112,16 +115,16 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 			)}
 
 			<Card mb="2rem">
-				<CardBody>
-					<VStack spacing={4} align="stretch" divider={<StackDivider />}>
+				<CardBody p="0">
+					<VStack spacing={0} align="stretch" divider={<StackDivider />}>
 						{currentQuestion.options.map((option, i) => (
 							<Button
-								onClick={() => handleAnswer(option)}
 								key={i}
+								onClick={() => handleAnswer(option, i)}
 								variant="ghost"
 								justifyContent="flex-start"
-								px={4}
-								py={2}
+								px={6}
+								py={6}
 								textAlign="left"
 								fontSize="15px"
 								fontWeight="400"
@@ -129,7 +132,15 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 								whiteSpace="normal"
 								_hover={{ opacity: '0.9' }}
 							>
-								{option.answer}
+								<Radio
+									size="lg"
+									name="1"
+									colorScheme="purple"
+									isChecked={answersIndexMap.get(currentQuestionIndex) === i}
+								></Radio>
+								<Box as="span" mx="1rem">
+									{option.answer}
+								</Box>
 							</Button>
 						))}
 					</VStack>
@@ -138,7 +149,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 
 			<Button
 				onClick={() => goToNextQuestion()}
-				colorScheme="blue"
+				colorScheme="purple"
 				borderRadius="6px"
 				fontSize="15px"
 				minW="220px"

@@ -10,6 +10,8 @@ interface QuizStoreState {
 	setLevel: (newLevels: string[]) => void
 	category: string
 	setCategory: (category: string) => void
+	isQuizFinished: boolean
+	setQuizFinished: (isFinished: boolean) => void
 }
 interface UIStoreState {
 	isDrawerOpen: boolean
@@ -26,6 +28,8 @@ export const useQuizStore = create<QuizStoreState>()(
 		setLevel: (newLevels: string[]) => set({ level: newLevels }),
 		category: '',
 		setCategory: (category: string) => set({ category }),
+		isQuizFinished: false,
+		setQuizFinished: (isFinished: boolean) => set({ isQuizFinished: isFinished }),
 	}))
 )
 

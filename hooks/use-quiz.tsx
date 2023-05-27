@@ -1,11 +1,14 @@
 import { QuizOption, SingleQuiz } from '@/interfaces/quiz-interface'
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useMap } from './use-map'
+import { useQuizStore } from '@/config/store'
 
 export function useQuiz(quizQuestions: SingleQuiz[]) {
 	const [answersMap, { set: setAnswersMap, clear: clearAnswersMap }] = useMap([])
+	const [answersIndexMap, { set: setAnswersIndexMap, clear: clearAnswersIndexMap }] = useMap([])
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-	const [quizCompleted, setQuizCompleted] = useState(false)
+
+	const { setQuizFinished, isQuizFinished } = useQuizStore((state) => state)
 
 	const currentQuestion = quizQuestions[currentQuestionIndex]
 
@@ -20,34 +23,40 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 		return score
 	}, [answersMap])
 
-	console.log('score', score)
-
-	const handleAnswer = (option: QuizOption) => {
+	const handleAnswer = (option: QuizOption, index: number) => {
 		setAnswersMap(currentQuestionIndex, option.rightAnswer)
+		setAnswersIndexMap(currentQuestionIndex, index)
 	}
 
 	const goToNextQuestion = () => {
 		if (currentQuestionIndex === quizQuestions.length - 1) {
-			setQuizCompleted(true)
+			setQuizFinished(true)
 		} else {
 			setCurrentQuestionIndex((prevIndex) => prevIndex + 1)
 		}
 	}
 
-	const resetQuiz = () => {
+	const resetQuiz = useCallback(() => {
 		setCurrentQuestionIndex(0)
 		clearAnswersMap()
-		setQuizCompleted(false)
-	}
+		clearAnswersIndexMap()
+		setQuizFinished(false)
+	}, [clearAnswersIndexMap, clearAnswersMap, setQuizFinished])
+
+	useEffect(() => {
+		return () => {
+			resetQuiz()
+		}
+	}, [resetQuiz])
 
 	const scorePercentage = ((score / quizQuestions.length) * 100).toFixed()
 
-	console.log('scorePercentage', scorePercentage)
 	return {
 		currentQuestion,
 		currentQuestionIndex,
+		answersIndexMap,
 		score,
-		quizCompleted,
+		isQuizFinished,
 		scorePercentage,
 		handleAnswer,
 		goToNextQuestion,
