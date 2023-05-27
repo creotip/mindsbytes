@@ -8,7 +8,7 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 	const [answersIndexMap, { set: setAnswersIndexMap, clear: clearAnswersIndexMap }] = useMap([])
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
 
-	const { setQuizFinished, isQuizFinished } = useQuizStore((state) => state)
+	const { setQuizFinished, isQuizFinished, isQuizActive } = useQuizStore((state) => state)
 
 	const currentQuestion = quizQuestions[currentQuestionIndex]
 
@@ -52,6 +52,7 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 	const scorePercentage = ((score / quizQuestions.length) * 100).toFixed()
 
 	return {
+		isQuizActive,
 		currentQuestion,
 		currentQuestionIndex,
 		answersIndexMap,

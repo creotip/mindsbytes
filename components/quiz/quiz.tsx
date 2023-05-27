@@ -21,23 +21,9 @@ interface QuizProps {
 	title: string
 }
 
-const Option = ({ text }: any) => {
-	return (
-		<Button
-			variant="ghost"
-			justifyContent="flex-start"
-			px={4}
-			py={2}
-			textAlign="left"
-			_hover={{ opacity: '0.9' }}
-		>
-			<Text>{text}</Text>
-		</Button>
-	)
-}
-
 export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 	const {
+		isQuizActive,
 		currentQuestion,
 		currentQuestionIndex,
 		answersIndexMap,

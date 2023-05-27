@@ -1,22 +1,8 @@
 'use client'
-import {
-	Box,
-} from '@chakra-ui/react'
-import { Link } from '@chakra-ui/next-js'
+import { Box } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation'
 import { QuizList } from '../quiz/quiz-list'
 
-interface CustomLinkProps {
-	href: string
-	title: string
-}
-const CustomLink = ({ href, title }: CustomLinkProps) => {
-	return (
-		<Link href={href} _hover={{ color: 'purple.300' }}>
-			{title}
-		</Link>
-	)
-}
 export const Sidebar = () => {
 	const pathname = usePathname()
 

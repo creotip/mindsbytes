@@ -9,10 +9,7 @@ import {
 	AccordionPanel,
 	AccordionIcon,
 } from '@chakra-ui/react'
-import { Link } from '@chakra-ui/next-js'
 import { usePathname } from 'next/navigation'
-import { config } from '@/config/config'
-import { useUIStore } from '@/config/store'
 import { CustomLink } from '../custom-link'
 
 export const QuizList = () => {
