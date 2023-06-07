@@ -1,11 +1,8 @@
 'use client'
 import { Box } from '@chakra-ui/react'
-import { usePathname } from 'next/navigation'
 import { QuizList } from '../quiz/quiz-list'
 
 export const Sidebar = () => {
-	const pathname = usePathname()
-
 	return (
 		<Box
 			as="aside"

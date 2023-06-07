@@ -9,12 +9,9 @@ import {
 	AccordionPanel,
 	AccordionIcon,
 } from '@chakra-ui/react'
-import { usePathname } from 'next/navigation'
 import { CustomLink } from '../custom-link'
 
 export const QuizList = () => {
-	const pathname = usePathname()
-
 	return (
 		<Box as="nav" fontSize="14px" fontWeight="600">
 			<List spacing={3}>

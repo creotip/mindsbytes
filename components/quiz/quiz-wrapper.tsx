@@ -32,12 +32,20 @@ type Inputs = {
 }
 
 export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperProps) => {
-	const levels = new Set(quizQuestions.map((q) => q.level))
-	const categories = new Set(quizQuestions.map((q) => q.category).flat())
 	const { isQuizActive, setQuizActive, setCurrentQuizTypeTitle, setCategory, setLevel } =
 		useQuizStore((state) => state)
 
 	const [filteredQuestions, setFilteredQuestions] = useState<SingleQuiz[]>(quizQuestions)
+
+	const levels = new Set(quizQuestions.map((q) => q.level))
+	const categories = new Set(
+		quizQuestions
+			.map((q) => q.category)
+			.flat()
+			.map((c) => c.toLocaleLowerCase())
+	)
+
+	console.log('categories', categories)
 
 	const {
 		handleSubmit,
@@ -45,6 +53,7 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 		formState: { errors, isSubmitting },
 		watch,
 		reset,
+		getValues,
 	} = useForm<Inputs>()
 
 	function onSubmit(values: Record<string, any>) {
@@ -55,8 +64,6 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 
 				return isLevelMatch && isCategoryMatch
 			})
-
-			console.log('filteredQuestions', filteredQuestions)
 
 			setFilteredQuestions(filteredQuestions)
 			setLevel(values.level)
@@ -79,6 +86,24 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 		reset({ level: ['all'], category: 'all' })
 	}, [reset])
 
+	const selectedLevels = watch('level')
+	const selectedCategory = watch('category')
+
+	useEffect(() => {
+		if (selectedLevels || selectedCategory) {
+			const filteredQuestions = quizQuestions.filter((q) => {
+				const isLevelMatch = selectedLevels.includes(q.level) || selectedLevels.includes('all')
+				const isCategoryMatch = selectedCategory === q.category || selectedCategory === 'all'
+
+				return isLevelMatch && isCategoryMatch
+			})
+
+			console.log('new filteredQuestions', filteredQuestions)
+
+			setFilteredQuestions(filteredQuestions)
+		}
+	}, [watch, quizQuestions, selectedLevels, selectedCategory])
+
 	if (isQuizActive) {
 		return <Quiz title={title} quizQuestions={filteredQuestions} />
 	}
@@ -99,18 +124,24 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 						Choose Level
 					</FormLabel>
 
-					<CheckboxGroup colorScheme="purple" defaultValue={['all']}>
+					<CheckboxGroup colorScheme="purple" defaultValue={Array.from(levels)}>
 						<Stack spacing={[1, 5]} direction={['column', 'row']}>
-							<Checkbox
+							{/* <Checkbox
 								value="all"
 								{...register('level', {
 									required: 'Please select at least one level',
 								})}
 							>
 								All
-							</Checkbox>
+							</Checkbox> */}
 							{Array.from(levels).map((level) => (
-								<Checkbox key={level} value={level} {...register('level')}>
+								<Checkbox
+									key={level}
+									value={level}
+									{...register('level', {
+										required: 'Please select at least one level',
+									})}
+								>
 									{level}
 								</Checkbox>
 							))}
@@ -119,11 +150,11 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 					<FormErrorMessage>{errors.level && errors.level.message}</FormErrorMessage>
 				</FormControl>
 
-				<FormControl isInvalid={!!errors.category} w="auto">
+				{/* <FormControl isInvalid={!!errors.category} w="auto">
 					<FormLabel htmlFor="category" textAlign="center" mb={1} fontWeight="600">
 						Choose Category
 					</FormLabel>
-					<Select defaultValue="all" {...register('category')}>
+					<Select textTransform="capitalize" defaultValue="all" {...register('category')}>
 						<option value="all">All</option>
 						{Array.from(categories).map((cat, index) => (
 							<option key={index} value={cat}>
@@ -131,7 +162,7 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 							</option>
 						))}
 					</Select>
-				</FormControl>
+				</FormControl> */}
 
 				{/* <Box>{filteredQuestions.length} Questions</Box> */}
 				<Button

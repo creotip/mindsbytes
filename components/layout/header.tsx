@@ -1,24 +1,18 @@
 'use client'
 import {
-	Button,
 	Box,
 	Drawer,
 	DrawerBody,
-	DrawerFooter,
 	DrawerHeader,
 	DrawerOverlay,
 	DrawerContent,
 	DrawerCloseButton,
 	IconButton,
-	useDisclosure,
 	Flex,
 	Show,
-	Divider,
 } from '@chakra-ui/react'
-import { Link } from '@chakra-ui/next-js'
 import { MdCenterFocusWeak } from 'react-icons/md'
 import { motion } from 'framer-motion'
-import { useRef } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { QuizList } from '../quiz/quiz-list'
 import { useUIStore } from '@/config/store'

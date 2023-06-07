@@ -62,5 +62,6 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 		handleAnswer,
 		goToNextQuestion,
 		resetQuiz,
+		quesionsLength: quizQuestions.length,
 	}
 }
