@@ -8,7 +8,9 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 	const [answersIndexMap, { set: setAnswersIndexMap, clear: clearAnswersIndexMap }] = useMap([])
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
 
-	const { setQuizFinished, isQuizFinished, isQuizActive } = useQuizStore((state) => state)
+	const { setQuizFinished, isQuizFinished, isQuizActive, setQuizActive } = useQuizStore(
+		(state) => state
+	)
 
 	const currentQuestion = quizQuestions[currentQuestionIndex]
 
@@ -41,7 +43,8 @@ export function useQuiz(quizQuestions: SingleQuiz[]) {
 		clearAnswersMap()
 		clearAnswersIndexMap()
 		setQuizFinished(false)
-	}, [clearAnswersIndexMap, clearAnswersMap, setQuizFinished])
+		setQuizActive(false)
+	}, [clearAnswersIndexMap, clearAnswersMap, setQuizActive, setQuizFinished])
 
 	useEffect(() => {
 		return () => {
