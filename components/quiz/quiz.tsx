@@ -5,7 +5,6 @@ import {
 	Box,
 	Heading,
 	Button,
-	Text,
 	VStack,
 	Card,
 	CardBody,
@@ -14,8 +13,12 @@ import {
 	Grid,
 	Radio,
 } from '@chakra-ui/react'
-import { Highlight, themes } from 'prism-react-renderer'
+import { Highlight, themes, Prism } from 'prism-react-renderer'
 import QuizToolbar from './quiz-toolbar'
+;(typeof global !== 'undefined' ? global : window).Prism = Prism
+// await import('prismjs/components/prism-applescript')
+/** or **/
+require('prismjs/components/prism-python')
 
 interface QuizProps {
 	quizQuestions: SingleQuiz[]
@@ -24,11 +27,9 @@ interface QuizProps {
 
 export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 	const {
-		quesionsLength,
 		currentQuestion,
 		currentQuestionIndex,
 		answersIndexMap,
-		score,
 		scorePercentage,
 		isQuizFinished,
 		handleAnswer,
@@ -39,9 +40,32 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 	if (isQuizFinished) {
 		return (
 			<Center h="full">
-				<VStack>
-					<Box>Quiz finished!</Box>
-					<Box>Your score is {scorePercentage}%</Box>
+				<VStack pos="relative">
+					<Box
+						filter="blur(55px)"
+						backgroundImage="linear-gradient( -45deg, #572eab 30%, #906fda )"
+						pos="absolute"
+						top="0"
+						left="0"
+						w="100%"
+						h="100%"
+					></Box>
+					<Box pos="relative" textAlign="center">
+						<Box fontSize="3.5rem" fontWeight="900" letterSpacing="2px" mb="1rem">
+							Quiz Finished
+						</Box>
+						<Box>Your score is {scorePercentage}%</Box>
+
+						<Button
+							mt="2rem"
+							size="lg"
+							onClick={() => {
+								resetQuiz()
+							}}
+						>
+							Restart Quiz
+						</Button>
+					</Box>
 				</VStack>
 			</Center>
 		)
@@ -51,7 +75,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 		<>
 			<QuizToolbar
 				title={title}
-				currentQuestionOutofTotal={`${currentQuestionIndex + 1} / ${quesionsLength}`}
+				currentQuestionOutofTotal={`${currentQuestionIndex + 1} / ${quizQuestions.length}`}
 				level={currentQuestion.level}
 			/>
 			<Box px="2rem" mt="2rem">
@@ -65,7 +89,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 							code={currentQuestion.codeBlock}
 							language={currentQuestion.language.toLowerCase()}
 						>
-							{({ className, style, tokens, getLineProps, getTokenProps }) => (
+							{({ style, tokens, getLineProps, getTokenProps }) => (
 								<Box
 									as="pre"
 									style={style}

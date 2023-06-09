@@ -1,24 +1,22 @@
 'use client'
 import type { SingleQuiz } from '@/interfaces/quiz-interface'
 import {
-	Box,
 	Button,
 	Checkbox,
 	CheckboxGroup,
 	Heading,
-	Select,
 	Stack,
 	VStack,
 	FormErrorMessage,
 	FormLabel,
 	FormControl,
-	Input,
 	Text,
 } from '@chakra-ui/react'
 import { useQuizStore } from '@/config/store'
 import { Quiz } from '@/components/quiz/quiz'
 import { useEffect, useState } from 'react'
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
+import { getFilteredQuestions } from '@/utils/quiz-utils'
 
 interface WrapperProps {
 	quizQuestions: SingleQuiz[]
@@ -37,35 +35,19 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 
 	const [filteredQuestions, setFilteredQuestions] = useState<SingleQuiz[]>(quizQuestions)
 
-	const levels = new Set(quizQuestions.map((q) => q.level))
-	const categories = new Set(
-		quizQuestions
-			.map((q) => q.category)
-			.flat()
-			.map((c) => c.toLocaleLowerCase())
-	)
-
-	console.log('categories', categories)
-
 	const {
 		handleSubmit,
 		register,
 		formState: { errors, isSubmitting },
 		watch,
 		reset,
-		getValues,
 	} = useForm<Inputs>()
+
+	const levels = new Set(quizQuestions.map((q) => q.level))
+	const selectedLevels = watch('level')
 
 	function onSubmit(values: Record<string, any>) {
 		if (!isQuizActive) {
-			const filteredQuestions = quizQuestions.filter((q) => {
-				const isLevelMatch = values.level.includes(q.level) || values.level.includes('all')
-				const isCategoryMatch = values.category === q.category || values.category === 'all'
-
-				return isLevelMatch && isCategoryMatch
-			})
-
-			setFilteredQuestions(filteredQuestions)
 			setLevel(values.level)
 			setCategory(values.category)
 			setCurrentQuizTypeTitle(title)
@@ -78,33 +60,26 @@ export const QuizWrapper = ({ quizQuestions, title, longDescription }: WrapperPr
 			setQuizActive(false)
 			setCurrentQuizTypeTitle('')
 			setLevel([])
-			setCategory('')
 		}
-	}, [setCategory, setCurrentQuizTypeTitle, setLevel, setQuizActive])
+	}, [setCurrentQuizTypeTitle, setLevel, setQuizActive])
 
 	useEffect(() => {
 		reset({ level: ['all'], category: 'all' })
 	}, [reset])
 
-	const selectedLevels = watch('level')
-	const selectedCategory = watch('category')
-
 	useEffect(() => {
-		if (selectedLevels || selectedCategory) {
-			const filteredQuestions = quizQuestions.filter((q) => {
-				const isLevelMatch = selectedLevels.includes(q.level) || selectedLevels.includes('all')
-				const isCategoryMatch = selectedCategory === q.category || selectedCategory === 'all'
-
-				return isLevelMatch && isCategoryMatch
-			})
-
-			console.log('new filteredQuestions', filteredQuestions)
+		if (selectedLevels) {
+			const filteredQuestions = getFilteredQuestions(quizQuestions)
+				.filterByLevel(selectedLevels)
+				.shuffle()
+				.getItemsByNumber(25)
 
 			setFilteredQuestions(filteredQuestions)
 		}
-	}, [watch, quizQuestions, selectedLevels, selectedCategory])
+	}, [watch, quizQuestions, selectedLevels])
 
 	if (isQuizActive) {
+		console.log('filteredQuestions', filteredQuestions)
 		return <Quiz title={title} quizQuestions={filteredQuestions} />
 	}
 

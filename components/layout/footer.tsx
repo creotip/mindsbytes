@@ -3,7 +3,7 @@ import { Grid, GridProps } from '@chakra-ui/react'
 
 export const Footer = (props: GridProps) => {
 	return (
-		<Grid as="footer" justifyContent="center" py="2rem">
+		<Grid as="footer" justifyContent="center" py="2rem" {...props}>
 			MindsBytes@2023
 		</Grid>
 	)

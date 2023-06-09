@@ -21,12 +21,12 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nprint(x % y)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = 5\nprint(x % y)",
 		"options": [
 			{
 				"answer": "2",
@@ -46,11 +46,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What does the 'elif' keyword mean in Python?",
+		"question": "What does the 'elif' keyword mean?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -58,24 +58,24 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to define a function in Python.",
+				"answer": "It is used to define a function.",
 				"rightAnswer": false
 			},
 			{
-				"answer": "It is used to create a loop in Python.",
+				"answer": "It is used to create a loop.",
 				"rightAnswer": false
 			},
 			{
-				"answer": "It is a built-in module in Python for file handling.",
+				"answer": "It is a built-in module for file handling.",
 				"rightAnswer": false
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "Which of the following is a mutable data type in Python?",
+		"question": "Which of the following is a mutable data type?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -96,12 +96,12 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Data Types"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nprint(x[1:])\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nprint(x[1:])",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -121,7 +121,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
@@ -146,11 +146,11 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Data Structures"]
 	},
 	{
-		"question": "What is the correct way to open a file named 'data.txt' in Python for reading?",
+		"question": "What is the correct way to open a file named 'data.txt' for reading?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -171,12 +171,12 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["File Handling"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nprint(len(x))\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nprint(len(x))",
 		"options": [
 			{
 				"answer": "0",
@@ -196,11 +196,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the purpose of the 'pass' statement in Python?",
+		"question": "What is the purpose of the 'pass' statement ?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -216,17 +216,17 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to raise an exception in Python.",
+				"answer": "It is used to raise an exception.",
 				"rightAnswer": false
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)",
 		"options": [
 			{
 				"answer": "2",
@@ -246,12 +246,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nprint(x[7:])\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 'Hello, World!'\nprint(x[7:])",
 		"options": [
 			{
 				"answer": "'World!'",
@@ -271,11 +271,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Strings"]
 	},
 	{
-		"question": "Which of the following is NOT a valid way to comment out a single line in Python?",
+		"question": "Which of the following is NOT a valid way to comment out a single line?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -296,11 +296,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Syntax"]
 	},
 	{
-		"question": "Which of the following is a correct way to check if a key exists in a Python dictionary?",
+		"question": "Which of the following is a correct way to check if a key exists in a dictionary?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -321,12 +321,12 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Dictionaries"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nprint(x[::-1])\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\nprint(x[::-1])",
 		"options": [
 			{
 				"answer": "[1, 2, 3, 4]",
@@ -346,11 +346,11 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the difference between 'append()' and 'extend()' methods in Python lists?",
+		"question": "What is the difference between 'append()' and 'extend()' methods lists?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -371,12 +371,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nresult = closure(5)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nresult = closure(5)\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -396,12 +396,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 5\n    return x\n\nx = 10\nresult = my_func(x)\nprint(x, result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    x += 5\n    return x\n\nx = 10\nresult = my_func(x)\nprint(x, result)",
 		"options": [
 			{
 				"answer": "10 15",
@@ -421,11 +421,11 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the purpose of the 'yield' keyword in Python?",
+		"question": "What is the purpose of the 'yield' keyword ?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -437,21 +437,21 @@
 				"rightAnswer": false
 			},
 			{
-				"answer": "It is used to handle exceptions in Python.",
+				"answer": "It is used to handle exceptions.",
 				"rightAnswer": false
 			},
 			{
-				"answer": "It is used to define a class in Python.",
+				"answer": "It is used to define a class.",
 				"rightAnswer": false
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nif x > y:\n    result = 'x is greater'\nelse:\n    result = 'y is greater'\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = 5\nif x > y:\n    result = 'x is greater'\nelse:\n    result = 'y is greater'\nprint(result)",
 		"options": [
 			{
 				"answer": "x is greater",
@@ -471,12 +471,12 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -496,11 +496,11 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the purpose of the 'try-except' statement in Python?",
+		"question": "What is the purpose of the 'try-except' statement?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -521,12 +521,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Error Handling"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = x\nx += 5\nprint(x, y)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = x\nx += 5\nprint(x, y)",
 		"options": [
 			{
 				"answer": "15 10",
@@ -546,12 +546,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Variables"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nprint(len(x))\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = (1, 2, 3)\nprint(len(x))",
 		"options": [
 			{
 				"answer": "0",
@@ -571,11 +571,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Tuples"]
 	},
 	{
-		"question": "What is the purpose of the 'pass' statement in Python?",
+		"question": "What is the purpose of the 'pass' statement?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -591,17 +591,17 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to raise an exception in Python.",
+				"answer": "It is used to raise an exception.",
 				"rightAnswer": false
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def multiply(x, y=2):\n    return x * y\n\nresult = multiply(3)\nprint(result)",
 		"options": [
 			{
 				"answer": "2",
@@ -621,12 +621,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -646,7 +646,7 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
@@ -658,11 +658,11 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "The GIL prevents the execution of multi-threaded programs in Python.",
+				"answer": "The GIL prevents the execution of multi-threaded programs.",
 				"rightAnswer": false
 			},
 			{
-				"answer": "The GIL is responsible for garbage collection in Python.",
+				"answer": "The GIL is responsible for garbage collection.",
 				"rightAnswer": false
 			},
 			{
@@ -671,12 +671,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Concurrency"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x, y):\n    return x / y\n\nresult = my_func(10, 0)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x, y):\n    return x / y\n\nresult = my_func(10, 0)\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -696,12 +696,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Error Handling"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = {1: 'one', 2: 'two', 3: 'three'}\nprint(x.get(4, 'four'))\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = {1: 'one', 2: 'two', 3: 'three'}\nprint(x.get(4, 'four'))",
 		"options": [
 			{
 				"answer": "1",
@@ -721,11 +721,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Dictionaries"]
 	},
 	{
-		"question": "What is the purpose of the 'super()' function in Python?",
+		"question": "What is the purpose of the 'super()' function?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -737,7 +737,7 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to handle exceptions in Python.",
+				"answer": "It is used to handle exceptions.",
 				"rightAnswer": false
 			},
 			{
@@ -746,12 +746,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Classes"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i * i for i in x if i % 2 == 0]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4, 5]\nresult = [i * i for i in x if i % 2 == 0]\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 4, 9, 16, 25]",
@@ -771,12 +771,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["List Comprehension"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = True\ny = False\nz = False\nif x or y and z:\n    print('Hello')\nelse:\n    print('World')\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = True\ny = False\nz = False\nif x or y and z:\n    print('Hello')\nelse:\n    print('World')",
 		"options": [
 			{
 				"answer": "Hello",
@@ -796,12 +796,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\ny = x\ny.append(5)\nprint(len(x))\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\ny = x\ny.append(5)\nprint(len(x))",
 		"options": [
 			{
 				"answer": "0",
@@ -821,11 +821,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the purpose of the 'yield' keyword in Python?",
+		"question": "What is the purpose of the 'yield' keyword?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -837,7 +837,7 @@
 				"rightAnswer": false
 			},
 			{
-				"answer": "It is used to handle exceptions in Python.",
+				"answer": "It is used to handle exceptions.",
 				"rightAnswer": false
 			},
 			{
@@ -846,12 +846,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Generators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 1\n\nx = 10\nmy_func(x)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    x += 1\n\nx = 10\nmy_func(x)\nprint(x)",
 		"options": [
 			{
 				"answer": "10",
@@ -871,12 +871,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i * 2 for i in x if i % 2 == 0]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4, 5]\nresult = [i * 2 for i in x if i % 2 == 0]\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 2, 3, 4, 5]",
@@ -896,12 +896,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["List Comprehension"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nprint(x[7:])\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 'Hello, World!'\nprint(x[7:])",
 		"options": [
 			{
 				"answer": "Hello",
@@ -921,11 +921,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Strings"]
 	},
 	{
-		"question": "What is the purpose of the 'with' statement in Python?",
+		"question": "What is the purpose of the 'with' statement?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -933,7 +933,7 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to handle exceptions in Python.",
+				"answer": "It is used to handle exceptions.",
 				"rightAnswer": false
 			},
 			{
@@ -946,12 +946,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["File Handling"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\ny = x\ny = y + [5]\nprint(len(x))\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\ny = x\ny = y + [5]\nprint(len(x))",
 		"options": [
 			{
 				"answer": "0",
@@ -971,12 +971,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 3\nresult = x % y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = 3\nresult = x % y\nprint(result)",
 		"options": [
 			{
 				"answer": "3",
@@ -996,12 +996,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x * 2\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = x * 2\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 2, 3, 1, 2, 3]",
@@ -1021,11 +1021,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the purpose of the 'pass' statement in Python?",
+		"question": "What is the purpose of the 'pass' statement?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -1041,17 +1041,17 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to handle exceptions in Python.",
+				"answer": "It is used to handle exceptions.",
 				"rightAnswer": false
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [10, 20, 30, 40, 50]\nresult = x[-3]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [10, 20, 30, 40, 50]\nresult = x[-3]\nprint(result)",
 		"options": [
 			{
 				"answer": "30",
@@ -1071,12 +1071,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 2\ny = 5\nresult = x ** y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 2\ny = 5\nresult = x ** y\nprint(result)",
 		"options": [
 			{
 				"answer": "7",
@@ -1096,12 +1096,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x // y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 5\ny = 2\nresult = x // y\nprint(result)",
 		"options": [
 			{
 				"answer": "2",
@@ -1121,11 +1121,11 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the purpose of the 'super()' function in Python?",
+		"question": "What is the purpose of the 'super()' function?",
 		"codeBlock": "",
 		"options": [
 			{
@@ -1133,7 +1133,7 @@
 				"rightAnswer": true
 			},
 			{
-				"answer": "It is used to handle exceptions in Python.",
+				"answer": "It is used to handle exceptions.",
 				"rightAnswer": false
 			},
 			{
@@ -1146,12 +1146,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Classes"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    print(x)\n\nmy_func(5)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x=10):\n    print(x)\n\nmy_func(5)",
 		"options": [
 			{
 				"answer": "10",
@@ -1171,12 +1171,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = [i for i in x if i % 2 == 0]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4, 5]\nresult = [i for i in x if i % 2 == 0]\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 2, 3, 4, 5]",
@@ -1196,12 +1196,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["List Comprehension"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 20\nresult = x > y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = 20\nresult = x > y\nprint(result)",
 		"options": [
 			{
 				"answer": "True",
@@ -1221,7 +1221,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
@@ -1246,12 +1246,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Classes"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x % y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 5\ny = 2\nresult = x % y\nprint(result)",
 		"options": [
 			{
 				"answer": "2",
@@ -1271,12 +1271,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nx.append([4, 5])\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nx.append([4, 5])\nprint(x)",
 		"options": [
 			{
 				"answer": "[1, 2, 3, [4, 5]]",
@@ -1296,7 +1296,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
@@ -1321,12 +1321,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Strings"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 2\nresult = x / y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 5\ny = 2\nresult = x / y\nprint(result)",
 		"options": [
 			{
 				"answer": "2.5",
@@ -1346,12 +1346,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 5\ny = 3\nresult = x ** (1 / y)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 5\ny = 3\nresult = x ** (1 / y)\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -1371,12 +1371,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nresult = x > 5 and y < 8\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = 5\nresult = x > 5 and y < 8\nprint(result)",
 		"options": [
 			{
 				"answer": "True",
@@ -1396,7 +1396,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
@@ -1421,12 +1421,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = [i * 2 for i in x]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = [i * 2 for i in x]\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 2, 3, 1, 2, 3]",
@@ -1446,12 +1446,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["List Comprehension"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    if x == 0:\n        return 0\n    return x + my_func(x - 1)\n\nresult = my_func(5)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    if x == 0:\n        return 0\n    return x + my_func(x - 1)\n\nresult = my_func(5)\nprint(result)",
 		"options": [
 			{
 				"answer": "0",
@@ -1471,12 +1471,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Recursion"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 'Hello'\nprint(x[1:4])\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 'Hello'\nprint(x[1:4])",
 		"options": [
 			{
 				"answer": "'ell'",
@@ -1496,7 +1496,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Strings"]
 	},
 	{
@@ -1521,12 +1521,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    return x * 2\n\nresult = my_func('Hello')\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    return x * 2\n\nresult = my_func('Hello')\nprint(result)",
 		"options": [
 			{
 				"answer": "'HelloHello'",
@@ -1546,12 +1546,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = list(map(lambda n: n ** 2, x))\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\nresult = list(map(lambda n: n ** 2, x))\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 4, 9, 16]",
@@ -1571,12 +1571,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lambda Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = list(filter(lambda n: n % 2 == 0, x))\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\nresult = list(filter(lambda n: n % 2 == 0, x))\nprint(result)",
 		"options": [
 			{
 				"answer": "[2, 4]",
@@ -1596,7 +1596,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lambda Functions"]
 	},
 	{
@@ -1621,12 +1621,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x, y=5):\n    return x + y\n\nresult = my_func(10)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x, y=5):\n    return x + y\n\nresult = my_func(10)\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -1646,12 +1646,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\nx.append(4)\nprint(y)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\ny = x\nx.append(4)\nprint(y)",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -1671,12 +1671,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = x[1:4:2]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4, 5]\nresult = x[1:4:2]\nprint(result)",
 		"options": [
 			{
 				"answer": "[2, 4]",
@@ -1696,7 +1696,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
@@ -1721,12 +1721,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -1746,12 +1746,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\nresult = (x := x + 1) * 2\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\nresult = (x := x + 1) * 2\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -1771,12 +1771,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Operators"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = {'a': 1, 'b': 2}\nresult = x.get('c', 3)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = {'a': 1, 'b': 2}\nresult = x.get('c', 3)\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -1796,7 +1796,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Dictionaries"]
 	},
 	{
@@ -1821,12 +1821,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Exception Handling"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = [n ** 2 for n in x if n % 2 == 0]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = [n ** 2 for n in x if n % 2 == 0]\nprint(result)",
 		"options": [
 			{
 				"answer": "[4]",
@@ -1846,12 +1846,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["List Comprehension"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -1871,12 +1871,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 'Hello, World!'\nresult = x.split(',')\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 'Hello, World!'\nresult = x.split(',')\nprint(result)",
 		"options": [
 			{
 				"answer": "['Hello', ' World!']",
@@ -1896,7 +1896,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Strings"]
 	},
 	{
@@ -1921,12 +1921,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x[::-1]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = x[::-1]\nprint(result)",
 		"options": [
 			{
 				"answer": "[3, 2, 1]",
@@ -1946,12 +1946,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 10\n    return x\n\nx = 5\nresult = my_func(x)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    x += 10\n    return x\n\nx = 5\nresult = my_func(x)\nprint(x)",
 		"options": [
 			{
 				"answer": "5",
@@ -1971,12 +1971,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = [n for n in x if n % 2 == 0]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\nresult = [n for n in x if n % 2 == 0]\nprint(result)",
 		"options": [
 			{
 				"answer": "[2, 4]",
@@ -1996,7 +1996,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["List Comprehension"]
 	},
 	{
@@ -2021,12 +2021,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Strings"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -2046,12 +2046,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 5\nresult = x ** 3 if x > 3 else x ** 2\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 5\nresult = x ** 3 if x > 3 else x ** 2\nprint(result)",
 		"options": [
 			{
 				"answer": "8",
@@ -2071,12 +2071,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Conditional Statements"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = {1, 2, 3}\nresult = len(x)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = {1, 2, 3}\nresult = len(x)\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -2096,7 +2096,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Sets"]
 	},
 	{
@@ -2121,12 +2121,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["File Handling"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4]\nresult = sum(x)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4]\nresult = sum(x)\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -2146,12 +2146,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(*args):\n    return sum(args)\n\nresult = my_func(1, 2, 3, 4)\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -2171,12 +2171,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.pop()\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = x.pop()\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -2196,7 +2196,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
@@ -2221,12 +2221,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.reverse()\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = x.reverse()\nprint(x)",
 		"options": [
 			{
 				"answer": "[3, 2, 1]",
@@ -2246,12 +2246,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x += 10\n    return x\n\nx = [5]\nresult = my_func(x)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    x += 10\n    return x\n\nx = [5]\nresult = my_func(x)\nprint(x)",
 		"options": [
 			{
 				"answer": "[5]",
@@ -2271,12 +2271,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = 10\ny = 5\nresult = x // y\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = 10\ny = 5\nresult = x // y\nprint(result)",
 		"options": [
 			{
 				"answer": "2.0",
@@ -2296,7 +2296,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Arithmetic Operations"]
 	},
 	{
@@ -2321,12 +2321,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3, 4, 5]\nresult = x[1:3]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3, 4, 5]\nresult = x[1:3]\nprint(result)",
 		"options": [
 			{
 				"answer": "[1, 2, 3]",
@@ -2346,12 +2346,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    return x\n\nresult = my_func()\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x=10):\n    return x\n\nresult = my_func()\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -2371,12 +2371,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x[3]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = x[3]\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -2396,7 +2396,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
@@ -2421,12 +2421,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = {'a': 1, 'b': 2, 'c': 3}\nresult = x.get('d', 0)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = {'a': 1, 'b': 2, 'c': 3}\nresult = x.get('d', 0)\nprint(result)",
 		"options": [
 			{
 				"answer": "0",
@@ -2446,12 +2446,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Dictionaries"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x):\n    x[0] = 10\n\nx = [1, 2, 3]\nmy_func(x)\nprint(x)",
 		"options": [
 			{
 				"answer": "[10, 2, 3]",
@@ -2471,12 +2471,12 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nresult = x[1]\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = (1, 2, 3)\nresult = x[1]\nprint(result)",
 		"options": [
 			{
 				"answer": "1",
@@ -2496,7 +2496,7 @@
 			}
 		],
 		"level": "Easy",
-		"language": "Python",
+		"language": "python",
 		"category": ["Tuples"]
 	},
 	{
@@ -2521,12 +2521,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Control Flow"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\nresult = x.index(2)\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "x = [1, 2, 3]\nresult = x.index(2)\nprint(result)",
 		"options": [
 			{
 				"answer": "0",
@@ -2546,12 +2546,12 @@
 			}
 		],
 		"level": "Medium",
-		"language": "Python",
+		"language": "python",
 		"category": ["Lists"]
 	},
 	{
-		"question": "What is the output of the following code?\n\n```python\ndef my_func(x=10):\n    x += 1\n    return x\n\nresult = my_func()\nprint(result)\n```",
-		"codeBlock": "",
+		"question": "What is the output of the following code?",
+		"codeBlock": "def my_func(x=10):\n    x += 1\n    return x\n\nresult = my_func()\nprint(result)",
 		"options": [
 			{
 				"answer": "10",
@@ -2571,7 +2571,7 @@
 			}
 		],
 		"level": "Hard",
-		"language": "Python",
+		"language": "python",
 		"category": ["Functions"]
 	}
 ]

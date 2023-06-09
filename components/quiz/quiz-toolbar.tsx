@@ -1,4 +1,4 @@
-import { Box, Flex, Tag } from '@chakra-ui/react'
+import { Flex, Tag } from '@chakra-ui/react'
 
 interface QuizToolbarProps {
 	title: string

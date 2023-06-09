@@ -21,10 +21,7 @@ const fonts = {
 
 const styles = {
 	global: {
-		body: {
-			maxWidth: '90rem',
-			mx: 'auto',
-		},
+		body: {},
 	},
 }
 

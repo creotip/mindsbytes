@@ -1,6 +1,5 @@
 'use client'
 import { Box, BoxProps } from '@chakra-ui/react'
-import { AnimatePresence, motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 
 export const Content = (props: BoxProps) => {
