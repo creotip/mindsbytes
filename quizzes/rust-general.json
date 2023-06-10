@@ -406,19 +406,23 @@
 		"options": [
 			{
 				"answer": "let person = Person { name: 'John', age: 25 };",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "let person = Person { name: \"John\", age: 25 };",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "let person = Person(name: 'John', age: 25);",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "let person = Person(name = 'John', age = 25);",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Easy",
@@ -531,19 +535,23 @@
 		"options": [
 			{
 				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    _ => println!(\"Other\"),\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    3 => println!(\"Three\"),\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    2 => println!(\"Two Again\"),\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    3 => println!(\"Three\"),\n    _ => println!(\"Other\"),\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -1081,19 +1089,23 @@
 		"options": [
 			{
 				"answer": "fn add(a, b) -> i32 { a + b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn add(a: i32, b: i32) -> i32 { a + b }",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "function add(a: i32, b: i32) -> i32 { a + b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn add(a, b) { a + b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Easy",
@@ -2631,19 +2643,23 @@
 		"options": [
 			{
 				"answer": "fn add(a: i32, b: i32) -> i32 { a + b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn greet() { println!(\"Hello!\"); panic!(); }",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn multiply(a: i32, b: i32) -> i32 { a * b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn square(x: i32) -> i32 { x * x }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Medium",
@@ -2781,19 +2797,23 @@
 		"options": [
 			{
 				"answer": "fn add(a: i32, b: i32) -> i32 { a + b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn apply_twice(f: fn(i32) -> i32, x: i32) -> i32 { f(f(x)) }",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn multiply(a: i32, b: i32) -> i32 { a * b }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn square(x: i32) -> i32 { x * x }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Medium",

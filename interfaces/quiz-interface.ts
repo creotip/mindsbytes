@@ -1,6 +1,7 @@
 export interface QuizOption {
 	answer: string
 	rightAnswer: boolean
+	answerIsCode?: boolean
 }
 
 export interface SingleQuiz {

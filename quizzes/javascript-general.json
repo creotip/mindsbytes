@@ -1,789 +1,781 @@
 [
-  {
-    "question": "What is the output of the following code?",
-    "codeBlock": "var x = 5;\nvar y = 10;\nvar z = x + y;\nconsole.log(z);",
-    "options": [
-      {
-        "answer": "15",
-        "rightAnswer": true
-      },
-      {
-        "answer": "510",
-        "rightAnswer": false
-      },
-      {
-        "answer": "5 + 10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "x + y",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["variables", "operators", "console.log"]
-  },
-  {
-    "question": "What is the result of the following expression?",
-    "codeBlock": "console.log(2 + '2' - 1);",
-    "options": [
-      {
-        "answer": "22",
-        "rightAnswer": false
-      },
-      {
-        "answer": "21",
-        "rightAnswer": true
-      },
-      {
-        "answer": "NaN",
-        "rightAnswer": false
-      },
-      {
-        "answer": "3",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Type Coercion", "Operators"]
-  },
-  {
-    "question": "What is the value of x after the following code is executed?",
-    "codeBlock": "let x = 5;\nif (true) {\n  let x = 10;\n}\nconsole.log(x);",
-    "options": [
-      {
-        "answer": "5",
-        "rightAnswer": true
-      },
-      {
-        "answer": "10",
-        "rightAnswer": false
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": false
-      },
-      {
-        "answer": "15",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Variables", "Block Scope"]
-  },
-  {
-    "question": "What will the following code output?",
-    "codeBlock": "for (var i = 0; i < 5; i++) {\n  setTimeout(function() {\n    console.log(i);\n  }, 1000);\n}",
-    "options": [
-      {
-        "answer": "0 1 2 3 4",
-        "rightAnswer": false
-      },
-      {
-        "answer": "5 5 5 5 5",
-        "rightAnswer": true
-      },
-      {
-        "answer": "1 2 3 4 5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "JavaScript",
-    "category": ["Closures", "Asynchronous"]
-  },
-  {
-    "question": "What is the output of the following code?",
-    "codeBlock": "console.log(typeof null);",
-    "options": [
-      {
-        "answer": "null",
-        "rightAnswer": false
-      },
-      {
-        "answer": "object",
-        "rightAnswer": true
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": false
-      },
-      {
-        "answer": "string",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Type Coercion", "Data Types"]
-  },
-  {
-    "question": "What will the following code output?",
-    "codeBlock": "const arr = [1, 2, 3];\narr.length = 0;\nconsole.log(arr);",
-    "options": [
-      {
-        "answer": "[1, 2, 3]",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[]",
-        "rightAnswer": true
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": false
-      },
-      {
-        "answer": "[0]",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Arrays", "Data Manipulation"]
-  },
-  {
-    "question": "What is the output of the following code?",
-    "codeBlock": "console.log(5 === '5');",
-    "options": [
-      {
-        "answer": "true",
-        "rightAnswer": false
-      },
-      {
-        "answer": "false",
-        "rightAnswer": true
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": false
-      },
-      {
-        "answer": "NaN",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Type Coercion", "Comparison Operators"]
-  },
-  {
-    "question": "What will the following code output?",
-    "codeBlock": "console.log(Math.min(1, null, NaN, 2, undefined));",
-    "options": [
-      {
-        "answer": "null",
-        "rightAnswer": false
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": false
-      },
-      {
-        "answer": "NaN",
-        "rightAnswer": false
-      },
-      {
-        "answer": "NaN",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Math Functions", "NaN"]
-  },
-  {
-    "question": "What is the output of the following code?",
-    "codeBlock": "console.log(x);\nvar x = 5;",
-    "options": [
-      {
-        "answer": "5",
-        "rightAnswer": false
-      },
-      {
-        "answer": "undefined",
-        "rightAnswer": true
-      },
-      {
-        "answer": "ReferenceError",
-        "rightAnswer": false
-      },
-      {
-        "answer": "null",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Hoisting"]
-  },
-  {
-    "question": "Which of the following correctly defines an arrow function in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "function add(a, b) { return a + b; }",
-        "rightAnswer": false
-      },
-      {
-        "answer": "const add = (a, b) => { return a + b; }",
-        "rightAnswer": true
-      },
-      {
-        "answer": "function add(a, b) => { return a + b; }",
-        "rightAnswer": false
-      },
-      {
-        "answer": "const add = function(a, b) { return a + b; }",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Arrow Function"]
-  },
-  {
-    "question": "What does IIFE stand for?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Immediately Invoked Functional Expression",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Immediately Invoked Function Execution",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Immediately Instantiated Function Expression",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Immediately Invoked Function Event",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["IIFE"]
-  },
-  {
-    "question": "What is the difference between the `bind`, `call`, and `apply` functions?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "`bind` returns a new function, `call` and `apply` invoke the function immediately",
-        "rightAnswer": false
-      },
-      {
-        "answer": "`bind` allows you to set the context and curry arguments, `call` and `apply` set the context and invoke the function immediately",
-        "rightAnswer": true
-      },
-      {
-        "answer": "`call` and `apply` return a new function, `bind` invokes the function immediately",
-        "rightAnswer": false
-      },
-      {
-        "answer": "`call` allows you to set the context and curry arguments, `bind` and `apply` set the context and invoke the function immediately",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Function Binding"]
-  },
-  {
-    "question": "What is the difference between the job queue and the event loop in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "There is no difference, they refer to the same thing",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The job queue is where asynchronous tasks are scheduled, while the event loop is responsible for picking tasks from the job queue and executing them",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The event loop is where asynchronous tasks are scheduled, while the job queue is responsible for picking tasks from the event loop and executing them",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The event loop and job queue are used interchangeably to refer to the mechanism of handling asynchronous tasks in JavaScript",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Job Queue", "Event Loop"]
-  },
-  {
-    "question": "Which design pattern focuses on creating objects through a factory method?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Singleton",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Observer",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Prototype",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Factory",
-        "rightAnswer": true
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Design Patterns"]
-  },
-  {
-    "question": "What is the difference between pass by reference and pass by value in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "In pass by reference, the actual value is passed to a function, while in pass by value, a reference to the value is passed",
-        "rightAnswer": false
-      },
-      {
-        "answer": "In pass by reference, a copy of the value is passed to a function, while in pass by value, the actual value is passed",
-        "rightAnswer": false
-      },
-      {
-        "answer": "In pass by reference, changes to the parameter inside the function affect the original value, while in pass by value, changes inside the function do not affect the original value",
-        "rightAnswer": true
-      },
-      {
-        "answer": "There is no difference, pass by reference and pass by value are the same in JavaScript",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Reference", "Value"]
-  },
-  {
-    "question": "What is the difference between deep copy and shallow copy?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Deep copy creates a new object with the same values as the original, while shallow copy creates a new object with references to the same values as the original",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Deep copy creates a new object with references to the same values as the original, while shallow copy creates a new object with the same values as the original",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Deep copy and shallow copy are the same in JavaScript",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Deep copy and shallow copy are concepts related to pass by reference and pass by value",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Copy"]
-  },
-  {
-    "question": "What are closures in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Closures are functions that are defined inside other functions",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Closures are functions that have access to variables from their outer (enclosing) function even after the outer function has finished executing",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Closures are functions that can only be invoked once",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Closures are functions that have access to variables from the global scope",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Hard",
-    "language": "JavaScript",
-    "category": ["Closures"]
-  },
-  {
-    "question": "What is the call stack in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "The call stack is a data structure that keeps track of function calls in the JavaScript code",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The call stack is a JavaScript function used to make HTTP requests",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The call stack is a stack data structure used for managing event handlers",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The call stack is a mechanism for handling asynchronous operations in JavaScript",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Call Stack"]
-  },
-  {
-    "question": "What is stored in the heap memory in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Primitive values such as numbers and booleans",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Function definitions and global variables",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Objects and non-primitive values such as arrays and objects",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Execution context and local variables",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Heap Memory"]
-  },
-  {
-    "question": "What are some key concepts in functional programming?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Mutability, loops, and object-oriented programming",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Higher-order functions, immutability, and recursion",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Variables, conditionals, and arrays",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Inheritance, encapsulation, and polymorphism",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Functional Programming"]
-  },
-  {
-    "question": "What are the benefits of using promises in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Promises simplify asynchronous code and enable better error handling through chaining and catch blocks",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Promises eliminate the need for callbacks and enable direct synchronous execution of asynchronous tasks",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Promises provide a way to handle multi-threading in JavaScript",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Promises improve memory management in JavaScript",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": [
-      "Promises"
-    ]
-  },
-  {
-    "question": "What does the `async/await` syntax in JavaScript provide?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "An alternative to promises for handling asynchronous operations",
-        "rightAnswer": true
-      },
-      {
-        "answer": "A way to execute JavaScript code synchronously",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A mechanism for defining event listeners in JavaScript",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A syntax for creating arrow functions in JavaScript",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Async/Await"]
-  },
-  {
-    "question": "What does the `this` keyword refer to in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "The current object that is being executed",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The parent object of the current object",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The global window object",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The prototype of the current object",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["This Keyword"]
-  },
-  {
-    "question": "What happens when a function is invoked with the `new` keyword in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "The function is treated as a constructor and a new object is created with its prototype",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The function is executed immediately and its return value is assigned to a new variable",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The function is converted into an arrow function and executed",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The function is called recursively with updated arguments",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Constructors"]
-  },
-  {
-    "question": "What is a prototype in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "A blueprint object used to create other objects with shared properties and methods",
-        "rightAnswer": true
-      },
-      {
-        "answer": "A special type of function used to define object behavior",
-        "rightAnswer": false
-      },
-      {
-        "answer": "An object that holds references to its parent objects",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A data structure used for efficient property access in objects",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Prototype"]
-  },
-  {
-    "question": "What is a Singleton design pattern?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "A design pattern that restricts the instantiation of a class to a single object",
-        "rightAnswer": true
-      },
-      {
-        "answer": "A design pattern that allows the creation of multiple instances of a class",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A design pattern that delegates object creation to a factory method",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A design pattern that provides a way to observe and notify changes in object state",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Design Patterns"]
-  },
-  {
-    "question": "What is the difference between a deep copy and a shallow copy in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "A deep copy creates a new object with completely independent values, while a shallow copy creates a new object with references to the same values",
-        "rightAnswer": true
-      },
-      {
-        "answer": "A deep copy creates a new object with references to the same values, while a shallow copy creates a new object with completely independent values",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A deep copy and a shallow copy are the same in JavaScript",
-        "rightAnswer": false
-      },
-      {
-        "answer": "A deep copy and a shallow copy refer to different ways of copying functions in JavaScript",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Copy"]
-  },
-  {
-    "question": "What are some key concepts in functional programming?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Immutability, higher-order functions, and pure functions",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Inheritance, encapsulation, and polymorphism",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Loops, conditionals, and variables",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Asynchronous programming, callbacks, and promises",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Medium",
-    "language": "JavaScript",
-    "category": ["Functional Programming"]
-  },
-  {
-    "question": "What is the purpose of promises in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "Promises are used to handle asynchronous operations and provide a way to handle the success or failure of those operations",
-        "rightAnswer": true
-      },
-      {
-        "answer": "Promises are used to define object blueprints and create instances of objects",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Promises are used to encapsulate data and behavior in JavaScript",
-        "rightAnswer": false
-      },
-      {
-        "answer": "Promises are used to define event listeners and handle user interactions",
-        "rightAnswer": false
-      }
-    ],
-    "level": "Easy",
-    "language": "JavaScript",
-    "category": ["Promises"]
-  },
-  {
-    "question": "What is the behavior of the async keyword in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "The async keyword is used to define asynchronous functions that return promises",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The async keyword is used to define synchronous functions that don't require promises",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The async keyword is used to handle errors in JavaScript code",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The async keyword is used to define functions that can only be invoked once",
-        "rightAnswer": false
-      }
-    ],
-    "language": "JavaScript",
-    "category": ["Async/Await", "Promises"],
-    "level": "Easy"
-  },
-  {
-    "question": "What is the behavior of the await keyword in JavaScript?",
-    "codeBlock": "",
-    "options": [
-      {
-        "answer": "The await keyword is used to wait for a promise to resolve or reject",
-        "rightAnswer": true
-      },
-      {
-        "answer": "The await keyword is used to wait for a promise to resolve",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The await keyword is used to wait for a promise to reject",
-        "rightAnswer": false
-      },
-      {
-        "answer": "The await keyword is used to wait for a promise to resolve or reject, but only if the promise is asynchronous",
-        "rightAnswer": false
-      }
-    ],
-    "language": "JavaScript",
-    "category": ["Async/Await", "Promises"],
-    "level": "Easy"
-  }
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "var x = 5;\nvar y = 10;\nvar z = x + y;\nconsole.log(z);",
+		"options": [
+			{
+				"answer": "15",
+				"rightAnswer": true
+			},
+			{
+				"answer": "510",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5 + 10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "x + y",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["variables", "operators", "console.log"]
+	},
+	{
+		"question": "What is the result of the following expression?",
+		"codeBlock": "console.log(2 + '2' - 1);",
+		"options": [
+			{
+				"answer": "22",
+				"rightAnswer": false
+			},
+			{
+				"answer": "21",
+				"rightAnswer": true
+			},
+			{
+				"answer": "NaN",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Type Coercion", "Operators"]
+	},
+	{
+		"question": "What is the value of x after the following code is executed?",
+		"codeBlock": "let x = 5;\nif (true) {\n  let x = 10;\n}\nconsole.log(x);",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "15",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Variables", "Block Scope"]
+	},
+	{
+		"question": "What will the following code output?",
+		"codeBlock": "for (var i = 0; i < 5; i++) {\n  setTimeout(function() {\n    console.log(i);\n  }, 1000);\n}",
+		"options": [
+			{
+				"answer": "0 1 2 3 4",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5 5 5 5 5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1 2 3 4 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "JavaScript",
+		"category": ["Closures", "Asynchronous"]
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "console.log(typeof null);",
+		"options": [
+			{
+				"answer": "null",
+				"rightAnswer": false
+			},
+			{
+				"answer": "object",
+				"rightAnswer": true
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "string",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Type Coercion", "Data Types"]
+	},
+	{
+		"question": "What will the following code output?",
+		"codeBlock": "const arr = [1, 2, 3];\narr.length = 0;\nconsole.log(arr);",
+		"options": [
+			{
+				"answer": "[1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[0]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Arrays", "Data Manipulation"]
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "console.log(5 === '5');",
+		"options": [
+			{
+				"answer": "true",
+				"rightAnswer": false
+			},
+			{
+				"answer": "false",
+				"rightAnswer": true
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "NaN",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Type Coercion", "Comparison Operators"]
+	},
+	{
+		"question": "What will the following code output?",
+		"codeBlock": "console.log(Math.min(1, null, NaN, 2, undefined));",
+		"options": [
+			{
+				"answer": "null",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "NaN",
+				"rightAnswer": false
+			},
+			{
+				"answer": "NaN",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Math Functions", "NaN"]
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "console.log(x);\nvar x = 5;",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": true
+			},
+			{
+				"answer": "ReferenceError",
+				"rightAnswer": false
+			},
+			{
+				"answer": "null",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Hoisting"]
+	},
+	{
+		"question": "Which of the following correctly defines an arrow function in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "function add(a, b) { return a + b; }",
+				"rightAnswer": false,
+				"answerIsCode": true
+			},
+			{
+				"answer": "const add = (a, b) => { return a + b; }",
+				"rightAnswer": true,
+				"answerIsCode": true
+			},
+			{
+				"answer": "function add(a, b) => { return a + b; }",
+				"rightAnswer": false,
+				"answerIsCode": true
+			},
+			{
+				"answer": "const add = function(a, b) { return a + b; }",
+				"rightAnswer": false,
+				"answerIsCode": true
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Arrow Function"]
+	},
+	{
+		"question": "What does IIFE stand for?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Immediately Invoked Functional Expression",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Immediately Invoked Function Execution",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Immediately Instantiated Function Expression",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Immediately Invoked Function Event",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["IIFE"]
+	},
+	{
+		"question": "What is the difference between the `bind`, `call`, and `apply` functions?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "`bind` returns a new function, `call` and `apply` invoke the function immediately",
+				"rightAnswer": false
+			},
+			{
+				"answer": "`bind` allows you to set the context and curry arguments, `call` and `apply` set the context and invoke the function immediately",
+				"rightAnswer": true
+			},
+			{
+				"answer": "`call` and `apply` return a new function, `bind` invokes the function immediately",
+				"rightAnswer": false
+			},
+			{
+				"answer": "`call` allows you to set the context and curry arguments, `bind` and `apply` set the context and invoke the function immediately",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Function Binding"]
+	},
+	{
+		"question": "What is the difference between the job queue and the event loop in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "There is no difference, they refer to the same thing",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The job queue is where asynchronous tasks are scheduled, while the event loop is responsible for picking tasks from the job queue and executing them",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The event loop is where asynchronous tasks are scheduled, while the job queue is responsible for picking tasks from the event loop and executing them",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The event loop and job queue are used interchangeably to refer to the mechanism of handling asynchronous tasks in JavaScript",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Job Queue", "Event Loop"]
+	},
+	{
+		"question": "Which design pattern focuses on creating objects through a factory method?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Singleton",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Observer",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Prototype",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Factory",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Design Patterns"]
+	},
+	{
+		"question": "What is the difference between pass by reference and pass by value in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "In pass by reference, the actual value is passed to a function, while in pass by value, a reference to the value is passed",
+				"rightAnswer": false
+			},
+			{
+				"answer": "In pass by reference, a copy of the value is passed to a function, while in pass by value, the actual value is passed",
+				"rightAnswer": false
+			},
+			{
+				"answer": "In pass by reference, changes to the parameter inside the function affect the original value, while in pass by value, changes inside the function do not affect the original value",
+				"rightAnswer": true
+			},
+			{
+				"answer": "There is no difference, pass by reference and pass by value are the same in JavaScript",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Reference", "Value"]
+	},
+	{
+		"question": "What is the difference between deep copy and shallow copy?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Deep copy creates a new object with the same values as the original, while shallow copy creates a new object with references to the same values as the original",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Deep copy creates a new object with references to the same values as the original, while shallow copy creates a new object with the same values as the original",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Deep copy and shallow copy are the same in JavaScript",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Deep copy and shallow copy are concepts related to pass by reference and pass by value",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Copy"]
+	},
+	{
+		"question": "What are closures in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Closures are functions that are defined inside other functions",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Closures are functions that have access to variables from their outer (enclosing) function even after the outer function has finished executing",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Closures are functions that can only be invoked once",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Closures are functions that have access to variables from the global scope",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "JavaScript",
+		"category": ["Closures"]
+	},
+	{
+		"question": "What is the call stack in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The call stack is a data structure that keeps track of function calls in the JavaScript code",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The call stack is a JavaScript function used to make HTTP requests",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The call stack is a stack data structure used for managing event handlers",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The call stack is a mechanism for handling asynchronous operations in JavaScript",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Call Stack"]
+	},
+	{
+		"question": "What is stored in the heap memory in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Primitive values such as numbers and booleans",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Function definitions and global variables",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Objects and non-primitive values such as arrays and objects",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Execution context and local variables",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Heap Memory"]
+	},
+	{
+		"question": "What are some key concepts in functional programming?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Mutability, loops, and object-oriented programming",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Higher-order functions, immutability, and recursion",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Variables, conditionals, and arrays",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Inheritance, encapsulation, and polymorphism",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Functional Programming"]
+	},
+	{
+		"question": "What are the benefits of using promises in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Promises simplify asynchronous code and enable better error handling through chaining and catch blocks",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Promises eliminate the need for callbacks and enable direct synchronous execution of asynchronous tasks",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Promises provide a way to handle multi-threading in JavaScript",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Promises improve memory management in JavaScript",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Promises"]
+	},
+	{
+		"question": "What does the `async/await` syntax in JavaScript provide?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "An alternative to promises for handling asynchronous operations",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A way to execute JavaScript code synchronously",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A mechanism for defining event listeners in JavaScript",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A syntax for creating arrow functions in JavaScript",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Async/Await"]
+	},
+	{
+		"question": "What does the `this` keyword refer to in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The current object that is being executed",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The parent object of the current object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The global window object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The prototype of the current object",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["This Keyword"]
+	},
+	{
+		"question": "What happens when a function is invoked with the `new` keyword in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The function is treated as a constructor and a new object is created with its prototype",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The function is executed immediately and its return value is assigned to a new variable",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The function is converted into an arrow function and executed",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The function is called recursively with updated arguments",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Constructors"]
+	},
+	{
+		"question": "What is a prototype in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A blueprint object used to create other objects with shared properties and methods",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A special type of function used to define object behavior",
+				"rightAnswer": false
+			},
+			{
+				"answer": "An object that holds references to its parent objects",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A data structure used for efficient property access in objects",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Prototype"]
+	},
+	{
+		"question": "What is a Singleton design pattern?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A design pattern that restricts the instantiation of a class to a single object",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A design pattern that allows the creation of multiple instances of a class",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A design pattern that delegates object creation to a factory method",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A design pattern that provides a way to observe and notify changes in object state",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Design Patterns"]
+	},
+	{
+		"question": "What is the difference between a deep copy and a shallow copy in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A deep copy creates a new object with completely independent values, while a shallow copy creates a new object with references to the same values",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A deep copy creates a new object with references to the same values, while a shallow copy creates a new object with completely independent values",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A deep copy and a shallow copy are the same in JavaScript",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A deep copy and a shallow copy refer to different ways of copying functions in JavaScript",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Copy"]
+	},
+	{
+		"question": "What are some key concepts in functional programming?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Immutability, higher-order functions, and pure functions",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Inheritance, encapsulation, and polymorphism",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Loops, conditionals, and variables",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Asynchronous programming, callbacks, and promises",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "JavaScript",
+		"category": ["Functional Programming"]
+	},
+	{
+		"question": "What is the purpose of promises in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Promises are used to handle asynchronous operations and provide a way to handle the success or failure of those operations",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Promises are used to define object blueprints and create instances of objects",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Promises are used to encapsulate data and behavior in JavaScript",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Promises are used to define event listeners and handle user interactions",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "JavaScript",
+		"category": ["Promises"]
+	},
+	{
+		"question": "What is the behavior of the async keyword in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The async keyword is used to define asynchronous functions that return promises",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The async keyword is used to define synchronous functions that don't require promises",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The async keyword is used to handle errors in JavaScript code",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The async keyword is used to define functions that can only be invoked once",
+				"rightAnswer": false
+			}
+		],
+		"language": "JavaScript",
+		"category": ["Async/Await", "Promises"],
+		"level": "Easy"
+	},
+	{
+		"question": "What is the behavior of the await keyword in JavaScript?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The await keyword is used to wait for a promise to resolve or reject",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The await keyword is used to wait for a promise to resolve",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The await keyword is used to wait for a promise to reject",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The await keyword is used to wait for a promise to resolve or reject, but only if the promise is asynchronous",
+				"rightAnswer": false
+			}
+		],
+		"language": "JavaScript",
+		"category": ["Async/Await", "Promises"],
+		"level": "Easy"
+	}
 ]
-
-
-
-
-
-
-
-
-
-

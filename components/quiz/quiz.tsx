@@ -47,7 +47,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 				<VStack pos="relative">
 					<Box
 						filter="blur(55px)"
-						backgroundImage="linear-gradient( -45deg, #572eab 30%, #906fda )"
+						backgroundImage="linear-gradient(-45deg, rgb(87 46 171 / 40%) 30%, rgb(144 111 218 / 40%))"
 						pos="absolute"
 						top="0"
 						left="0"
@@ -55,7 +55,7 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 						h="100%"
 					></Box>
 					<Box pos="relative" textAlign="center">
-						<Box fontSize="3.5rem" fontWeight="900" letterSpacing="2px" mb="1rem">
+						<Box fontSize="3.5rem" fontWeight="700" letterSpacing="2px" mb="1rem">
 							Quiz Finished
 						</Box>
 						<Box>Your score is {scorePercentage}%</Box>
@@ -140,36 +140,45 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 										colorScheme="purple"
 										isChecked={answersIndexMap.get(currentQuestionIndex) === i}
 									></Radio>
-									<Grid className="pre-wrapper">
-										<Box as="pre" mx="1rem" overflow="auto">
-											<Code fontSize="xs" p="4px 8px" borderRadius="4px">
-												{option.answer}
-											</Code>
-											{/* <Highlight theme={themes.nightOwl} code={option.answer} language="markdown">
-											{({ style, tokens, getLineProps, getTokenProps }) => (
-												<Box
-													as="pre"
-													style={{ ...style, backgroundColor: '#262e3d' }}
-													overflow="auto"
-													fontSize="13px"
-													p="0.6rem"
-													borderRadius="5px"
-													bgColor="#262e3d"
-												>
-													<Box as="code">
-														{tokens.map((line, i) => (
-															<div key={i} {...getLineProps({ line })}>
-																{line.map((token, key) => (
-																	<span key={key} {...getTokenProps({ token })} />
-																))}
-															</div>
-														))}
+									{option?.answerIsCode ? (
+										<Grid mx="1rem" w="100%">
+											<Highlight
+												theme={themes.nightOwl}
+												code={option.answer}
+												language={currentQuestion.language.toLowerCase()}
+											>
+												{({ style, tokens, getLineProps, getTokenProps }) => (
+													<Box
+														as="pre"
+														style={{ ...style, backgroundColor: '#262e3d' }}
+														overflow="auto"
+														fontSize="13px"
+														p="0.6rem"
+														borderRadius="5px"
+														bgColor="#262e3d"
+													>
+														<Box as="code">
+															{tokens.map((line, i) => (
+																<div key={i} {...getLineProps({ line })}>
+																	{line.map((token, key) => (
+																		<span key={key} {...getTokenProps({ token })} />
+																	))}
+																</div>
+															))}
+														</Box>
 													</Box>
-												</Box>
-											)}
-										</Highlight> */}
-										</Box>
-									</Grid>
+												)}
+											</Highlight>
+										</Grid>
+									) : (
+										<Grid className="pre-wrapper">
+											<Box as="pre" mx="1rem" whiteSpace="pre-wrap" maxW="500px" lineHeight="16px">
+												<Code fontSize="xs" p="4px 8px" borderRadius="4px">
+													{option.answer}
+												</Code>
+											</Box>
+										</Grid>
+									)}
 								</Button>
 							))}
 						</VStack>
