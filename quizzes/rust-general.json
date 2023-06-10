@@ -4640,19 +4640,23 @@
 		"options": [
 			{
 				"answer": "fn functionName<T>(param: T) { ... }",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn functionName(param: T) -> T { ... }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn functionName<T>(param: T) -> T { ... }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn functionName(param: T) { ... }",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Easy",
@@ -4790,19 +4794,23 @@
 		"options": [
 			{
 				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().rev().collect()\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().collect::<String>().chars().rev().collect::<String>()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().rev().collect::<String>()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().collect::<String>().chars().rev().collect::<String>()\n    input.chars().rev().collect::<String>()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4815,19 +4823,23 @@
 		"options": [
 			{
 				"answer": "fn is_palindrome(input: &str) -> bool {\n    input.chars().eq(input.chars().rev())\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_palindrome(input: &str) -> bool {\n    input.chars().collect::<String>() == input.chars().rev().collect::<String>()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_palindrome(input: &str) -> bool {\n    input.chars().eq(input.chars().rev())\n    input.chars().collect::<String>() == input.chars().rev().collect::<String>()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_palindrome(input: &str) -> bool {\n    let reversed = input.chars().rev().collect::<String>();\n    input == reversed\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4840,19 +4852,23 @@
 		"options": [
 			{
 				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().max().cloned()\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().max_by_key(|&x| x).cloned()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().cloned().max_by_key(|&x| x)\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().max_by_key(|&x| x).cloned()\n    arr.iter().cloned().max_by_key(|&x| x)\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4865,19 +4881,23 @@
 		"options": [
 			{
 				"answer": "fn factorial(n: u32) -> u32 {\n    if n <= 1 {\n        1\n    } else {\n        n * factorial(n - 1)\n    }\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn factorial(n: u32) -> u32 {\n    (1..n).fold(1, |acc, x| acc * x)\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn factorial(n: u32) -> u32 {\n    (1..=n).product()\n    (1..n).fold(1, |acc, x| acc * x)\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn factorial(n: u32) -> u32 {\n    if n <= 1 {\n        1\n    } else {\n        n * factorial(n - 1)\n    }\n    (1..=n).product()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4890,19 +4910,23 @@
 		"options": [
 			{
 				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let limit = (n as f64).sqrt() as u32 + 1;\n    for i in 2..limit {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    for i in 2..n {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let limit = n / 2 + 1;\n    for i in 2..limit {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let limit = (n as f32).sqrt() as u32 + 1;\n    for i in 2..limit {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4915,19 +4939,23 @@
 		"options": [
 			{
 				"answer": "fn fibonacci(n: u32) -> u32 {\n    let mut fib = (0, 1);\n    for _ in 0..n {\n        fib = (fib.1, fib.0 + fib.1);\n    }\n    fib.0\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn fibonacci(n: u32) -> u32 {\n    if n <= 1 {\n        n\n    } else {\n        fibonacci(n - 1) + fibonacci(n - 2)\n    }\n    fibonacci(n - 1) + fibonacci(n - 2)\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn fibonacci(n: u32) -> u32 {\n    if n <= 1 {\n        n\n    } else {\n        fibonacci(n - 1) + fibonacci(n - 2)\n    }\n    let mut fib = (0, 1);\n    for _ in 0..n {\n        fib = (fib.1, fib.0 + fib.1);\n    }\n    fib.0\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn fibonacci(n: u32) -> u32 {\n    let mut fib = [0, 1];\n    for i in 2..=n as usize {\n        fib[i] = fib[i - 1] + fib[i - 2];\n    }\n    fib[n as usize]\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4940,19 +4968,23 @@
 		"options": [
 			{
 				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().fold(0, |count, &x| if x == *target { count + 1 } else { count })\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().filter(|&x| *x == *target).count()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().filter(|&&x| x == *target).count()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().map(|&x| if x == *target { 1 } else { 0 }).sum()\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",
@@ -4965,19 +4997,23 @@
 		"options": [
 			{
 				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n}",
-				"rightAnswer": true
+				"rightAnswer": true,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			},
 			{
 				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n}",
-				"rightAnswer": false
+				"rightAnswer": false,
+				"answerIsCode": true
 			}
 		],
 		"level": "Hard",

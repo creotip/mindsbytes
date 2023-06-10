@@ -12,6 +12,7 @@ import {
 	Center,
 	Grid,
 	Radio,
+	Code,
 } from '@chakra-ui/react'
 import { Highlight, themes, Prism } from 'prism-react-renderer'
 import QuizToolbar from './quiz-toolbar'
@@ -19,7 +20,9 @@ import QuizToolbar from './quiz-toolbar'
 // await import('prismjs/components/prism-applescript')
 /** or **/
 require('prismjs/components/prism-python')
-require('prismjs/components/prism-rust')
+require('prismjs/components/prism-bash')
+require('prismjs/components/prism-markdown')
+// require('prismjs/components/prism-rust')
 
 interface QuizProps {
 	quizQuestions: SingleQuiz[]
@@ -137,9 +140,36 @@ export const Quiz = ({ title, quizQuestions }: QuizProps) => {
 										colorScheme="purple"
 										isChecked={answersIndexMap.get(currentQuestionIndex) === i}
 									></Radio>
-									<Box as="span" mx="1rem">
-										{option.answer}
-									</Box>
+									<Grid className="pre-wrapper">
+										<Box as="pre" mx="1rem" overflow="auto">
+											<Code fontSize="xs" p="4px 8px" borderRadius="4px">
+												{option.answer}
+											</Code>
+											{/* <Highlight theme={themes.nightOwl} code={option.answer} language="markdown">
+											{({ style, tokens, getLineProps, getTokenProps }) => (
+												<Box
+													as="pre"
+													style={{ ...style, backgroundColor: '#262e3d' }}
+													overflow="auto"
+													fontSize="13px"
+													p="0.6rem"
+													borderRadius="5px"
+													bgColor="#262e3d"
+												>
+													<Box as="code">
+														{tokens.map((line, i) => (
+															<div key={i} {...getLineProps({ line })}>
+																{line.map((token, key) => (
+																	<span key={key} {...getTokenProps({ token })} />
+																))}
+															</div>
+														))}
+													</Box>
+												</Box>
+											)}
+										</Highlight> */}
+										</Box>
+									</Grid>
 								</Button>
 							))}
 						</VStack>
