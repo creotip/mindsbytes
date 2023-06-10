@@ -32,7 +32,11 @@ export const QuizList = () => {
 											Javascript
 										</CustomLink>
 									</ListItem>
-									<ListItem>TypeScript</ListItem>
+									<ListItem>
+										<CustomLink isSidebar href="/quizzes/typescript">
+											TypeScript
+										</CustomLink>
+									</ListItem>
 									<ListItem>
 										<CustomLink isSidebar href="/quizzes/python">
 											Python
@@ -46,7 +50,11 @@ export const QuizList = () => {
 									<ListItem>SQL</ListItem>
 									<ListItem>NoSQL</ListItem>
 									<ListItem>C#</ListItem>
-									<ListItem>Rust</ListItem>
+									<ListItem>
+										<CustomLink isSidebar href="/quizzes/rust">
+											Rust
+										</CustomLink>
+									</ListItem>
 									<ListItem>Go</ListItem>
 									<ListItem>C</ListItem>
 									<ListItem>C++</ListItem>

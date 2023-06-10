@@ -1,0 +1,628 @@
+[
+	{
+		"question": "Which of the following is true about Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rust is a statically typed language.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rust is an interpreted language.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust is a dynamically typed language.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust is a functional programming language.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Language Basics"]
+	},
+	{
+		"question": "What is the ownership system in Rust designed to prevent?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Null pointer exceptions",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Memory leaks",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Infinite loops",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Type errors",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Language Basics"]
+	},
+	{
+		"question": "Which of the following is NOT a valid variable binding keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "let",
+				"rightAnswer": false
+			},
+			{
+				"answer": "mut",
+				"rightAnswer": false
+			},
+			{
+				"answer": "var",
+				"rightAnswer": true
+			},
+			{
+				"answer": "const",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Language Basics"]
+	},
+	{
+		"question": "Which of the following is NOT a primitive data type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "u32",
+				"rightAnswer": false
+			},
+			{
+				"answer": "f64",
+				"rightAnswer": false
+			},
+			{
+				"answer": "bool",
+				"rightAnswer": false
+			},
+			{
+				"answer": "string",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Data Types"]
+	},
+	{
+		"question": "Which of the following statements about lifetimes in Rust is true?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rust does not have a lifetime system.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Lifetimes are used to prevent data races in concurrent programs.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Lifetimes are optional and can be omitted in Rust code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Lifetimes are only applicable to structs and not functions.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Advanced Concepts"]
+	},
+
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let mut x = 5;\n    let y = &x;\n    *y = 10;\n    println!(\"{}\", x);\n}",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["References and Mutability"]
+	},
+	{
+		"question": "Which of the following statements is true about Rust's 'match' expression?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It is equivalent to the 'if-else' statement in other programming languages.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used for pattern matching and can handle exhaustive cases.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It is used for looping over a collection of items.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It is used for defining macros in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the purpose of the 'cargo' command in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To compile Rust source code into an executable or library.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To format Rust code according to the official style guidelines.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To run unit tests for Rust code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To generate documentation for Rust code.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Build Tools"]
+	},
+	{
+		"question": "What does the 'mut' keyword signify in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It makes a variable immutable.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It makes a variable mutable.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It marks a function as a mutable function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It denotes a mutable reference in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Language Basics"]
+	},
+	{
+		"question": "Which of the following code snippets in Rust will panic at runtime if an index is out of bounds?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "let arr = [1, 2, 3];\nlet value = arr[5];",
+				"rightAnswer": true
+			},
+			{
+				"answer": "let vec = vec![1, 2, 3];\nlet value = vec.get(5).unwrap();",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let mut string = String::from(\"hello\");\nlet char = string.remove(10);",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let map = HashMap::new();\nlet value = map.get(\"key\");",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "In Rust, which of the following keywords is used to define a function?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "func",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn",
+				"rightAnswer": true
+			},
+			{
+				"answer": "def",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fun",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Language Basics"]
+	},
+	{
+		"question": "What does the 'impl' keyword signify in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It defines an implementation block for a trait.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It imports modules from external crates.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It declares a new struct or enum.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It creates a new instance of a struct or enum.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Language Basics"]
+	},
+	{
+		"question": "Which of the following is NOT a valid visibility modifier in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "pub",
+				"rightAnswer": false
+			},
+			{
+				"answer": "priv",
+				"rightAnswer": true
+			},
+			{
+				"answer": "crate",
+				"rightAnswer": false
+			},
+			{
+				"answer": "pub(crate)",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Modules and Visibility"]
+	},
+	{
+		"question": "Which of the following statements about Rust's ownership system is true?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rust uses garbage collection to manage memory.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust allows multiple mutable references to the same data.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust enforces strict ownership rules at compile time.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rust automatically deallocates memory when a variable goes out of scope.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Ownership and Borrowing"]
+	},
+	{
+		"question": "In Rust, which of the following traits must be implemented to use the '==' operator for custom types?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Eq",
+				"rightAnswer": false
+			},
+			{
+				"answer": "PartialEq",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Comparable",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Equals",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Traits"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let mut numbers = vec![1, 2, 3, 4, 5];\n    let sum: i32 = numbers.iter().sum();\n    println!(\"Sum: {}\", sum);\n}",
+		"options": [
+			{
+				"answer": "Sum: 15",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Sum: 10",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Sum: 0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Collections"]
+	},
+	{
+		"question": "Which of the following code snippets correctly creates an instance of a struct named 'Person' with a name field set to 'John' and an age field set to 25?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "let person = Person { name: 'John', age: 25 };",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let person = Person { name: \"John\", age: 25 };",
+				"rightAnswer": true
+			},
+			{
+				"answer": "let person = Person(name: 'John', age: 25);",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let person = Person(name = 'John', age = 25);",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Structs"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "let result = (1..=10)\n    .filter(|x| x % 2 == 0)\n    .map(|x| x * 2)\n    .collect::<Vec<_>>();",
+		"options": [
+			{
+				"answer": "Calculates the sum of even numbers from 1 to 10.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Filters out odd numbers, doubles the even numbers, and collects the results into a vector.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Calculates the product of even numbers from 1 to 10.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Performs bitwise operations on numbers from 1 to 10.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Functional Programming"]
+	},
+	{
+		"question": "Which of the following statements is true about Rust's 'Result' type?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The 'Result' type is used for error handling in Rust.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The 'Result' type is used for concurrent programming in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The 'Result' type is used for defining macros in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The 'Result' type is used for pattern matching in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let mut x = 5;\n    let y = &mut x;\n    *y += 1;\n    println!(\"{}\", x);\n}",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["References and Mutability"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn fibonacci(n: u32) -> u32 {\n    if n == 0 {\n        return 0;\n    } else if n == 1 {\n        return 1;\n    }\n    fibonacci(n - 1) + fibonacci(n - 2)\n}\n\nfn main() {\n    let result = fibonacci(5);\n    println!(\"Result: {}\", result);\n}",
+		"options": [
+			{
+				"answer": "Result: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result: 8",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Result: 13",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result: 20",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Recursion"]
+	},
+	{
+		"question": "Which of the following code snippets correctly demonstrates Rust's 'match' expression to handle multiple cases?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    _ => println!(\"Other\"),\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    3 => println!(\"Three\"),\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    2 => println!(\"Two Again\"),\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let x = 5;\nmatch x {\n    1 => println!(\"One\"),\n    2 => println!(\"Two\"),\n    3 => println!(\"Three\"),\n    _ => println!(\"Other\"),\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "What is the purpose of the 'cargo' command in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It compiles Rust code into a binary executable.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It formats Rust code according to style guidelines.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It generates documentation for Rust projects.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It manages dependencies and builds Rust projects.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Build System"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let x = 5;\n    let y = &x;\n    println!(\"{}\", *y);\n}",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["References and Borrowing"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let mut x = 5;\n    let y = &x;\n    let z = &mut x;\n    *z += 1;\n    println!(\"{}\", y);\n}",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["References and Mutability"]
+	}
+]

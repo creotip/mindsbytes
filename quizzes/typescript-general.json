@@ -1,0 +1,1251 @@
+[
+	{
+		"question": "What is TypeScript?",
+		"options": [
+			{
+				"answer": "A superset of JavaScript",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A programming language developed by Microsoft",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A framework for building web applications",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A database management system",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "Which of the following is a benefit of using TypeScript?",
+		"options": [
+			{
+				"answer": "Type safety",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Faster execution speed",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Easier debugging",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Built-in testing framework",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "How do you define a variable with a specific type in TypeScript?",
+		"options": [
+			{
+				"answer": "Using the `var` keyword",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Using the `let` keyword",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Using the `const` keyword",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Using the `:type` syntax",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of interfaces in TypeScript?",
+		"options": [
+			{
+				"answer": "To define the structure of a class",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create objects",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle HTTP requests",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To perform database operations",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the difference between `interface` and `type` in TypeScript?",
+		"options": [
+			{
+				"answer": "`interface` is used for object shapes, while `type` can represent any data",
+				"rightAnswer": true
+			},
+			{
+				"answer": "`interface` is used for function signatures, while `type` is used for variable declarations",
+				"rightAnswer": false
+			},
+			{
+				"answer": "`interface` is a keyword, while `type` is a built-in type in TypeScript",
+				"rightAnswer": false
+			},
+			{
+				"answer": "There is no difference, they can be used interchangeably",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What will be the output of the following code?",
+		"codeBlock": "function greet(name: string): void {\n  console.log(`Hello, ${name}!`);\n}\n\ngreet(42);",
+		"options": [
+			{
+				"answer": "Hello, 42!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Hello, undefined!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "Which of the following TypeScript features is used to enforce strict null checks?",
+		"options": [
+			{
+				"answer": "Optional Chaining",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Type Guards",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Non-Null Assertion Operator",
+				"rightAnswer": false
+			},
+			{
+				"answer": "StrictNullChecks",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "const person = {\n  name: 'John',\n  age: 30,\n};\n\nconst { name, age } = person;\nname = 'Jane';\nconsole.log(person.name);",
+		"options": [
+			{
+				"answer": "John",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Jane",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the type of the `result` variable in the following code?",
+		"codeBlock": "const calculateSum = (...numbers: number[]): number => {\n  return numbers.reduce((sum, num) => sum + num, 0);\n};\n\nconst result = calculateSum(1, 2, 3, 4);",
+		"options": [
+			{
+				"answer": "number",
+				"rightAnswer": true
+			},
+			{
+				"answer": "array",
+				"rightAnswer": false
+			},
+			{
+				"answer": "function",
+				"rightAnswer": false
+			},
+			{
+				"answer": "unknown",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "class MyClass {\n  static myProperty = 'Hello';\n\n  static myMethod() {\n    console.log(this.myProperty);\n  }\n}\n\nconst myObject = new MyClass();\nmyObject.myMethod();",
+		"options": [
+			{
+				"answer": "Hello",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+
+	{
+		"question": "What is the correct way to define a tuple type in TypeScript?",
+		"options": [
+			{
+				"answer": "type MyTuple = [number, string, boolean];",
+				"rightAnswer": true
+			},
+			{
+				"answer": "interface MyTuple = [number, string, boolean];",
+				"rightAnswer": false
+			},
+			{
+				"answer": "type MyTuple = (number, string, boolean);",
+				"rightAnswer": false
+			},
+			{
+				"answer": "interface MyTuple = (number, string, boolean);",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `keyof` keyword in TypeScript?",
+		"options": [
+			{
+				"answer": "To obtain the union of all property names of a type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a new key-value pair in an object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To access the value of a specific property in an object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a new property on an interface",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "const greet = (name: string = 'Guest'): void => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet();",
+		"options": [
+			{
+				"answer": "Hello, Guest!",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Hello, undefined!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Hello, !",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "Which TypeScript feature allows you to create types that depend on each other?",
+		"options": [
+			{
+				"answer": "Intersection Types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Union Types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Conditional Types",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Mapped Types",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `keyof` operator in TypeScript?",
+		"options": [
+			{
+				"answer": "To access the value of a specific property in an object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a new key-value pair in an object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To obtain the union of all property names of a type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a new property on an interface",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What will be the output of the following code?",
+		"codeBlock": "const numbers = [1, 2, 3, 4, 5];\n\nconst [first, second, ...rest] = numbers;\n\nconsole.log(first, second, rest);",
+		"options": [
+			{
+				"answer": "1 2 [3, 4, 5]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1 2 [1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1 2 [2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `keyof` operator in TypeScript?",
+		"options": [
+			{
+				"answer": "To access the value of a specific property in an object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a new key-value pair in an object",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To obtain the union of all property names of a type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a new property on an interface",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function* generateNumbers(): Generator<number> {\n  yield 1;\n  yield 2;\n  yield 3;\n}\n\nconst numbers = generateNumbers();\n\nconsole.log(numbers.next().value);",
+		"options": [
+			{
+				"answer": "1",
+				"rightAnswer": true
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+
+	{
+		"question": "Which keyword is used to define a read-only property in TypeScript?",
+		"options": [
+			{
+				"answer": "const",
+				"rightAnswer": false
+			},
+			{
+				"answer": "readonly",
+				"rightAnswer": true
+			},
+			{
+				"answer": "let",
+				"rightAnswer": false
+			},
+			{
+				"answer": "var",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `unknown` type in TypeScript?",
+		"options": [
+			{
+				"answer": "To represent values that may be null or undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To represent any JavaScript value",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To represent values whose type is not known",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To represent numeric values",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function delay(ms: number): Promise<void> {\n  return new Promise<void>((resolve) => {\n    setTimeout(() => {\n      resolve();\n    }, ms);\n  });\n}\n\nconsole.log('A');\ndelay(2000).then(() => console.log('B'));\nconsole.log('C');",
+		"options": [
+			{
+				"answer": "A B C",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A C B",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A B",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A C",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "Which decorator is used to mark a class property as a dependency for dependency injection in TypeScript?",
+		"options": [
+			{
+				"answer": "@Injectable",
+				"rightAnswer": false
+			},
+			{
+				"answer": "@Inject",
+				"rightAnswer": false
+			},
+			{
+				"answer": "@Component",
+				"rightAnswer": false
+			},
+			{
+				"answer": "@Injectable",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function logName<T extends { name: string }>(obj: T): void {\n  console.log(obj.name);\n}\n\nlogName({ name: 'John', age: 30 });",
+		"options": [
+			{
+				"answer": "John",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `as` keyword in TypeScript?",
+		"options": [
+			{
+				"answer": "To cast a value to a different type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define an alias for a type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an assertion that a value is truthy",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To access a private property or method",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+
+	{
+		"question": "Which TypeScript feature allows you to enforce that a variable should never be assigned `null` or `undefined`?",
+		"options": [
+			{
+				"answer": "Nullable types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Optional properties",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Non-null assertion operator",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Strict null checks",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function* fibonacci(): Generator<number> {\n  let a = 0;\n  let b = 1;\n  while (true) {\n    yield a;\n    [a, b] = [b, a + b];\n  }\n}\n\nconst sequence = fibonacci();\nconsole.log(sequence.next().value);\nconsole.log(sequence.next().value);\nconsole.log(sequence.next().value);\nconsole.log(sequence.next().value);",
+		"options": [
+			{
+				"answer": "0 1 1 2",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1 1 2 3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "0 1 2 3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1 2 3 4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `extends` keyword in TypeScript?",
+		"options": [
+			{
+				"answer": "To implement inheritance between classes",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a generic type parameter",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an intersection type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a conditional type",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function identity<T extends number | string>(value: T): T {\n  return value;\n}\n\nconst result1 = identity(10);\nconst result2 = identity('hello');\nconsole.log(result1.length);\nconsole.log(result2.length);",
+		"options": [
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "2 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Property 'length' does not exist on type 'number | string'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "Which TypeScript feature allows you to specify multiple types that a value can have?",
+		"options": [
+			{
+				"answer": "Union Types",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Intersection Types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Literal Types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Conditional Types",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "type Shape = { name: string };\ntype Circle = Shape & { radius: number };\n\ntype Square = Shape & { sideLength: number };\n\ntype ShapeContainer = Circle | Square;\n\nfunction printShapeName(shape: ShapeContainer): void {\n  console.log(shape.name);\n}\n\nconst circle: Circle = { name: 'Circle', radius: 5 };\nconst square: Square = { name: 'Square', sideLength: 10 };\n\nprintShapeName(circle);\nprintShapeName(square);",
+		"options": [
+			{
+				"answer": "Circle Square",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Circle",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Square",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function logInfo(name: string, age?: number): void {\n  console.log(`Name: ${name}`);\n  if (age !== undefined) {\n    console.log(`Age: ${age}`);\n  }\n}\n\nlogInfo('John');\nlogInfo('Sarah', 25);",
+		"options": [
+			{
+				"answer": "Name: John\nName: Sarah\nAge: 25",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Name: John\nName: Sarah",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Name: John\nAge: 25",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "Which of the following is a valid way to declare a generic type parameter in TypeScript?",
+		"options": [
+			{
+				"answer": "<T>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "(T)",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[T]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "{T}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "function mergeArrays<T>(a: T[], b: T[]): T[] {\n  return [...a, ...b];\n}\n\nconst result = mergeArrays([1, 2, 3], ['a', 'b', 'c']);\nconsole.log(result);",
+		"options": [
+			{
+				"answer": "[1, 2, 3, 'a', 'b', 'c']",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3, 0, 1, 2]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "['a', 'b', 'c', 1, 2, 3]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `readonly` modifier in TypeScript?",
+		"options": [
+			{
+				"answer": "To specify that a property can only be accessed within its own class",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To indicate that a property or variable should never change its value once assigned",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a method as optional",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To allow a property to be accessed without using the dot notation",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "type Person = {\n  name: string;\n  age: number;\n};\n\ntype ReadonlyPerson = {\n  readonly [K in keyof Person]: Person[K];\n};\n\nconst person: ReadonlyPerson = {\n  name: 'John',\n  age: 25,\n};\n\nperson.age = 30;\n\nconsole.log(person.age);",
+		"options": [
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": true
+			},
+			{
+				"answer": "25",
+				"rightAnswer": false
+			},
+			{
+				"answer": "30",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Error: Cannot assign to 'age' because it is a read-only property.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `never` type in TypeScript?",
+		"options": [
+			{
+				"answer": "To represent a value that will never occur",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a type that can be assigned any value",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a union of multiple types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify a type that cannot be null or undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "const num: number = 5;\nconsole.log(num.toFixed(2));",
+		"options": [
+			{
+				"answer": "5.00",
+				"rightAnswer": true
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "interface Animal {\n  name: string;\n  age: number;\n}\n\nconst dog: Animal = {\n  name: 'Max',\n  age: 5,\n};\n\nconst { name, age } = dog;\nconsole.log(name, age);",
+		"options": [
+			{
+				"answer": "Max 5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "undefined undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5 Max",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "type Color = 'Red' | 'Green' | 'Blue';\n\nfunction logColor(color: Color): void {\n  console.log(color);\n}\n\nlogColor('Green');",
+		"options": [
+			{
+				"answer": "Green",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "TypeError",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `infer` keyword in TypeScript?",
+		"options": [
+			{
+				"answer": "To define a generic type parameter",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To infer the type of a generic parameter from its usage",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a conditional type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To restrict a type to a certain range of values",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "type Person = {\n  name: string;\n  age: number;\n};\n\ntype PersonInfo = Person & {\n  address: string;\n};\n\nfunction getPersonName(person: PersonInfo): string {\n  return person.name;\n}\n\nconst person: Person = {\n  name: 'John',\n  age: 25,\n};\n\nconst personName = getPersonName(person);\nconsole.log(personName);",
+		"options": [
+			{
+				"answer": "John",
+				"rightAnswer": true
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "TypeError",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is a type assertion in TypeScript?",
+		"options": [
+			{
+				"answer": "A way to force the type of a value to a specific type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A way to dynamically determine the type of a value at runtime",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A way to assign multiple types to a single variable",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A way to define a new type based on existing types",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `Pick` utility type in TypeScript?",
+		"options": [
+			{
+				"answer": "To create a new type by picking specific properties from an existing type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a union of two or more types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an intersection of two or more types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a conditional type",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "const array: ReadonlyArray<number> = [1, 2, 3];\narray.push(4);\nconsole.log(array.length);",
+		"options": [
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": true
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": false
+			},
+			{
+				"answer": "TypeError",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `namespace` keyword in TypeScript?",
+		"options": [
+			{
+				"answer": "To organize code into logical groups",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a new type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an abstract class",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To extend a class",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `Partial` utility type in TypeScript?",
+		"options": [
+			{
+				"answer": "To make all properties of a type optional",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a new type by picking specific properties from an existing type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a union of two or more types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an intersection of two or more types",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the output of the following code?",
+		"codeBlock": "const x = 5;\nfunction foo(x: number): void {\n  console.log(x);\n}\nfoo(10);",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `abstract` keyword in TypeScript?",
+		"options": [
+			{
+				"answer": "To define a new type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To extend a class",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an abstract class",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To organize code into logical groups",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `Omit` utility type in TypeScript?",
+		"options": [
+			{
+				"answer": "To create a new type by picking specific properties from an existing type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a type by excluding specific properties from an existing type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a union of two or more types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create an intersection of two or more types",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `key` parameter in a mapped type in TypeScript?",
+		"options": [
+			{
+				"answer": "To define the value type of each property in the mapped type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To represent the name of each property in the mapped type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To specify the name of the mapped type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To access a specific property of an object",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	},
+	{
+		"question": "What is the purpose of the `--strictNullChecks` compiler flag in TypeScript?",
+		"options": [
+			{
+				"answer": "To enable strict type checking for null and undefined values",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To enforce strict naming conventions for variables",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To enable strict mode for JavaScript compatibility",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To optimize the generated JavaScript code",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"category": ["TypeScript"],
+		"language": "TypeScript"
+	}
+]

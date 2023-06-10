@@ -1,0 +1,252 @@
+[
+	{
+		"question": "What does HTML stand for?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Hyper Text Markup Language",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Home Tool Markup Language",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Hyperlinks and Text Markup Language",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Hyperlinking Text Markup Language",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Basics"]
+	},
+	{
+		"question": "Which element is used to define a hyperlink in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<a>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<link>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<href>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<hyperlink>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "What is the correct HTML element for inserting a line break?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<lb>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<br>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<break>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<linebreak>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "Which HTML attribute is used to define inline styles?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "class",
+				"rightAnswer": false
+			},
+			{
+				"answer": "style",
+				"rightAnswer": true
+			},
+			{
+				"answer": "font",
+				"rightAnswer": false
+			},
+			{
+				"answer": "id",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Styling"]
+	},
+	{
+		"question": "Which HTML element is used to display a picture?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<img>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<picture>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<image>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<photo>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "Which HTML element is used for the largest heading?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<h1>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<heading>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<h6>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<head>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "What is the purpose of the HTML <head> element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To contain the visible content of the page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the structure of the page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define metadata about the HTML document",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To group and style multiple elements",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Basics"]
+	},
+	{
+		"question": "Which HTML element is used to define a table row?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<td>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<row>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<tr>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<th>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tables"]
+	},
+	{
+		"question": "Which attribute specifies the URL of an external script file in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "src",
+				"rightAnswer": true
+			},
+			{
+				"answer": "href",
+				"rightAnswer": false
+			},
+			{
+				"answer": "link",
+				"rightAnswer": false
+			},
+			{
+				"answer": "script",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Scripting"]
+	},
+	{
+		"question": "Which HTML element is used to define a navigation menu?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<nav>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<menu>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<ul>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<list>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tags"]
+	}
+]

@@ -19,6 +19,7 @@ import QuizToolbar from './quiz-toolbar'
 // await import('prismjs/components/prism-applescript')
 /** or **/
 require('prismjs/components/prism-python')
+require('prismjs/components/prism-rust')
 
 interface QuizProps {
 	quizQuestions: SingleQuiz[]
