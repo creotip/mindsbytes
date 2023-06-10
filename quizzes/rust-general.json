@@ -624,5 +624,4364 @@
 		"level": "Hard",
 		"language": "Rust",
 		"category": ["References and Mutability"]
+	},
+	{
+		"question": "Which of the following is true about Rust's ownership system?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rust uses a garbage collector to manage memory.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust uses manual memory management with explicit allocation and deallocation.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust uses a combination of static analysis and ownership rules to enforce memory safety.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rust automatically handles memory deallocation through destructors.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Ownership"]
+	},
+	{
+		"question": "What is the purpose of the 'Option' type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To represent a nullable value.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To perform pattern matching on values.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define generic types and traits.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle errors and propagate them through the call stack.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let x = 42;\n    let y = &x;\n    let z = *y;\n    println!(\"{}\", z);\n}",
+		"options": [
+			{
+				"answer": "42",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["References"]
+	},
+	{
+		"question": "What is the role of the 'Drop' trait in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define a method that is called when a value goes out of scope.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To provide a way to handle errors in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To implement operators and perform overloading in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify lifetimes of references in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Traits"]
+	},
+	{
+		"question": "What does the 'async' keyword signify in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It marks a function as a generator.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It indicates that a function performs asynchronous operations.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It specifies that a function is a pure function with no side effects.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It enables automatic reference counting for a type.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Asynchronous Programming"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let numbers = vec![1, 2, 3, 4, 5];\n    let sum = numbers.iter().filter(|&x| x % 2 == 0).sum::<i32>();\n    println!(\"{}\", sum);\n}",
+		"options": [
+			{
+				"answer": "6",
+				"rightAnswer": false
+			},
+			{
+				"answer": "9",
+				"rightAnswer": false
+			},
+			{
+				"answer": "14",
+				"rightAnswer": true
+			},
+			{
+				"answer": "15",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Functional Programming"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "struct Rectangle {\n    width: u32,\n    height: u32,\n}\n\nimpl Rectangle {\n    fn area(&self) -> u32 {\n        self.width * self.height\n    }\n}\n\nfn main() {\n    let rect = Rectangle { width: 10, height: 20 };\n    let area = rect.area();\n    println!(\"{}\", area);\n}",
+		"options": [
+			{
+				"answer": "It defines a struct representing a rectangle and calculates its area.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It defines a trait for calculating the area of various shapes.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It demonstrates Rust's pattern matching capabilities.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It showcases Rust's concurrency features.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Structs and Methods"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let mut data = vec![1, 2, 3, 4, 5];\n    data.retain(|&x| x % 2 == 0);\n    println!(\"{:?}\", data);\n}",
+		"options": [
+			{
+				"answer": "[1, 3, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[2, 4]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "[1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Vector Manipulation"]
+	},
+	{
+		"question": "What does the 'Deref' trait do in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It allows overloading of the dereference operator (*) to customize pointer-like behavior.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It enables dynamic dispatch and polymorphism in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It provides a way to implement iterable collections in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It ensures memory safety and prevents null pointer dereferences in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Traits"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let x = String::from(\"Hello, world!\");\n    let y = &x;\n    let z = y;\n    println!(\"{}\", z);\n}",
+		"options": [
+			{
+				"answer": "Hello, world!",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Undefined",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["References"]
+	},
+	{
+		"question": "Which crate in Rust provides functionality for working with network connections?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::net",
+				"rightAnswer": false
+			},
+			{
+				"answer": "tokio",
+				"rightAnswer": false
+			},
+			{
+				"answer": "hyper",
+				"rightAnswer": false
+			},
+			{
+				"answer": "reqwest",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "use std::net::TcpListener;\n\nfn main() {\n    let listener = TcpListener::bind(\"127.0.0.1:8080\").unwrap();\n    for stream in listener.incoming() {\n        // Handle incoming connection\n    }\n}",
+		"options": [
+			{
+				"answer": "Creates a TCP listener on localhost at port 8080 and accepts incoming connections.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Establishes a TCP connection to the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Sends an HTTP request to the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Receives incoming network packets from the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "Which crate in Rust is commonly used for building HTTP clients and servers?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "serde",
+				"rightAnswer": false
+			},
+			{
+				"answer": "actix-web",
+				"rightAnswer": true
+			},
+			{
+				"answer": "rocket",
+				"rightAnswer": false
+			},
+			{
+				"answer": "warp",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "What is the purpose of the 'actix' crate in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To provide asynchronous programming capabilities.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle network connections and routing in web applications.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To serialize and deserialize data formats.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To parse and manipulate HTML documents.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "Which Rust crate is commonly used for making HTTP requests?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "hyper",
+				"rightAnswer": true
+			},
+			{
+				"answer": "reqwest",
+				"rightAnswer": false
+			},
+			{
+				"answer": "tokio",
+				"rightAnswer": false
+			},
+			{
+				"answer": "rocket",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "Which keyword is used to define an immutable variable in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "mut",
+				"rightAnswer": false
+			},
+			{
+				"answer": "let",
+				"rightAnswer": true
+			},
+			{
+				"answer": "const",
+				"rightAnswer": false
+			},
+			{
+				"answer": "var",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Variables"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let mut x = 5;\n    let y = &mut x;\n    *y += 1;\n    println!(\"{}\", x);\n}",
+		"options": [
+			{
+				"answer": "5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Compilation Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Runtime Error",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["References"]
+	},
+	{
+		"question": "What is the purpose of the 'match' keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define a new enum type.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To perform pattern matching on values.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a new function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle errors using the Result type.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Control Flow"]
+	},
+	{
+		"question": "Which of the following is a valid way to define a function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "fn add(a, b) -> i32 { a + b }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn add(a: i32, b: i32) -> i32 { a + b }",
+				"rightAnswer": true
+			},
+			{
+				"answer": "function add(a: i32, b: i32) -> i32 { a + b }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn add(a, b) { a + b }",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the purpose of the 'unwrap' method in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To safely handle errors and propagate them to the calling code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To explicitly panic and crash the program if an error occurs.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To safely unwrap an Option or Result and retrieve the value inside.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To perform bitwise operations on integer types.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "Which crate in Rust is commonly used for interacting with databases?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "rust-postgres",
+				"rightAnswer": true
+			},
+			{
+				"answer": "diesel",
+				"rightAnswer": false
+			},
+			{
+				"answer": "sqlx",
+				"rightAnswer": false
+			},
+			{
+				"answer": "rocket",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Database"]
+	},
+	{
+		"question": "Which of the following statements is true about Rocket, a web framework in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rocket focuses on asynchronous programming and scalability.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rocket provides out-of-the-box support for WebSockets.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rocket emphasizes ease of use and developer productivity.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rocket is primarily designed for microservices architectures.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Web Frameworks"]
+	},
+	{
+		"question": "Which crate in Rust is commonly used for performing cryptographic operations?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "ring",
+				"rightAnswer": true
+			},
+			{
+				"answer": "bcrypt",
+				"rightAnswer": false
+			},
+			{
+				"answer": "openssl",
+				"rightAnswer": false
+			},
+			{
+				"answer": "crypto",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Security"]
+	},
+	{
+		"question": "What is the purpose of the 'serde' crate in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To provide a lightweight, synchronous networking framework.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To parse and manipulate JSON and other data formats.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To handle asynchronous I/O operations.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create graphical user interfaces (GUI) in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Data Serialization"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "use std::net::TcpStream;\n\nfn main() {\n    let stream = TcpStream::connect(\"127.0.0.1:8080\").unwrap();\n    // Perform operations with the stream\n}",
+		"options": [
+			{
+				"answer": "Creates a TCP listener on localhost at port 8080.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Connects to a TCP server at 127.0.0.1:8080.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Sends an HTTP request to the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Receives incoming network packets from the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "Which of the following crates in Rust is commonly used for building RESTful APIs?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Actix-web",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rocket",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Tide",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Iron",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Web Development"]
+	},
+	{
+		"question": "Which of the following statements is true about Rust's ownership system?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Ownership in Rust allows multiple mutable references to the same data.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust's ownership system eliminates the need for garbage collection.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rust allows dangling pointers and null references.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Ownership in Rust follows a reference counting mechanism.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Ownership"]
+	},
+	{
+		"question": "What is the purpose of the 'async' keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To indicate that a function is deprecated and should not be used.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To enable asynchronous programming and define async functions.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To specify the scope and lifetime of variables in a function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle errors and unwrap Option and Result types.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Asynchronous Programming"]
+	},
+	{
+		"question": "What is the purpose of the 'cargo' command in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To compile Rust code into machine-readable binary files.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To manage dependencies and build Rust projects.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To execute Rust programs and scripts.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To generate documentation for Rust code.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Build System"]
+	},
+	{
+		"question": "What is the purpose of the 'Arc' type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To perform atomic operations on shared memory.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To manage reference counts for shared ownership.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create dynamic libraries and link them with Rust programs.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define and manipulate complex algebraic data types.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Concurrency"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "fn main() {\n    let mut nums = vec![1, 2, 3, 4, 5];\n    let sum: i32 = nums.iter().map(|x| x * x).sum();\n    println!(\"Sum: {}\", sum);\n}",
+		"options": [
+			{
+				"answer": "Calculates the sum of the squares of all elements in the 'nums' vector.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Calculates the product of all elements in the 'nums' vector.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Prints the square of each element in the 'nums' vector.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Prints the sum of all elements in the 'nums' vector.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Functional Programming"]
+	},
+	{
+		"question": "What is the purpose of the 'std::sync::Mutex' type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To enable concurrent access to shared resources with a lock mechanism.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To implement mutual exclusion and prevent data races in multithreaded programs.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define and manipulate mutex data structures in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To perform atomic operations on shared memory.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Concurrency"]
+	},
+	{
+		"question": "What does the 'serde' attribute in the following Rust code snippet do?",
+		"codeBlock": "#[derive(Debug, Serialize, Deserialize)]\nstruct Person {\n    name: String,\n    age: u32,\n}",
+		"options": [
+			{
+				"answer": "Indicates that the 'Person' struct can be serialized and deserialized using Serde.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Enables the debug printing of the 'Person' struct using the 'Debug' trait.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Specifies the size and alignment of the 'Person' struct in memory.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Provides a way to implement custom serialization and deserialization logic for the 'Person' struct.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Data Serialization"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "use std::net::{TcpListener, TcpStream};\n\nfn main() {\n    let listener = TcpListener::bind(\"127.0.0.1:8080\").unwrap();\n    for stream in listener.incoming() {\n        let stream = stream.unwrap();\n        // Handle incoming connections\n    }\n}",
+		"options": [
+			{
+				"answer": "Creates a TCP listener on localhost at port 8080.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Connects to a TCP server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Sends an HTTP request to the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Receives incoming network packets from the server at 127.0.0.1:8080.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Networking"]
+	},
+	{
+		"question": "Which method is used in Rust to append an element to a vector?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "push()",
+				"rightAnswer": true
+			},
+			{
+				"answer": "add()",
+				"rightAnswer": false
+			},
+			{
+				"answer": "append()",
+				"rightAnswer": false
+			},
+			{
+				"answer": "insert()",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Built-in Methods"]
+	},
+	{
+		"question": "Which trait provides the clone() method in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Clone",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Copy",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Serialize",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Deserialize",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Traits"]
+	},
+	{
+		"question": "Which method is used in Rust to convert a String to an integer?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "to_string()",
+				"rightAnswer": false
+			},
+			{
+				"answer": "parse()",
+				"rightAnswer": true
+			},
+			{
+				"answer": "to_owned()",
+				"rightAnswer": false
+			},
+			{
+				"answer": "into()",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Built-in Methods"]
+	},
+	{
+		"question": "Which module in Rust provides functionality for working with dates and times?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::net",
+				"rightAnswer": false
+			},
+			{
+				"answer": "chrono",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["APIs"]
+	},
+	{
+		"question": "What is the output of the following Rust code snippet?",
+		"codeBlock": "fn main() {\n    let nums = vec![1, 2, 3, 4, 5];\n    let sum: i32 = nums.iter().sum();\n    println!(\"Sum: {}\", sum);\n}",
+		"options": [
+			{
+				"answer": "Sum: 15",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Sum: 120",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Sum: 3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Sum: 0",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Built-in Methods"]
+	},
+	{
+		"question": "Which trait is used to implement the '+' operator for a custom struct in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Add",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Sub",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Mul",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Div",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Traits"]
+	},
+	{
+		"question": "What does the following Rust code snippet do?",
+		"codeBlock": "use std::fs;\n\nfn main() {\n    let file_content = fs::read_to_string(\"data.txt\").unwrap();\n    println!(\"File content: {}\", file_content);\n}",
+		"options": [
+			{
+				"answer": "Reads the content of a file named 'data.txt' and prints it.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Writes the content of a file named 'data.txt' with the provided data.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Deletes the file named 'data.txt' from the file system.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Renames the file named 'data.txt' to 'file_content'.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["File I/O"]
+	},
+	{
+		"question": "Which crate in Rust provides functionality for working with regular expressions?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "regex",
+				"rightAnswer": true
+			},
+			{
+				"answer": "serde",
+				"rightAnswer": false
+			},
+			{
+				"answer": "tokio",
+				"rightAnswer": false
+			},
+			{
+				"answer": "actix",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["APIs"]
+	},
+	{
+		"question": "Which symbol is used to access the value pointed to by a raw pointer in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "*",
+				"rightAnswer": true
+			},
+			{
+				"answer": "&",
+				"rightAnswer": false
+			},
+			{
+				"answer": "&mut",
+				"rightAnswer": false
+			},
+			{
+				"answer": "->",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which type of pointer in Rust allows for mutable and exclusive access to data?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Box<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "&T",
+				"rightAnswer": false
+			},
+			{
+				"answer": "&mut T",
+				"rightAnswer": true
+			},
+			{
+				"answer": "*const T",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What is the purpose of using the 'unsafe' keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To indicate that a block of code contains unsafe operations.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To bypass the borrow checker and access mutable data.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To declare a function that can be called from another language.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify the lifetime of a reference.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What does the 'null' pointer represent in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A null reference",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A dangling pointer",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function pointer",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A raw pointer",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which pointer type in Rust is used to create self-referential structs?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rc<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Cell<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "RefCell<T>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Mutex<T>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which operator is used to create a reference from a value in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "&",
+				"rightAnswer": true
+			},
+			{
+				"answer": "*",
+				"rightAnswer": false
+			},
+			{
+				"answer": "&&",
+				"rightAnswer": false
+			},
+			{
+				"answer": "->",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which type of pointer in Rust allows for shared ownership of data?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "&T",
+				"rightAnswer": true
+			},
+			{
+				"answer": "&mut T",
+				"rightAnswer": false
+			},
+			{
+				"answer": "*const T",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Box<T>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What is the purpose of the 'deref' method in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Allows a smart pointer to be treated like a regular reference.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Enables raw pointer arithmetic.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Accesses the value pointed to by a raw pointer.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Marks a block of code as unsafe.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What does the 'Box<T>' type in Rust represent?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A heap-allocated value.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A reference to a stack-allocated value.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function pointer.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A raw pointer.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which pointer type in Rust is used for interior mutability?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rc<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Cell<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "RefCell<T>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Mutex<T>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What is the purpose of the 'as' keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To perform type casting.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To declare an unsafe block.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To access the value pointed to by a raw pointer.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a mutable reference.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which type of pointer in Rust allows for dynamically-sized types?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Box<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rc<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "*const T",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Trait Object",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What does it mean for a raw pointer to be 'null-terminated'?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The pointer points to a null character at the end of a string.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The pointer has a null value.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The pointer is deallocated and no longer valid.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The pointer is associated with a null reference.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What is the purpose of the 'NonNull' type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Represents a non-null raw pointer.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Provides a way to mutate shared data.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Allows for downcasting of trait objects.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Enables safe concurrent access to data.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "Which pointer type in Rust is used for thread-safe interior mutability?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rc<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Cell<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "RefCell<T>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Mutex<T>",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Pointers"]
+	},
+	{
+		"question": "What is the purpose of modules in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To organize code into logical units and control visibility.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define functions that can be called from other languages.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle errors and exceptions in Rust programs.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To allocate memory dynamically at runtime.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Modules"]
+	},
+	{
+		"question": "Which keyword is used to declare a module in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "mod",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn",
+				"rightAnswer": false
+			},
+			{
+				"answer": "use",
+				"rightAnswer": false
+			},
+			{
+				"answer": "struct",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Modules"]
+	},
+	{
+		"question": "What is the purpose of the 'pub' keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To make items (functions, structs, etc.) accessible from outside the module.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To declare a public module that can be used by other crates.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To import items from another module.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a macro that can be used in the current module.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Modules"]
+	},
+	{
+		"question": "Which statement is used to import items from a module in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "use",
+				"rightAnswer": true
+			},
+			{
+				"answer": "mod",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn",
+				"rightAnswer": false
+			},
+			{
+				"answer": "pub",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Modules"]
+	},
+	{
+		"question": "What is a macro in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A way to define reusable code patterns.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A mechanism to create dynamic arrays.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A feature to generate random numbers.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A type of pointer that allows unsafe operations.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "Which of the following statements is true about Rust macros?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Rust macros are limited to simple text substitution.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust macros can generate arbitrary Rust code at compile-time.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Rust macros are only used for conditional compilation.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust macros can only be defined within a function scope.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "What is the purpose of the 'macro_rules!' keyword in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define a procedural macro.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To invoke a built-in Rust macro.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To declare a macro invocation within a module.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a declarative macro.",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "Which of the following is a common use case for macros in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Implementing low-level system operations.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Generating repetitive code patterns.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Enabling runtime reflection and type introspection.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Handling network protocols and socket operations.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "Which of the following statements about modules in Rust is true?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Modules are only used for organizing functions and variables.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Modules can be nested to create a hierarchy of namespaces.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Modules are primarily used for error handling in Rust.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Modules are not supported in Rust and are replaced by crates.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Modules"]
+	},
+	{
+		"question": "In Rust, what does the 'use' keyword do when working with modules?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Imports all public items from a module into the current scope.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Declares a new module within the current module.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Enables conditional compilation based on feature flags.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Invokes a macro defined within a module.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Modules"]
+	},
+	{
+		"question": "Which of the following is true about procedural macros in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Procedural macros are defined using the 'macro_rules!' keyword.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Procedural macros are evaluated at compile-time to generate code.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Procedural macros can only be used in the main function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Procedural macros are limited to simple text substitution.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "What is the purpose of the 'cfg' attribute in Rust macros?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define a conditional compilation block based on a specified configuration.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a new module within a macro invocation.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To import items from another module into the current scope.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To generate a runtime error if a condition is not met.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "Which macro in Rust can be used to iterate over items in a collection?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "println!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "vec!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "format!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "for!",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Macros"]
+	},
+	{
+		"question": "What is the difference between a function and a method in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Functions are defined within structs, while methods are standalone.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Functions can only be called with the dot syntax, while methods can be called with both dot syntax and double colons.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Functions are defined outside of any struct or enum, while methods are associated with a particular type.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Functions can have multiple implementations, while methods have a single implementation per type.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Functions"]
+	},
+	{
+		"question": "Which of the following best describes a closure in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A closure is a function that can only be called from within the same module.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A closure is an anonymous function that can capture variables from its surrounding environment.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A closure is a function with a return type that is inferred by the Rust compiler.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A closure is a function that can accept other functions as arguments.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Closures"]
+	},
+	{
+		"question": "What is a higher-order function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A higher-order function is a function that takes a closure as an argument or returns a closure.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A higher-order function is a function that has a higher stack frame size compared to other functions.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A higher-order function is a function that can only be called by higher-ranked types.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A higher-order function is a function that uses advanced type-level programming techniques.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Higher-Order Functions"]
+	},
+	{
+		"question": "What is a diverging function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A diverging function is a function that returns a Result enum to indicate success or failure.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A diverging function is a function that never returns to the calling code.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A diverging function is a function that has a higher level of complexity compared to other functions.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A diverging function is a function that can only be called from within the same module.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Diverging Functions"]
+	},
+	{
+		"question": "Which of the following keywords is used to define a method in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "method",
+				"rightAnswer": false
+			},
+			{
+				"answer": "def",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn",
+				"rightAnswer": false
+			},
+			{
+				"answer": "impl",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Methods"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn add(a: i32, b: i32) -> i32 {\n    a + b\n}\n\nfn main() {\n    let result = add(3, 4);\n    println!(\"Result: {}\", result);\n}",
+		"options": [
+			{
+				"answer": "Result: 7",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Result: 3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result: 4",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result: add(3, 4)",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Functions"]
+	},
+	{
+		"question": "Which of the following statements about closures in Rust is correct?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Closures in Rust are always anonymous.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Closures in Rust can only capture variables from the global scope.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Closures in Rust can only be defined with the 'closure' keyword.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Closures in Rust are only used for error handling purposes.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Closures"]
+	},
+	{
+		"question": "What is the purpose of a higher-order function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To enable recursion in Rust functions.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create functions that operate on other functions.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To handle errors and propagate them to the calling code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define functions that have multiple return values.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Higher-Order Functions"]
+	},
+	{
+		"question": "What is a diverging function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A function that takes no arguments and returns a unit value.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function that returns an error type to indicate failure.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function that can mutate its arguments.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function that never returns to the caller.",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Diverging Functions"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    let add_one = |x| x + 1;\n    let result = add_one(5);\n    println!(\"Result: {}\", result);\n}",
+		"options": [
+			{
+				"answer": "Result: 6",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Result: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result: add_one(5)",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result: x + 1",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Closures"]
+	},
+	{
+		"question": "Which of the following is an example of a diverging function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "fn add(a: i32, b: i32) -> i32 { a + b }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn greet() { println!(\"Hello!\"); panic!(); }",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn multiply(a: i32, b: i32) -> i32 { a * b }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn square(x: i32) -> i32 { x * x }",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Diverging Functions"]
+	},
+	{
+		"question": "What is the difference between a free function and a method in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Free functions can only be defined within structs, while methods are standalone functions.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Free functions can be called with the dot syntax, while methods are called without any syntax.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Free functions are associated with a particular type, while methods are defined outside of any struct or enum.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Free functions can only have a single implementation, while methods have multiple implementations.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Functions"]
+	},
+	{
+		"question": "What is the purpose of a closure in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To encapsulate code that can be executed repeatedly.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define functions that have a static lifetime.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To declare generic types for a function.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle exception cases and error conditions.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Closures"]
+	},
+	{
+		"question": "Which of the following statements about higher-order functions in Rust is true?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Higher-order functions can only accept closures with a 'static lifetime.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Higher-order functions can only accept closures that capture variables by reference.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Higher-order functions can return closures as their output.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Higher-order functions can only operate on functions with a single argument.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Higher-Order Functions"]
+	},
+	{
+		"question": "Which of the following defines a diverging function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A function that can return a value of any type.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function that can accept any number of arguments.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function that never returns to the caller.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A function that can be called from any module without importing.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Diverging Functions"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    let greet = |name| println!(\"Hello, {}!\", name);\n    greet(\"Alice\");\n    greet(\"Bob\");\n}",
+		"options": [
+			{
+				"answer": "Hello, Alice!\nHello, Bob!",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Hello, Alice!\nHello, Alice!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Hello, Bob!\nHello, Bob!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Hello, Alice!\nHello, Carol!",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Closures"]
+	},
+	{
+		"question": "Which of the following is an example of a higher-order function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "fn add(a: i32, b: i32) -> i32 { a + b }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn apply_twice(f: fn(i32) -> i32, x: i32) -> i32 { f(f(x)) }",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn multiply(a: i32, b: i32) -> i32 { a * b }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn square(x: i32) -> i32 { x * x }",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Higher-Order Functions"]
+	},
+	{
+		"question": "What is the purpose of an if statement in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To create loops and iterate over a collection of items.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a function or method that performs a specific task.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To conditionally execute a block of code based on a boolean expression.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To declare and initialize variables with specific values.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "Which keyword is used to exit a loop prematurely in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "break",
+				"rightAnswer": true
+			},
+			{
+				"answer": "continue",
+				"rightAnswer": false
+			},
+			{
+				"answer": "return",
+				"rightAnswer": false
+			},
+			{
+				"answer": "exit",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    let mut i = 0;\n    while i < 5 {\n        println!(\"Value: {}\", i);\n        i += 1;\n    }\n}",
+		"options": [
+			{
+				"answer": "Value: 0\nValue: 1\nValue: 2\nValue: 3\nValue: 4",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4\nValue: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: 0\nValue: 1\nValue: 2\nValue: 3\nValue: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4\nValue: 4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the purpose of a match statement in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To perform bitwise operations on numeric values.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To compare two values and check if they are equal.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To conditionally execute different blocks of code based on the value of an expression.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a custom data type in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    for i in 1..=5 {\n        if i % 2 == 0 {\n            continue;\n        }\n        println!(\"Value: {}\", i);\n    }\n}",
+		"options": [
+			{
+				"answer": "Value: 1\nValue: 3\nValue: 5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Value: 2\nValue: 4",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4\nValue: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "Which of the following is used to define a range in a for loop in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "..",
+				"rightAnswer": true
+			},
+			{
+				"answer": "...",
+				"rightAnswer": false
+			},
+			{
+				"answer": "..=",
+				"rightAnswer": false
+			},
+			{
+				"answer": ":",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    let numbers = vec![1, 2, 3, 4, 5];\n    for num in numbers.iter() {\n        println!(\"Value: {}\", num);\n    }\n}",
+		"options": [
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4\nValue: 5",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1\n2\n3\n4\n5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: [1, 2, 3, 4, 5]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the purpose of a loop statement in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To repeatedly execute a block of code indefinitely.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define a function or method that performs a specific task.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To conditionally execute a block of code based on a boolean expression.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create loops and iterate over a collection of items.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the purpose of a match statement in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To perform bitwise operations on numeric values.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To compare two values and check if they are equal.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To conditionally execute different blocks of code based on the value of an expression.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create a custom data type in Rust.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    let mut i = 0;\n    loop {\n        if i >= 5 {\n            break;\n        }\n        println!(\"Value: {}\", i);\n        i += 1;\n    }\n}",
+		"options": [
+			{
+				"answer": "Value: 0\nValue: 1\nValue: 2\nValue: 3\nValue: 4",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4\nValue: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: 0\nValue: 1\nValue: 2\nValue: 3\nValue: 5",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Value: 1\nValue: 2\nValue: 3\nValue: 4\nValue: 4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Flow of Control"]
+	},
+	{
+		"question": "Which trait is used for converting a value into a string representation in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "ToString",
+				"rightAnswer": true
+			},
+			{
+				"answer": "FromStr",
+				"rightAnswer": false
+			},
+			{
+				"answer": "AsRef",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Into",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Conversion"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "fn main() {\n    let number = 42;\n    let number_str = number.to_string();\n    println!(\"Number as string: {}\", number_str);\n}",
+		"options": [
+			{
+				"answer": "Number as string: 42",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Number as string: \"42\"",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Number as string: '42'",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Number as string: 101010",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Conversion"]
+	},
+	{
+		"question": "Which trait is used for converting a string into a value of a specific type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "ToString",
+				"rightAnswer": false
+			},
+			{
+				"answer": "FromStr",
+				"rightAnswer": true
+			},
+			{
+				"answer": "AsRef",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Into",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Conversion"]
+	},
+	{
+		"question": "What is the output of the following Rust code?",
+		"codeBlock": "use std::str::FromStr;\n\nfn main() {\n    let number_str = \"42\";\n    let number = i32::from_str(number_str).unwrap();\n    println!(\"Number: {}\", number);\n}",
+		"options": [
+			{
+				"answer": "Number: 42",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Number: \"42\"",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Number: '42'",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Number: 101010",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Conversion"]
+	},
+	{
+		"question": "Which macro can be used for converting a value from one type to another in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "to!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "convert!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "into!",
+				"rightAnswer": true
+			},
+			{
+				"answer": "from!",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Conversion"]
+	},
+	{
+		"question": "What does the 'unsafe' keyword indicate in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The code is guaranteed to be safe and free of bugs.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The code may invoke undefined behavior or have other safety concerns.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The code is optimized for performance and efficiency.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The code is executed in a controlled and restricted environment.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Unsafe Operations"]
+	},
+	{
+		"question": "What is the purpose of 'unsafe' blocks in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To disable error handling and panic unwinding.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To mark certain code as thread-unsafe and prevent data races.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To allow the use of certain operations that are considered unsafe.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To enable low-level system operations and direct memory access.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Unsafe Operations"]
+	},
+	{
+		"question": "What is the purpose of the 'unsafe' trait in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define a trait that can only be implemented using unsafe code.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To mark a trait as unsafe to use in certain contexts.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "There is no 'unsafe' trait in Rust.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The 'unsafe' trait allows access to unsafe operations and features.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Unsafe Operations"]
+	},
+	{
+		"question": "What are some potential risks associated with using unsafe code in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Memory leaks and resource leaks.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Concurrency issues and race conditions.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Unexpected program termination and crashes.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Increased compile-time and slower execution.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Unsafe Operations"]
+	},
+	{
+		"question": "What is the primary testing framework used in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "JUnit",
+				"rightAnswer": false
+			},
+			{
+				"answer": "pytest",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Mocha",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Rust test",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What attribute is used to mark a function as a test in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "#[test]",
+				"rightAnswer": true
+			},
+			{
+				"answer": "#[check]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "#[verify]",
+				"rightAnswer": false
+			},
+			{
+				"answer": "#[assert]",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What is the purpose of the 'assert_eq!' macro in Rust tests?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To assert that two expressions are equal.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To assert that a given condition is true.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To assert that a function panics as expected.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To assert that a value is within a specified range.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What is the purpose of the 'should_panic' attribute in Rust tests?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To mark a test as expected to panic.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To skip a test and exclude it from execution.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify test dependencies and ordering.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To measure the performance of a test.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "Which command is used to run tests in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "cargo test",
+				"rightAnswer": true
+			},
+			{
+				"answer": "cargo run",
+				"rightAnswer": false
+			},
+			{
+				"answer": "cargo build",
+				"rightAnswer": false
+			},
+			{
+				"answer": "cargo check",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What is the purpose of the '#[ignore]' attribute in Rust tests?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To exclude a test from being executed.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To mark a test as a benchmark.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify test dependencies and ordering.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To measure the performance of a test.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What is the purpose of the '#[should_panic(expected = \"...\")]' attribute in Rust tests?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To mark a test as expected to panic with a specific message.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To skip a test and exclude it from execution.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify test dependencies and ordering.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To measure the performance of a test.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What is the purpose of the 'cargo doc --test' command in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To generate documentation for tests in the project.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To compile and execute tests in the project.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To measure the test coverage of the project.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To profile the performance of the tests.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "Which assertion macro is used to test if an expression returns an error in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "assert_eq!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "assert_ne!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "assert!(expression.is_err())",
+				"rightAnswer": true
+			},
+			{
+				"answer": "assert!(expression.is_ok())",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "What is the purpose of the 'test' module in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define common test utilities and helper functions.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To group related tests and provide test fixtures.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To enable parallel execution of tests.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To mark a module as a test module.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Testing"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with threads?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::thread",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["std"]
+	},
+	{
+		"question": "Which type is used to represent a dynamically sized string in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "str",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Text",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Char",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["std"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with dates and times?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::path",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::env",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::time",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::net",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["std"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with command line arguments?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::cmp",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::env",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::collections",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["std"]
+	},
+	{
+		"question": "Which type is used to represent a fixed-size array in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Array",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Slice",
+				"rightAnswer": false
+			},
+			{
+				"answer": "ArraySlice",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["std"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides channels for message passing between threads?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::sync::mpsc",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Concurrency"]
+	},
+	{
+		"question": "Which function is used to read the contents of a file in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "fs::open",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fs::write",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fs::create_dir",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fs::read_to_string",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["File I/O"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with file paths?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::path",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["File I/O"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for spawning and interacting with child processes?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::process",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Process Management"]
+	},
+	{
+		"question": "Which function is used to delete a file in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "fs::copy",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fs::rename",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fs::remove_file",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fs::read_dir",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["File System"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for accessing command line arguments?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::env",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::process",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Program Arguments"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with foreign functions?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::process",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::ffi",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["FFI"]
+	},
+	{
+		"question": "Which function is used to send a message through a channel in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "send",
+				"rightAnswer": false
+			},
+			{
+				"answer": "write",
+				"rightAnswer": false
+			},
+			{
+				"answer": "receive",
+				"rightAnswer": false
+			},
+			{
+				"answer": "send_message",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Channels"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with file metadata?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::process",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["File I/O"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with file paths?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::path",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["File I/O"]
+	},
+	{
+		"question": "Which function is used to spawn a child process in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::process::spawn",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::io::spawn",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::thread::spawn",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::sync::spawn",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Process Management"]
+	},
+	{
+		"question": "Which function is used to create a new directory in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::fs::copy",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs::rename",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs::create_dir",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::fs::read_dir",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["File System"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for accessing command line arguments?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::io",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::env",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::process",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Program Arguments"]
+	},
+	{
+		"question": "Which module of the Rust standard library provides functionality for working with foreign functions?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::sync",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::process",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::ffi",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["FFI"]
+	},
+	{
+		"question": "Which function is used to read the contents of a file into a byte array in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::fs::read",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::fs::write",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs::create_dir",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::fs::read_to_string",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["File I/O"]
+	},
+	{
+		"question": "Which function is used to execute a command in the system shell and capture its output in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "std::process::Command::output",
+				"rightAnswer": true
+			},
+			{
+				"answer": "std::process::Command::spawn",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::process::Command::status",
+				"rightAnswer": false
+			},
+			{
+				"answer": "std::process::Command::kill",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Process Management"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a dynamic array with contiguous memory?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": true
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Option",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a key-value mapping?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": true
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Option",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent an owned, growable UTF-8 string?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Option",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent an optional value?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Option",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a slice?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "&[T]",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a fixed-size array?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "[T; N]",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a mapping from keys to values with consistent ordering?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "BTreeMap",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a collection of unique values without any particular order?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashSet",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "Which standard library type in Rust is used to represent a dynamically sized type?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Vec",
+				"rightAnswer": false
+			},
+			{
+				"answer": "HashMap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "String",
+				"rightAnswer": false
+			},
+			{
+				"answer": "dyn Trait",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Std Types"]
+	},
+	{
+		"question": "In Rust, which keyword is used to propagate errors in a function?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "return",
+				"rightAnswer": false
+			},
+			{
+				"answer": "throw",
+				"rightAnswer": false
+			},
+			{
+				"answer": "panic",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result",
+				"rightAnswer": true
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "Which type is commonly used to represent the result of an operation that can fail in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Option",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Error",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Exception",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "Which method is used to handle the potential error contained in a `Result` enum?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "unwrap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "expect",
+				"rightAnswer": false
+			},
+			{
+				"answer": "match",
+				"rightAnswer": true
+			},
+			{
+				"answer": "try",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "What is the purpose of the `?` operator in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To indicate a panic",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To handle errors in a concise manner",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To skip error handling and continue execution",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To throw an exception",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "Which trait must be implemented for a type to be used as an error in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Error",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Result",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Option",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Panic",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "Which function is used to create a new error value of a custom error type?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "panic!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "unwrap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result::Ok",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Err",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "In Rust, which function is used to propagate an error to the calling code?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "panic!",
+				"rightAnswer": false
+			},
+			{
+				"answer": "unwrap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result::Ok",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Result::Err",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Error Handling"]
+	},
+	{
+		"question": "In Rust, what is the smallest scope in which a variable is valid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Function scope",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Block scope",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Module scope",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Global scope",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "What happens to a variable declared inside a block after the block ends in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The variable is automatically deallocated and its memory is freed",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The variable becomes immutable and its value cannot be changed",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The variable remains accessible and its value can be modified",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The variable is moved to a higher scope and remains accessible",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "Which keyword is used to introduce a new scope in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "new",
+				"rightAnswer": false
+			},
+			{
+				"answer": "scope",
+				"rightAnswer": false
+			},
+			{
+				"answer": "block",
+				"rightAnswer": true
+			},
+			{
+				"answer": "section",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "In Rust, can a variable declared in an outer scope be accessed from an inner scope?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "No, it is not allowed in Rust",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Yes, it is allowed in Rust",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "What is the term used to describe the ability to shadow a variable with a new one of the same name in an inner scope?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Shadowing",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Hiding",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Overriding",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Muting",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "Which scoping rule in Rust allows borrowing a variable immutably multiple times or mutably once?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Block scoping",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Function scoping",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Ownership scoping",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Borrowing scoping",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "In Rust, can a variable declared in an inner scope have the same name as a variable declared in an outer scope?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "No, it is not allowed in Rust",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Yes, it is allowed in Rust",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Scoping Rules"]
+	},
+	{
+		"question": "What are generics used for in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To specify the return type of a function",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define variables with multiple types",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To write code that can work with different types",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To restrict the types that can be used in a program",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "What is the syntax for defining a generic function in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "fn functionName<T>(param: T) { ... }",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn functionName(param: T) -> T { ... }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn functionName<T>(param: T) -> T { ... }",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn functionName(param: T) { ... }",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "What does the 'T' represent in a generic type parameter?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The type of a temporary variable",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The type of a trait",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The type of a tuple",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A placeholder for any type",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "What is the advantage of using generics in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Improved code readability",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Faster program execution",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Reduced memory usage",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Code reuse and increased flexibility",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "Can structs and enums be defined with generic type parameters in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "No, only functions can have generic type parameters",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Yes, both structs and enums can have generic type parameters",
+				"rightAnswer": true
+			},
+			{
+				"answer": "No, only enums can have generic type parameters",
+				"rightAnswer": false
+			},
+			{
+				"answer": "No, only structs can have generic type parameters",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "What is the result of specializing a generic function or type for a specific type in Rust?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Reduced performance",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Improved code maintainability",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Increased code complexity",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A separate implementation specific to that type",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "What is a trait bound in Rust generics?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A restriction on the types that can be used with a generic",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A type that implements the Copy trait",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A function that specifies the return type",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A syntax error in Rust generics",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Generics"]
+	},
+	{
+		"question": "Write a function in Rust that reverses a string.",
+		"codeBlock": "fn reverse_string(input: &str) -> String {\n    let mut reversed = String::new();\n    for c in input.chars().rev() {\n        reversed.push(c);\n    }\n    reversed\n}",
+		"options": [
+			{
+				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().rev().collect()\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().collect::<String>().chars().rev().collect::<String>()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().rev().collect::<String>()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn reverse_string(input: &str) -> String {\n    input.chars().collect::<String>().chars().rev().collect::<String>()\n    input.chars().rev().collect::<String>()\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that checks if a given string is a palindrome.",
+		"codeBlock": "fn is_palindrome(input: &str) -> bool {\n    let input = input.to_lowercase();\n    let reversed: String = input.chars().rev().collect();\n    input == reversed\n}",
+		"options": [
+			{
+				"answer": "fn is_palindrome(input: &str) -> bool {\n    input.chars().eq(input.chars().rev())\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn is_palindrome(input: &str) -> bool {\n    input.chars().collect::<String>() == input.chars().rev().collect::<String>()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn is_palindrome(input: &str) -> bool {\n    input.chars().eq(input.chars().rev())\n    input.chars().collect::<String>() == input.chars().rev().collect::<String>()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn is_palindrome(input: &str) -> bool {\n    let reversed = input.chars().rev().collect::<String>();\n    input == reversed\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that finds the maximum element in an array.",
+		"codeBlock": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().cloned().max()\n}",
+		"options": [
+			{
+				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().max().cloned()\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().max_by_key(|&x| x).cloned()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().cloned().max_by_key(|&x| x)\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn find_max_element(arr: &[i32]) -> Option<i32> {\n    arr.iter().max_by_key(|&x| x).cloned()\n    arr.iter().cloned().max_by_key(|&x| x)\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that computes the factorial of a given number.",
+		"codeBlock": "fn factorial(n: u32) -> u32 {\n    (1..=n).product()\n}",
+		"options": [
+			{
+				"answer": "fn factorial(n: u32) -> u32 {\n    if n <= 1 {\n        1\n    } else {\n        n * factorial(n - 1)\n    }\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn factorial(n: u32) -> u32 {\n    (1..n).fold(1, |acc, x| acc * x)\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn factorial(n: u32) -> u32 {\n    (1..=n).product()\n    (1..n).fold(1, |acc, x| acc * x)\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn factorial(n: u32) -> u32 {\n    if n <= 1 {\n        1\n    } else {\n        n * factorial(n - 1)\n    }\n    (1..=n).product()\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that checks if a given number is prime.",
+		"codeBlock": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    for i in 2..=n / 2 {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
+		"options": [
+			{
+				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let limit = (n as f64).sqrt() as u32 + 1;\n    for i in 2..limit {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    for i in 2..n {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let limit = n / 2 + 1;\n    for i in 2..limit {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn is_prime(n: u32) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let limit = (n as f32).sqrt() as u32 + 1;\n    for i in 2..limit {\n        if n % i == 0 {\n            return false;\n        }\n    }\n    true\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that finds the nth Fibonacci number.",
+		"codeBlock": "fn fibonacci(n: u32) -> u32 {\n    if n <= 1 {\n        n\n    } else {\n        fibonacci(n - 1) + fibonacci(n - 2)\n    }\n}",
+		"options": [
+			{
+				"answer": "fn fibonacci(n: u32) -> u32 {\n    let mut fib = (0, 1);\n    for _ in 0..n {\n        fib = (fib.1, fib.0 + fib.1);\n    }\n    fib.0\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn fibonacci(n: u32) -> u32 {\n    if n <= 1 {\n        n\n    } else {\n        fibonacci(n - 1) + fibonacci(n - 2)\n    }\n    fibonacci(n - 1) + fibonacci(n - 2)\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn fibonacci(n: u32) -> u32 {\n    if n <= 1 {\n        n\n    } else {\n        fibonacci(n - 1) + fibonacci(n - 2)\n    }\n    let mut fib = (0, 1);\n    for _ in 0..n {\n        fib = (fib.1, fib.0 + fib.1);\n    }\n    fib.0\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn fibonacci(n: u32) -> u32 {\n    let mut fib = [0, 1];\n    for i in 2..=n as usize {\n        fib[i] = fib[i - 1] + fib[i - 2];\n    }\n    fib[n as usize]\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that counts the number of occurrences of a given element in an array.",
+		"codeBlock": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().filter(|&x| x == target).count()\n}",
+		"options": [
+			{
+				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().fold(0, |count, &x| if x == *target { count + 1 } else { count })\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().filter(|&x| *x == *target).count()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().filter(|&&x| x == *target).count()\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn count_occurrences<T: Eq>(arr: &[T], target: &T) -> usize {\n    arr.iter().map(|&x| if x == *target { 1 } else { 0 }).sum()\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
+	},
+	{
+		"question": "Write a function in Rust that checks if a given string is an anagram of another string.",
+		"codeBlock": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n}",
+		"options": [
+			{
+				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n}",
+				"rightAnswer": true
+			},
+			{
+				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n}",
+				"rightAnswer": false
+			},
+			{
+				"answer": "fn is_anagram(s1: &str, s2: &str) -> bool {\n    let mut s1_chars: Vec<char> = s1.chars().collect();\n    let mut s2_chars: Vec<char> = s2.chars().collect();\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n    s1_chars.sort();\n    s2_chars.sort();\n    s1_chars == s2_chars\n    s1_chars.sort_unstable();\n    s2_chars.sort_unstable();\n    s1_chars == s2_chars\n}",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "Rust",
+		"category": ["Algorithms"]
 	}
 ]

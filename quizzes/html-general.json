@@ -248,5 +248,284 @@
 		"level": "Easy",
 		"language": "HTML",
 		"category": ["Tags"]
+	},
+	{
+		"question": "Which HTML element is used to define a clickable button?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<button>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<input>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<form>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<link>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Forms"]
+	},
+	{
+		"question": "Which attribute is used to specify the source URL of an embedded video in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "src",
+				"rightAnswer": true
+			},
+			{
+				"answer": "url",
+				"rightAnswer": false
+			},
+			{
+				"answer": "link",
+				"rightAnswer": false
+			},
+			{
+				"answer": "source",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Multimedia"]
+	},
+	{
+		"question": "Which HTML element is used to define an unordered list?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<ul>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<ol>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<li>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<list>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "Which HTML element is used to define a definition term in a description list?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<dt>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<dl>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<dd>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<def>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "Which attribute is used to specify the order of columns in a flexible grid layout in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "order",
+				"rightAnswer": true
+			},
+			{
+				"answer": "grid-order",
+				"rightAnswer": false
+			},
+			{
+				"answer": "column-order",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-order",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Layout"]
+	},
+	{
+		"question": "Which HTML element is used to define a section of content that can be hidden or shown by the user?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<details>",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<section>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<summary>",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<toggle>",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Tags"]
+	},
+	{
+		"question": "What is the purpose of the HTML <head> element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define the main content of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the footer of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the header of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To contain metadata and specify the document's title, styles, and scripts",
+				"rightAnswer": true
+			}
+		],
+		"level": "Architectural",
+		"language": "HTML",
+		"category": ["Structure"]
+	},
+	{
+		"question": "What is the purpose of the HTML <body> element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define the main content of the web page",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define the footer of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the header of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To contain metadata and specify the document's title, styles, and scripts",
+				"rightAnswer": false
+			}
+		],
+		"level": "Architectural",
+		"language": "HTML",
+		"category": ["Structure"]
+	},
+	{
+		"question": "What is the purpose of the HTML <header> element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define the main content of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the footer of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the header of the web page or a section",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To contain metadata and specify the document's title, styles, and scripts",
+				"rightAnswer": false
+			}
+		],
+		"level": "Architectural",
+		"language": "HTML",
+		"category": ["Structure"]
+	},
+	{
+		"question": "What is the purpose of the HTML <footer> element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define the main content of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the footer of the web page or a section",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define the header of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To contain metadata and specify the document's title, styles, and scripts",
+				"rightAnswer": false
+			}
+		],
+		"level": "Architectural",
+		"language": "HTML",
+		"category": ["Structure"]
+	},
+	{
+		"question": "What is the purpose of the HTML <section> element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To define the main content of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a standalone section of content",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define the footer of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the header of the web page",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To contain metadata and specify the document's title, styles, and scripts",
+				"rightAnswer": false
+			}
+		],
+		"level": "Architectural",
+		"language": "HTML",
+		"category": ["Structure"]
 	}
 ]

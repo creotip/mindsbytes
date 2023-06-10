@@ -1,0 +1,1860 @@
+[
+	{
+		"question": "What does CSS stand for?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Cascading Style Sheets",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Cascaded Style Sheets",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Creative Style Sheets",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Coded Style Sheets",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Basics"]
+	},
+	{
+		"question": "What is the correct CSS syntax for selecting an element with the class 'example'?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": ".example",
+				"rightAnswer": true
+			},
+			{
+				"answer": "#example",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<example>",
+				"rightAnswer": false
+			},
+			{
+				"answer": ":example",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Selectors"]
+	},
+	{
+		"question": "Which property is used to change the text color in CSS?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "color",
+				"rightAnswer": true
+			},
+			{
+				"answer": "font-color",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-color",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-style",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to control the spacing between lines of text?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "line-height",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-spacing",
+				"rightAnswer": false
+			},
+			{
+				"answer": "letter-spacing",
+				"rightAnswer": false
+			},
+			{
+				"answer": "word-spacing",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to change the background color of an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "background-color",
+				"rightAnswer": true
+			},
+			{
+				"answer": "color",
+				"rightAnswer": false
+			},
+			{
+				"answer": "background",
+				"rightAnswer": false
+			},
+			{
+				"answer": "bgcolor",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to control the size of an element's border?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "border-width",
+				"rightAnswer": true
+			},
+			{
+				"answer": "border-style",
+				"rightAnswer": false
+			},
+			{
+				"answer": "border-color",
+				"rightAnswer": false
+			},
+			{
+				"answer": "border-size",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "What is the correct CSS syntax for targeting an element with both class 'class1' and 'class2'?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": ".class1.class2",
+				"rightAnswer": true
+			},
+			{
+				"answer": ".class1, .class2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "#class1.class2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "#class1, #class2",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Selectors"]
+	},
+	{
+		"question": "Which CSS property is used to control the size of an element's font?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "font-size",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-size",
+				"rightAnswer": false
+			},
+			{
+				"answer": "font-style",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-style",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to align text to the right?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "text-align: right;",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-align: center;",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-align: left;",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-align: justify;",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to add shadows to an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "box-shadow",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-shadow",
+				"rightAnswer": false
+			},
+			{
+				"answer": "shadow-effect",
+				"rightAnswer": false
+			},
+			{
+				"answer": "element-shadow",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to control the visibility of an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "display",
+				"rightAnswer": true
+			},
+			{
+				"answer": "visibility",
+				"rightAnswer": false
+			},
+			{
+				"answer": "opacity",
+				"rightAnswer": false
+			},
+			{
+				"answer": "hidden",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+
+	{
+		"question": "Which CSS property is used to control the spacing between elements?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "margin",
+				"rightAnswer": true
+			},
+			{
+				"answer": "padding",
+				"rightAnswer": false
+			},
+			{
+				"answer": "border",
+				"rightAnswer": false
+			},
+			{
+				"answer": "spacing",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to make an element's text bold?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "font-weight",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-decoration",
+				"rightAnswer": false
+			},
+			{
+				"answer": "font-style",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-transform",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to specify the order of flexible items in a flex container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "order",
+				"rightAnswer": true
+			},
+			{
+				"answer": "flex-order",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-wrap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-flow",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to create rounded corners on an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "border-radius",
+				"rightAnswer": true
+			},
+			{
+				"answer": "corner-radius",
+				"rightAnswer": false
+			},
+			{
+				"answer": "border-style",
+				"rightAnswer": false
+			},
+			{
+				"answer": "corner-style",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to change the size of an element based on the size of its content?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "display: inline-block;",
+				"rightAnswer": true
+			},
+			{
+				"answer": "width: auto;",
+				"rightAnswer": false
+			},
+			{
+				"answer": "height: content;",
+				"rightAnswer": false
+			},
+			{
+				"answer": "size: auto;",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to control the order of overlapping elements?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "z-index",
+				"rightAnswer": true
+			},
+			{
+				"answer": "position",
+				"rightAnswer": false
+			},
+			{
+				"answer": "display",
+				"rightAnswer": false
+			},
+			{
+				"answer": "order",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to specify the duration of a transition?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "transition-duration",
+				"rightAnswer": true
+			},
+			{
+				"answer": "animation-duration",
+				"rightAnswer": false
+			},
+			{
+				"answer": "transform-duration",
+				"rightAnswer": false
+			},
+			{
+				"answer": "timing-duration",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to apply a 2D or 3D transformation to an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "transform",
+				"rightAnswer": true
+			},
+			{
+				"answer": "transition",
+				"rightAnswer": false
+			},
+			{
+				"answer": "animation",
+				"rightAnswer": false
+			},
+			{
+				"answer": "position",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to specify the style of a list item marker?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "list-style-type",
+				"rightAnswer": true
+			},
+			{
+				"answer": "list-style-image",
+				"rightAnswer": false
+			},
+			{
+				"answer": "list-style",
+				"rightAnswer": false
+			},
+			{
+				"answer": "marker-style",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to control the order of flex items in a flex container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "order",
+				"rightAnswer": true
+			},
+			{
+				"answer": "flex-order",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-direction",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-wrap",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to control the appearance of the cursor on an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "cursor",
+				"rightAnswer": true
+			},
+			{
+				"answer": "pointer",
+				"rightAnswer": false
+			},
+			{
+				"answer": "mouse-cursor",
+				"rightAnswer": false
+			},
+			{
+				"answer": "hover-cursor",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+
+	{
+		"question": "Which CSS property is used to create a responsive layout for mobile devices?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "@media",
+				"rightAnswer": true
+			},
+			{
+				"answer": "@viewport",
+				"rightAnswer": false
+			},
+			{
+				"answer": "@responsive",
+				"rightAnswer": false
+			},
+			{
+				"answer": "@breakpoint",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Responsive Design"]
+	},
+	{
+		"question": "Which CSS property is used to create a gradient background?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "background-image: linear-gradient();",
+				"rightAnswer": true
+			},
+			{
+				"answer": "background-color: gradient();",
+				"rightAnswer": false
+			},
+			{
+				"answer": "background-style: gradient();",
+				"rightAnswer": false
+			},
+			{
+				"answer": "background-type: linear-gradient();",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Consider the following HTML code:\n\n```html\n<div class=\"container\">\n  <p>This is a paragraph.</p>\n  <p class=\"special\">This is a special paragraph.</p>\n</div>\n``` \n\nWhich CSS selector will select the second paragraph with the class \"special\"?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": ".container .special",
+				"rightAnswer": true
+			},
+			{
+				"answer": ".special p",
+				"rightAnswer": false
+			},
+			{
+				"answer": "div .special",
+				"rightAnswer": false
+			},
+			{
+				"answer": "#container .special",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Selectors"]
+	},
+	{
+		"question": "Which CSS property is used to add multiple shadows to an element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "box-shadow",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-shadow",
+				"rightAnswer": false
+			},
+			{
+				"answer": "element-shadow",
+				"rightAnswer": false
+			},
+			{
+				"answer": "shadow-effect",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.element {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 50px auto;\n}\n``` \n\nWhat is the number of grid columns in the grid container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "3",
+				"rightAnswer": true
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Grid Layout"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n@keyframes move {\n  from { transform: translateX(0); }\n  to { transform: translateX(100px); }\n}\n\n.element {\n  animation-name: move;\n  animation-duration: 2s;\n  animation-iteration-count: infinite;\n}\n``` \n\nWhat is the purpose of this CSS code?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It creates an animation that moves the element horizontally by 100 pixels repeatedly.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It applies a 2-second transition to the element's position on page load.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It animates the element's background color to change from one color to another.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It rotates the element 100 degrees clockwise continuously.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Animations"]
+	},
+
+	{
+		"question": "Which CSS property is used to control the spacing between the characters in a text?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "letter-spacing",
+				"rightAnswer": true
+			},
+			{
+				"answer": "word-spacing",
+				"rightAnswer": false
+			},
+			{
+				"answer": "line-height",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-indent",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to align text vertically within its containing element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "vertical-align",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-align",
+				"rightAnswer": false
+			},
+			{
+				"answer": "line-height",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-transform",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to specify the minimum width of a flex item?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "min-width",
+				"rightAnswer": true
+			},
+			{
+				"answer": "flex-min-width",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-basis",
+				"rightAnswer": false
+			},
+			{
+				"answer": "width",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to specify the size of a background image?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "background-size",
+				"rightAnswer": true
+			},
+			{
+				"answer": "background-image",
+				"rightAnswer": false
+			},
+			{
+				"answer": "background-repeat",
+				"rightAnswer": false
+			},
+			{
+				"answer": "background-position",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.selector {\n  display: inline-block;\n  margin: 10px;\n  padding: 20px;\n  border: 1px solid black;\n}\n``` \n\nWhat will be the total width of the .selector element, including content, padding, and border?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "42px",
+				"rightAnswer": true
+			},
+			{
+				"answer": "41px",
+				"rightAnswer": false
+			},
+			{
+				"answer": "40px",
+				"rightAnswer": false
+			},
+			{
+				"answer": "43px",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Box Model"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 10px;\n}\n\n.item {\n  grid-column: 2 / 4;\n}\n``` \n\nIn the .container, how many grid columns will the .item span across?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Grid Layout"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n@keyframes rotate {\n  from { transform: rotate(0deg); }\n  to { transform: rotate(360deg); }\n}\n\n.element {\n  animation-name: rotate;\n  animation-duration: 2s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n``` \n\nWhat effect will this CSS code produce?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It creates an animation that rotates the element 360 degrees clockwise repeatedly with an ease-in-out timing function.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It applies a 2-second transition to the element's rotation on page load.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It animates the element's opacity to fade in and out repeatedly.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It scales the element up and down continuously.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Animations"]
+	},
+
+	{
+		"question": "Which CSS property is used to control the stacking order of elements?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "z-index",
+				"rightAnswer": true
+			},
+			{
+				"answer": "position",
+				"rightAnswer": false
+			},
+			{
+				"answer": "display",
+				"rightAnswer": false
+			},
+			{
+				"answer": "float",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS selector selects all direct child elements of a parent element?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": ">",
+				"rightAnswer": true
+			},
+			{
+				"answer": "~",
+				"rightAnswer": false
+			},
+			{
+				"answer": "+",
+				"rightAnswer": false
+			},
+			{
+				"answer": "::",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Selectors"]
+	},
+	{
+		"question": "Which CSS property is used to apply a shadow effect to text?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "text-shadow",
+				"rightAnswer": true
+			},
+			{
+				"answer": "box-shadow",
+				"rightAnswer": false
+			},
+			{
+				"answer": "shadow-effect",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-effect",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Which CSS property is used to specify the color of the text?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "color",
+				"rightAnswer": true
+			},
+			{
+				"answer": "text-color",
+				"rightAnswer": false
+			},
+			{
+				"answer": "font-color",
+				"rightAnswer": false
+			},
+			{
+				"answer": "text-style",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Properties"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: flex;\n  justify-content: space-between;\n}\n\n.item {\n  flex-grow: 1;\n}\n``` \n\nWhat will be the behavior of the .item elements inside the .container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The .item elements will grow and distribute the available space equally between them.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The .item elements will shrink and distribute the available space equally between them.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item elements will align themselves to the left side of the container.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item elements will align themselves to the right side of the container.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.selector {\n  position: relative;\n  top: 20px;\n  left: 30px;\n}\n``` \n\nWhat will be the final position of the .selector element on the page?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The .selector element will be positioned 20 pixels down and 30 pixels to the right from its normal position.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The .selector element will be positioned 20 pixels up and 30 pixels to the left from its normal position.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .selector element will be positioned 20 pixels to the right from its normal position.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .selector element will be positioned 20 pixels down from its normal position.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Positioning"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n@keyframes pulse {\n  0% { transform: scale(1); }\n  50% { transform: scale(1.2); }\n  100% { transform: scale(1); }\n}\n\n.element {\n  animation-name: pulse;\n  animation-duration: 2s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n``` \n\nWhat effect will this CSS code produce?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "It creates an animation that scales the element up and down repeatedly with an ease-in-out timing function.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "It applies a 2-second transition to the element's size on page load.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It rotates the element 360 degrees clockwise continuously.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "It fades the element in and out repeatedly.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Animations"]
+	},
+
+	{
+		"question": "Which CSS property is used to create a flex container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "display",
+				"rightAnswer": true
+			},
+			{
+				"answer": "flex-wrap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-direction",
+				"rightAnswer": false
+			},
+			{
+				"answer": "justify-content",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to align flex items vertically within a flex container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "align-items",
+				"rightAnswer": true
+			},
+			{
+				"answer": "justify-content",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-direction",
+				"rightAnswer": false
+			},
+			{
+				"answer": "align-content",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to distribute extra space among flex items?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "flex-grow",
+				"rightAnswer": true
+			},
+			{
+				"answer": "flex-shrink",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-basis",
+				"rightAnswer": false
+			},
+			{
+				"answer": "flex-wrap",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to control the order of flex items within a flex container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "order",
+				"rightAnswer": true
+			},
+			{
+				"answer": "flex-direction",
+				"rightAnswer": false
+			},
+			{
+				"answer": "align-items",
+				"rightAnswer": false
+			},
+			{
+				"answer": "justify-content",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: flex;\n  flex-direction: column;\n}\n\n.item {\n  flex-grow: 1;\n}\n``` \n\nWhat will be the behavior of the .item elements inside the .container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The .item elements will grow and distribute the available vertical space equally between them.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The .item elements will shrink and distribute the available vertical space equally between them.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item elements will align themselves to the left side of the container.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item elements will align themselves to the right side of the container.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: flex;\n  justify-content: space-between;\n}\n\n.item {\n  flex-basis: 25%;\n}\n``` \n\nHow many .item elements will fit in a single row within the .container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "4",
+				"rightAnswer": true
+			},
+			{
+				"answer": "2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "5",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["Flexbox"]
+	},
+
+	{
+		"question": "Which CSS property is used to create a grid container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "display",
+				"rightAnswer": true
+			},
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-gap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-row",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to define the number of columns in a grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": true
+			},
+			{
+				"answer": "grid-gap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-row",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-rows",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to specify the size of a grid column or row?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-column",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-gap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-rows",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to specify the space between grid items?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-gap",
+				"rightAnswer": true
+			},
+			{
+				"answer": "grid-template-areas",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-auto-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-row-gap",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 10px;\n}\n\n.item {\n  grid-column: 2 / 4;\n}\n``` \n\nIn the .container, how many grid columns will the .item span across?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}\n``` \n\nWhat is the behavior of the .container when the screen size changes?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The .container will automatically create as many columns as it can fit, with each column having a minimum width of 200px.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The .container will always have a fixed number of columns, regardless of the screen size.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .container will adjust the gap between columns based on the screen size.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .container will hide the overflowing columns when the screen size is too small.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+
+	{
+		"question": "Which CSS property is used to specify the areas within a CSS Grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-template-areas",
+				"rightAnswer": true
+			},
+			{
+				"answer": "grid-auto-flow",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-row-gap",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to automatically place grid items within a CSS Grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-auto-flow",
+				"rightAnswer": true
+			},
+			{
+				"answer": "grid-gap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-column-gap",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to align grid items horizontally within a CSS Grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "justify-items",
+				"rightAnswer": true
+			},
+			{
+				"answer": "align-items",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-row-gap",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to create a fixed-size grid track within a CSS Grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-auto-rows",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-column-gap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-rows",
+				"rightAnswer": true
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 100px 200px;\n}\n\n.item {\n  grid-column: 2;\n  grid-row: 1;\n}\n``` \n\nIn the .container, what will be the size of the .item?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "The .item will span across the second column and have a height of 100px.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item will span across the second column and have a height of 200px.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item will have a width of 1fr and a height of 100px.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The .item will have a width of 1fr and a height of 200px.",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+
+	{
+		"question": "What is the purpose of the CSS Grid property 'grid-area'?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To specify the size of a grid cell within a CSS Grid.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define a named area within a CSS Grid for grid items to be placed.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To align grid items vertically within a CSS Grid.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To automatically flow grid items within a CSS Grid.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n}\n\n.item {\n  grid-column: span 2;\n}\n``` \n\nHow many columns will the .item span across within the .container?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "2",
+				"rightAnswer": true
+			},
+			{
+				"answer": "1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "3",
+				"rightAnswer": false
+			},
+			{
+				"answer": "4",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Which CSS property is used to create a fixed-size grid track within a CSS Grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "grid-template-columns",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-auto-rows",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-column-gap",
+				"rightAnswer": false
+			},
+			{
+				"answer": "grid-template-rows",
+				"rightAnswer": true
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "Consider the following CSS code:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  grid-template-rows: repeat(3, 100px);\n}\n\n.item {\n  grid-column: 2 / 4;\n  grid-row: 1 / 3;\n}\n``` \n\nIn the .container, how many grid cells will the .item occupy?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "4",
+				"rightAnswer": true
+			},
+			{
+				"answer": "6",
+				"rightAnswer": false
+			},
+			{
+				"answer": "8",
+				"rightAnswer": false
+			},
+			{
+				"answer": "10",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "What is the purpose of the CSS Grid property 'grid-auto-flow'?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To control the flow of content within a CSS Grid.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define the size of grid tracks within a CSS Grid.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To align grid items horizontally within a CSS Grid.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To create a gap between grid cells within a CSS Grid.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "What is the specificity of the following CSS selector: 'body .container > ul li a'?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0,1,3,1",
+				"rightAnswer": false
+			},
+			{
+				"answer": "0,1,3,2",
+				"rightAnswer": false
+			},
+			{
+				"answer": "0,1,3,3",
+				"rightAnswer": true
+			},
+			{
+				"answer": "0,1,4,1",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Selectors"]
+	},
+	{
+		"question": "Which CSS property is used to define the duration of a transition?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "transition-property",
+				"rightAnswer": false
+			},
+			{
+				"answer": "transition-delay",
+				"rightAnswer": false
+			},
+			{
+				"answer": "transition-duration",
+				"rightAnswer": true
+			},
+			{
+				"answer": "transition-timing-function",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Transitions"]
+	},
+	{
+		"question": "Which CSS property is used to define the number of times an animation should repeat?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "animation-name",
+				"rightAnswer": false
+			},
+			{
+				"answer": "animation-duration",
+				"rightAnswer": false
+			},
+			{
+				"answer": "animation-iteration-count",
+				"rightAnswer": true
+			},
+			{
+				"answer": "animation-timing-function",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Animations"]
+	},
+	{
+		"question": "What is the default value of the 'flex-shrink' property in CSS Flexbox?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "0",
+				"rightAnswer": false
+			},
+			{
+				"answer": "1",
+				"rightAnswer": true
+			},
+			{
+				"answer": "auto",
+				"rightAnswer": false
+			},
+			{
+				"answer": "initial",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Flexbox"]
+	},
+	{
+		"question": "Which CSS property is used to specify the alignment of grid items along the block axis in CSS Grid?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "justify-items",
+				"rightAnswer": false
+			},
+			{
+				"answer": "align-items",
+				"rightAnswer": true
+			},
+			{
+				"answer": "justify-content",
+				"rightAnswer": false
+			},
+			{
+				"answer": "align-content",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "CSS",
+		"category": ["CSS Grid"]
+	},
+	{
+		"question": "What is the purpose of media queries in CSS?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To specify different styles for different devices and screen sizes.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To create animations and transitions in CSS.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To define the layout and structure of a webpage.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To add interactivity and behavior to web pages.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Easy",
+		"language": "CSS",
+		"category": ["Responsiveness"]
+	},
+	{
+		"question": "What is the concept of 'mobile-first' approach in responsive web design?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Designing and developing a website primarily for mobile devices, then scaling up for larger screens.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Designing and developing a website primarily for desktop screens, then scaling down for smaller devices.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Designing and developing a website that works equally well on all screen sizes without any specific focus on mobile or desktop.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Designing and developing separate websites for mobile and desktop, without any consideration for responsive design.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Responsiveness"]
+	},
+	{
+		"question": "What is a fluid layout in responsive web design?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A layout that adjusts its width and height based on the size of the viewport.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A layout that has a fixed width and height, regardless of the viewport size.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A layout that is specifically designed for mobile devices and cannot be resized for larger screens.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A layout that uses absolute positioning for all its elements, allowing for precise control over their placement.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Responsiveness"]
+	},
+	{
+		"question": "What is the purpose of the viewport meta tag in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "To control the size and scale of the viewport on mobile devices.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "To define the structure and layout of the web page.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To specify the fonts and typography used in the web page.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "To add interactivity and behavior to web pages.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Responsiveness"]
+	},
+	{
+		"question": "In responsive design, what are breakpoints?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Specific points at which the layout of a web page changes to adapt to different screen sizes.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "The points at which a web page breaks and becomes unreadable on certain devices.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The points at which a web page transitions from mobile view to desktop view.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "The points at which media queries are applied to a web page.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Medium",
+		"language": "CSS",
+		"category": ["Responsiveness"]
+	}
+]
