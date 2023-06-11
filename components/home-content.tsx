@@ -96,7 +96,7 @@ export function HomeContent() {
 						variant="ghost"
 						display="flex"
 						key={index}
-						p="1rem"
+						p={['10px', '1rem']}
 						border="1px solid"
 						borderColor="gray.600"
 						borderRadius="7px"
