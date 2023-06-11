@@ -47,8 +47,8 @@ export const QuizList = () => {
 									<ListItem>Java</ListItem>
 									<ListItem>Kotlin</ListItem>
 									<ListItem>Swift</ListItem>
-									<ListItem>SQL</ListItem>
-									<ListItem>NoSQL</ListItem>
+									<ListItem>MySQL</ListItem>
+									<ListItem>MongoDB</ListItem>
 									<ListItem>C#</ListItem>
 									<ListItem>
 										<CustomLink isSidebar href="/quizzes/rust">

@@ -1,6 +1,48 @@
 'use client'
 import { config } from '@/config/config'
-import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import {
+	SiCplusplus,
+	SiCsharp,
+	SiCss3,
+	SiGo,
+	SiHtml5,
+	SiJavascript,
+	SiKotlin,
+	SiMongodb,
+	SiMysql,
+	SiPerl,
+	SiPhp,
+	SiPython,
+	SiRuby,
+	SiRust,
+	SiScala,
+	SiSwift,
+	SiTypescript,
+} from 'react-icons/si'
+import { FaJava } from 'react-icons/fa'
+
+const quizMapIcons = [
+	{ title: 'Javascript', icon: <SiJavascript /> },
+	{ title: 'TypeScript', icon: <SiTypescript /> },
+	{ title: 'Python', icon: <SiPython /> },
+	{ title: 'HTML', icon: <SiHtml5 /> },
+	{ title: 'CSS', icon: <SiCss3 /> },
+	{ title: 'Java', icon: <FaJava /> },
+	{ title: 'Kotlin', icon: <SiKotlin /> },
+	{ title: 'Swift', icon: <SiSwift /> },
+	{ title: 'MySQL', icon: <SiMysql /> },
+	{ title: 'MongoDB', icon: <SiMongodb /> },
+	{ title: 'C#', icon: <SiCsharp /> },
+	{ title: 'Rust', icon: <SiRust /> },
+	{ title: 'Go', icon: <SiGo /> },
+	{ title: 'C', icon: <SiCplusplus /> },
+	{ title: 'C++', icon: <SiCplusplus /> },
+	{ title: 'PHP', icon: <SiPhp /> },
+	{ title: 'Ruby', icon: <SiRuby /> },
+	{ title: 'Perl', icon: <SiPerl /> },
+	{ title: 'Scala', icon: <SiScala /> },
+]
 
 export function HomeContent() {
 	return (
@@ -20,7 +62,7 @@ export function HomeContent() {
 				{config.seo.alternativeDescription}
 			</Text>
 
-			<SimpleGrid columns={[1, 1, 1, 3]} gap="25px">
+			<SimpleGrid columns={[1, 1, 1, 3]} gap="25px" mb="3rem">
 				<Box p="20px" border="1px solid" borderColor="gray.600" borderRadius="7px">
 					<Heading as="h2" fontSize="1rem" mb="1rem">
 						No Registration Required
@@ -43,6 +85,33 @@ export function HomeContent() {
 						Enjoy a seamless and intuitive user interface that makes quiz-taking a breeze.
 					</Text>
 				</Box>
+			</SimpleGrid>
+
+			<Heading as="h2" textAlign="center" fontSize="2xl" mb="2rem">
+				Programming languages quizzes
+			</Heading>
+			<SimpleGrid columns={[4, 4, 4, 8]} spacing="1rem">
+				{quizMapIcons.map((quiz, index) => (
+					<Button
+						variant="ghost"
+						display="flex"
+						key={index}
+						p="20px"
+						border="1px solid"
+						borderColor="gray.600"
+						borderRadius="7px"
+						textAlign="center"
+						flexDir="column"
+						h="auto"
+					>
+						<Box fontSize={['20px', '40px']} mb="10px">
+							{quiz.icon}
+						</Box>
+						<Text color="gray.400" fontSize={['10px', 'xs', 'xs']}>
+							{quiz.title}
+						</Text>
+					</Button>
+				))}
 			</SimpleGrid>
 		</Box>
 	)
