@@ -1,48 +1,8 @@
 'use client'
 import { config } from '@/config/config'
-import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react'
-import {
-	SiCplusplus,
-	SiCsharp,
-	SiCss3,
-	SiGo,
-	SiHtml5,
-	SiJavascript,
-	SiKotlin,
-	SiMongodb,
-	SiMysql,
-	SiPerl,
-	SiPhp,
-	SiPython,
-	SiRuby,
-	SiRust,
-	SiScala,
-	SiSwift,
-	SiTypescript,
-} from 'react-icons/si'
-import { FaJava } from 'react-icons/fa'
-
-const quizMapIcons = [
-	{ title: 'Javascript', icon: <SiJavascript /> },
-	{ title: 'TypeScript', icon: <SiTypescript /> },
-	{ title: 'Python', icon: <SiPython /> },
-	{ title: 'HTML', icon: <SiHtml5 /> },
-	{ title: 'CSS', icon: <SiCss3 /> },
-	{ title: 'Java', icon: <FaJava /> },
-	{ title: 'Kotlin', icon: <SiKotlin /> },
-	{ title: 'Swift', icon: <SiSwift /> },
-	{ title: 'MySQL', icon: <SiMysql /> },
-	{ title: 'MongoDB', icon: <SiMongodb /> },
-	{ title: 'C#', icon: <SiCsharp /> },
-	{ title: 'Rust', icon: <SiRust /> },
-	{ title: 'Go', icon: <SiGo /> },
-	{ title: 'C', icon: <SiCplusplus /> },
-	{ title: 'C++', icon: <SiCplusplus /> },
-	{ title: 'PHP', icon: <SiPhp /> },
-	{ title: 'Ruby', icon: <SiRuby /> },
-	{ title: 'Perl', icon: <SiPerl /> },
-	{ title: 'Scala', icon: <SiScala /> },
-]
+import { quizMap } from '@/utils/quiz-map'
+import { Box, Button, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { CustomLink } from './custom-link'
 
 export function HomeContent() {
 	return (
@@ -91,8 +51,10 @@ export function HomeContent() {
 				Programming languages quizzes
 			</Heading>
 			<SimpleGrid columns={[4, 4, 4, 8]} spacing="1rem">
-				{quizMapIcons.map((quiz, index) => (
+				{quizMap.map((quizMapItem, index) => (
 					<Button
+						as={CustomLink}
+						href={quizMapItem.path}
 						variant="ghost"
 						display="flex"
 						key={index}
@@ -105,10 +67,10 @@ export function HomeContent() {
 						h="auto"
 					>
 						<Box fontSize={['20px', '40px']} mb="10px">
-							{quiz.icon}
+							{quizMapItem.icon}
 						</Box>
 						<Text color="gray.400" fontSize={['10px', 'xs', 'xs']}>
-							{quiz.title}
+							{quizMapItem.title}
 						</Text>
 					</Button>
 				))}
