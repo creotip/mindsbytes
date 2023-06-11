@@ -54,25 +54,31 @@ export const Header = () => {
 				></Box>
 			</Box>
 
-			<Show below="md">
-				<IconButton
-					aria-label="Call Sage"
-					fontSize="20px"
-					onClick={() => setDrawer(true)}
-					icon={<HiOutlineMenuAlt3 />}
-				/>
-				<Drawer isOpen={isDrawerOpen} placement="right" onClose={() => setDrawer(false)}>
-					<DrawerOverlay />
-					<DrawerContent>
-						<DrawerCloseButton />
-						<DrawerHeader>Choose your quiz</DrawerHeader>
+			<IconButton
+				aria-label="drawer menu"
+				variant="ghost"
+				fontSize="20px"
+				onClick={() => setDrawer(true)}
+				icon={<HiOutlineMenuAlt3 />}
+				bgImage="radial-gradient( #222b3d 20%, #141923)"
+				border="1px solid"
+				borderColor="gray.700"
+				_hover={{
+					shadow: 'xl',
+					bgImage: 'none',
+				}}
+			/>
+			<Drawer isOpen={isDrawerOpen} placement="right" onClose={() => setDrawer(false)}>
+				<DrawerOverlay />
+				<DrawerContent>
+					<DrawerCloseButton />
+					<DrawerHeader>Choose your quiz</DrawerHeader>
 
-						<DrawerBody>
-							<QuizList />
-						</DrawerBody>
-					</DrawerContent>
-				</Drawer>
-			</Show>
+					<DrawerBody>
+						<QuizList />
+					</DrawerBody>
+				</DrawerContent>
+			</Drawer>
 		</Flex>
 	)
 }

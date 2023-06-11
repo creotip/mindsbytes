@@ -23,9 +23,9 @@ export function HomeContent() {
 				bg="linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%)"
 				color="transparent"
 				css={{
-					'background-clip': 'text',
-					'&::-webkit-background-clip': 'text',
-					'&::--webkit-text-fill-color': 'transparent',
+					backgroundClip: 'text',
+					'&::WebkitBackgroundClip': 'text',
+					'&::webkitTextFillColor': 'transparent',
 				}}
 			>
 				Make Learning Fun With Quizzes
