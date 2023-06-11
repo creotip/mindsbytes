@@ -527,5 +527,130 @@
 		"level": "Architectural",
 		"language": "HTML",
 		"category": ["Structure"]
+	},
+	{
+		"question": "What is the difference between the HTML <script>, <script async>, and <script defer> attributes?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "<script> is used for synchronous loading, <script async> is used for asynchronous loading, and <script defer> is used for deferred loading.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "<script> is used for deferred loading, <script async> is used for synchronous loading, and <script defer> is used for asynchronous loading.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "<script> is used for asynchronous loading, <script async> is used for deferred loading, and <script defer> is used for synchronous loading.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "There is no difference between them; they are interchangeable.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Script Loading"]
+	},
+	{
+		"question": "When and how should you preload resources in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Preloading resources should be used when you anticipate that certain assets (e.g., CSS, JavaScript, fonts, images) will be needed in the near future. To preload resources, you can use the <link rel='preload'> element with appropriate attributes such as 'as', 'href', and 'type'.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Preloading resources is not necessary in HTML as modern browsers automatically optimize resource loading. You should rely on the browser's default behavior.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Preloading resources should only be used for critical assets such as the main CSS file or JavaScript bundle. It can be achieved by setting the 'preload' attribute in the <head> section of the HTML document.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Preloading resources should be done by using JavaScript. You need to manually fetch and load each resource using AJAX requests and insert them dynamically into the DOM.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Performance"]
+	},
+	{
+		"question": "What are data- attributes used for in HTML?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "data- attributes are used to store custom data private to the page or application. They provide a way to attach additional information to HTML elements without using non-standard attributes or modifying the DOM.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "data- attributes are used to define standard data types such as numbers, strings, or booleans in HTML elements. They are primarily used for input validation.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "data- attributes are used to define the styling and layout properties of HTML elements. They allow for custom CSS rules and selectors.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "data- attributes are used to include external resources such as images, scripts, or stylesheets in HTML documents. They specify the source URLs.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Attributes"]
+	},
+	{
+		"question": "Describe the difference between a cookie, sessionStorage, and localStorage.",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "A cookie is a small piece of data stored on the client-side that is sent back and forth with each HTTP request. It has an expiration date and can be accessed by both the client-side and server-side. sessionStorage and localStorage are web storage mechanisms that store data on the client-side only. sessionStorage stores data for a single session and is cleared when the session ends, while localStorage stores data persistently until it is cleared manually or by the user.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "A cookie, sessionStorage, and localStorage are all used for the same purpose of storing data on the client-side. The only difference is their storage capacities. Cookies have a smaller storage limit, sessionStorage has a medium storage limit, and localStorage has the largest storage capacity.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A cookie is used to store user preferences, sessionStorage is used for storing temporary data, and localStorage is used for long-term data storage. They all serve different purposes based on the data retention requirements.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "A cookie is stored as a text file on the server, sessionStorage is stored in memory, and localStorage is stored in a separate database on the client-side. They have different underlying storage mechanisms.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["Web Storage"]
+	},
+	{
+		"question": "What is structured data in HTML and what is its purpose?",
+		"codeBlock": "",
+		"options": [
+			{
+				"answer": "Structured data in HTML is a way to provide additional context and meaning to web content by using standardized formats like JSON-LD or microdata. Its purpose is to help search engines understand the content better, enhance search results with rich snippets, and enable other applications to interpret and utilize the data.",
+				"rightAnswer": true
+			},
+			{
+				"answer": "Structured data in HTML is used to define the layout and styling of web pages. It allows for precise positioning of elements and custom styling using CSS.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Structured data in HTML is used to encrypt sensitive information transmitted over the network. It ensures data security and confidentiality.",
+				"rightAnswer": false
+			},
+			{
+				"answer": "Structured data in HTML is a way to include multimedia content such as images, videos, or audio files directly within the HTML document. It provides a better user experience.",
+				"rightAnswer": false
+			}
+		],
+		"level": "Hard",
+		"language": "HTML",
+		"category": ["SEO"]
 	}
 ]
