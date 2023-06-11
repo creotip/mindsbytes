@@ -4,6 +4,13 @@ import { quizMap } from '@/utils/quiz-map'
 import { Box, Button, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import { CustomLink } from './custom-link'
 
+const HomeBoxesDefaultProps = {
+	p: '20px',
+	border: '1px solid',
+	borderColor: 'gray.700',
+	borderRadius: '7px',
+	backgroundImage: 'linear-gradient(-45deg, #212938 30%, #1a202c)',
+}
 export function HomeContent() {
 	return (
 		<Box className="home-content" px="1rem">
@@ -23,13 +30,13 @@ export function HomeContent() {
 			</Text>
 
 			<SimpleGrid columns={[1, 1, 1, 3]} gap="25px" mb="3rem">
-				<Box p="20px" border="1px solid" borderColor="gray.600" borderRadius="7px">
+				<Box {...HomeBoxesDefaultProps}>
 					<Heading as="h2" fontSize="1rem" mb="1rem">
 						No Registration Required
 					</Heading>
 					<Text color="gray.400">Start quizzing instantly without the need for registration.</Text>
 				</Box>
-				<Box p="20px" border="1px solid" borderColor="gray.600" borderRadius="7px">
+				<Box {...HomeBoxesDefaultProps}>
 					<Heading as="h2" fontSize="1rem" mb="1rem">
 						Wide Range of Quizzes
 					</Heading>
@@ -37,7 +44,7 @@ export function HomeContent() {
 						Explore an extensive collection of quizzes across various topics and interests.
 					</Text>
 				</Box>
-				<Box p="20px" border="1px solid" borderColor="gray.600" borderRadius="7px">
+				<Box {...HomeBoxesDefaultProps}>
 					<Heading as="h2" fontSize="1rem" mb="1rem">
 						User-Friendly Interface
 					</Heading>
@@ -48,9 +55,9 @@ export function HomeContent() {
 			</SimpleGrid>
 
 			<Heading as="h2" textAlign="center" fontSize="2xl" mb="2rem">
-				Programming languages quizzes
+				Programming languages and Frameworks quizzes
 			</Heading>
-			<SimpleGrid columns={[4, 4, 4, 8]} spacing="1rem">
+			<SimpleGrid columns={[4, 4, 4, 8]} spacing="1rem" mb="3rem">
 				{quizMap.map((quizMapItem, index) => (
 					<Button
 						as={CustomLink}
@@ -60,11 +67,16 @@ export function HomeContent() {
 						key={index}
 						p={['10px', '1rem']}
 						border="1px solid"
-						borderColor="gray.600"
+						borderColor="gray.700"
 						borderRadius="7px"
 						textAlign="center"
 						flexDir="column"
 						h="auto"
+						bgImage="radial-gradient( #222b3d 20%, #141923)"
+						_hover={{
+							shadow: 'xl',
+							bgImage: 'none',
+						}}
 					>
 						<Box fontSize={['20px', '40px']} mb="10px">
 							{quizMapItem.icon}
@@ -75,6 +87,10 @@ export function HomeContent() {
 					</Button>
 				))}
 			</SimpleGrid>
+
+			<Heading as="h2" textAlign="center" fontSize="2xl" mb="2rem">
+				Tech, Math, and Science quizzes
+			</Heading>
 		</Box>
 	)
 }
