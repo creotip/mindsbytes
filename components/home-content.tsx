@@ -1,6 +1,6 @@
 'use client'
 import { config } from '@/config/config'
-import { quizMap } from '@/utils/quiz-map'
+import { quizMap, quizMapTechScience } from '@/utils/quiz-map'
 import { Box, Button, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import { CustomLink } from './custom-link'
 
@@ -97,6 +97,37 @@ export function HomeContent() {
 			<Heading as="h2" textAlign="center" fontSize="2xl" mb="2rem">
 				Tech, Math, and Science quizzes
 			</Heading>
+
+			<SimpleGrid columns={[4, 4, 4, 8]} spacing="1rem" mb="3rem">
+				{quizMapTechScience.map((quizMapItem, index) => (
+					<Button
+						as={CustomLink}
+						href={quizMapItem.path}
+						variant="ghost"
+						display="flex"
+						key={index}
+						p={['10px', '1rem']}
+						border="1px solid"
+						borderColor="gray.700"
+						borderRadius="7px"
+						textAlign="center"
+						flexDir="column"
+						h="auto"
+						bgImage="radial-gradient( #222b3d 20%, #141923)"
+						_hover={{
+							shadow: 'xl',
+							bgImage: 'none',
+						}}
+					>
+						<Box fontSize={['20px', '40px']} mb="10px">
+							{quizMapItem.icon}
+						</Box>
+						<Text color="gray.400" whiteSpace="normal" fontSize={['10px', 'xs', 'xs']}>
+							{quizMapItem.title}
+						</Text>
+					</Button>
+				))}
+			</SimpleGrid>
 		</Box>
 	)
 }
