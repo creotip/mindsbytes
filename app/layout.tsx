@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<HolyGrail>
 							<Header />
 							<Main>
-								<Sidebar />
+								{/* <Sidebar /> */}
 								<Content>{children}</Content>
 							</Main>
 							<Footer />

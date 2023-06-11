@@ -11,6 +11,7 @@ const HomeBoxesDefaultProps = {
 	borderRadius: '7px',
 	backgroundImage: 'linear-gradient(-45deg, #212938 30%, #1a202c)',
 }
+
 export function HomeContent() {
 	return (
 		<Box className="home-content" px="1rem">
@@ -19,10 +20,15 @@ export function HomeContent() {
 				fontSize={['2rem', '2rem', '3rem']}
 				textAlign="center"
 				my="2rem"
-				bg="-webkit-linear-gradient(45deg, #ffffff, #cbbcff)"
-				backgroundClip="text"
+				bg="linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%)"
+				color="transparent"
+				css={{
+					'background-clip': 'text',
+					'&::-webkit-background-clip': 'text',
+					'&::--webkit-text-fill-color': 'transparent',
+				}}
 			>
-				<span>Make</span> Learning Fun With Quizzes
+				Make Learning Fun With Quizzes
 			</Heading>
 
 			<Text color="gray.400" textAlign="center" mb="2rem">

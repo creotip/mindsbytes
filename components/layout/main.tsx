@@ -7,7 +7,7 @@ export const Main = (props: GridProps) => {
 			as="main"
 			mt="6"
 			gap="2.5rem"
-			gridTemplateColumns={['1fr', '1fr', '230px 1fr']}
+			gridTemplateColumns={['1fr', '1fr', '1fr']}
 			gridTemplateRows="1fr"
 			px="1rem"
 			{...props}

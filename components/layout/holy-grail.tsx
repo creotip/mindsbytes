@@ -9,7 +9,7 @@ export const HolyGrail = (props: GridProps) => {
 			gridTemplateRows="auto 1fr auto"
 			gridRowGap="1rem"
 			minH="100vh"
-			maxW="90rem"
+			maxW="70rem"
 			mx="auto"
 			{...props}
 		/>
