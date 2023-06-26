@@ -24,8 +24,8 @@ export function HomeContent() {
 				color="transparent"
 				css={{
 					backgroundClip: 'text',
-					'&::WebkitBackgroundClip': 'text',
-					'&::webkitTextFillColor': 'transparent',
+					WebkitBackgroundClip: 'text',
+					WebkitTextFillColor: 'transparent',
 				}}
 			>
 				Make Learning Fun With Quizzes

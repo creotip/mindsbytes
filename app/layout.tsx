@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/layout/header'
-import { Sidebar } from '@/components/layout/sidebar'
 import { HolyGrail } from '@/components/layout/holy-grail'
 import { Main } from '@/components/layout/main'
 import { Footer } from '@/components/layout/footer'
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<HolyGrail>
 							<Header />
 							<Main>
-								{/* <Sidebar /> */}
 								<Content>{children}</Content>
 							</Main>
 							<Footer />
