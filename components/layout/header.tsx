@@ -34,14 +34,7 @@ export const Header = () => {
 					_hover={{ opacity: '0.7' }}
 				>
 					<MdCenterFocusWeak size="24px" />
-					<motion.span
-						initial={{ opacity: 0, x: -20 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.5 }}
-						whileHover={{ scale: 1.05 }}
-					>
-						MindsBytes
-					</motion.span>
+					<span>MindsBytes</span>
 				</CustomLink>
 				<Box
 					filter="blur(34px)"
